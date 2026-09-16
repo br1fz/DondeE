@@ -18,6 +18,6 @@
 
 ## 💻 Instalación
 1. Clonar: `git clone https://github.com/br1fz/DondeE.git`
-2. Crear BD `dondee_db` e importar el esquema SQL desde la carpeta `DondeE - BD/`.
+2. Crear BD `dondee_db` e importar el esquema SQL ejecutando el script maestro: `psql -d dondee_db -f "DondeE - BD/database/init.sql"`
 3. Instalar dependencias en frontend y backend (`npm install`).
 4. Configurar variables de entorno `.env` y ejecutar servidores.
