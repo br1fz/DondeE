@@ -16,8 +16,18 @@
 * **Backend:** Node.js / Express (o framework equivalente).
 * **Base de Datos:** PostgreSQL con extensión PostGIS.
 
-## 💻 Instalación
-1. Clonar: `git clone https://github.com/br1fz/DondeE.git`
-2. Crear BD `dondee_db` e importar el esquema SQL ejecutando el script maestro: `psql -d dondee_db -f "DondeE - BD/database/init.sql"`
-3. Instalar dependencias en frontend y backend (`npm install`).
-4. Configurar variables de entorno `.env` y ejecutar servidores.
+## 💻 Instalación y Demostración en Vivo
+1. Clonar repositorio: `git clone https://github.com/br1fz/DondeE.git`
+2. Crear BD `dondee_db` e importar el esquema maestro y el set de datos mockup de Valparaíso y Viña del Mar:
+   ```bash
+   psql -d dondee_db -f "DondeE - BD/database/init.sql"
+   psql -d dondee_db -f "DondeE - BD/database/07_mock_valparaiso_vina.sql"
+   ```
+3. Ejecutar el Frontend interactivo (MockUp UI Figma integrado):
+   ```bash
+   cd "DondeE - FE"
+   npm install
+   npm run dev
+   ```
+4. Abrir en el navegador (`http://localhost:5173`) para interactuar con la búsqueda geoespacial (Valparaíso y Viña del Mar), reserva transaccional de aforo en tiempo real con QR y comentarios sociales.
+
