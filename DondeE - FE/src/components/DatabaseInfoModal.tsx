@@ -3,9 +3,11 @@ import React from "react";
 interface Props {
   isOpen: boolean;
   onClose: () => void;
+  backendStatus: "checking" | "connected" | "offline";
+  postgisVersion?: string;
 }
 
-export default function DatabaseInfoModal({ isOpen, onClose }: Props) {
+export default function DatabaseInfoModal({ isOpen, onClose, backendStatus, postgisVersion }: Props) {
   if (!isOpen) return null;
 
   return (
@@ -38,6 +40,16 @@ export default function DatabaseInfoModal({ isOpen, onClose }: Props) {
         </div>
 
         <div className="space-y-4 font-mono text-xs">
+          <div className={`p-3 rounded-2xl border ${backendStatus === "connected" ? "bg-emerald-500/10 border-emerald-400/30" : backendStatus === "offline" ? "bg-red-500/10 border-red-400/30" : "bg-amber-500/10 border-amber-400/30"}`}>
+            <div className="flex items-center justify-between gap-2">
+              <span className="text-white/80">Conexión API + PostgreSQL</span>
+              <span className={backendStatus === "connected" ? "text-emerald-300" : backendStatus === "offline" ? "text-red-300" : "text-amber-300"}>
+                {backendStatus === "connected" ? "CONECTADO" : backendStatus === "offline" ? "DESCONECTADO" : "VERIFICANDO..."}
+              </span>
+            </div>
+            {postgisVersion && <p className="mt-1 text-[10px] text-white/50">PostGIS {postgisVersion}</p>}
+          </div>
+
           {/* Geolocation Section */}
           <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10">
             <div className="flex items-center gap-2 text-purple-400 font-bold mb-1.5 text-[11px]">

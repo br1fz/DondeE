@@ -10,6 +10,7 @@ import ReservationScreen from "./screens/ReservationScreen";
 import ClientDrawer from "./components/ClientDrawer";
 import DatabaseInfoModal from "./components/DatabaseInfoModal";
 import GeolocationModal from "./components/GeolocationModal";
+import { getBackendHealth } from "./api";
 
 type Screen = "map" | "reservation";
 
@@ -24,6 +25,17 @@ export default function App() {
   const [selectedEvent, setSelectedEvent] = useState<NightEvent | undefined>(MOCK_EVENTS[0]);
   const [isClientDrawerOpen, setIsClientDrawerOpen] = useState(false);
   const [isDbModalOpen, setIsDbModalOpen] = useState(false);
+  const [backendStatus, setBackendStatus] = useState<"checking" | "connected" | "offline">("checking");
+  const [postgisVersion, setPostgisVersion] = useState<string>();
+
+  useEffect(() => {
+    getBackendHealth()
+      .then((health) => {
+        setBackendStatus("connected");
+        setPostgisVersion(health.postgis_version);
+      })
+      .catch(() => setBackendStatus("offline"));
+  }, []);
 
   // Geolocation automatic prompt state on initial entry
   const [isGeoModalOpen, setIsGeoModalOpen] = useState(true);
@@ -239,6 +251,8 @@ export default function App() {
       <DatabaseInfoModal
         isOpen={isDbModalOpen}
         onClose={() => setIsDbModalOpen(false)}
+        backendStatus={backendStatus}
+        postgisVersion={postgisVersion}
       />
     </div>
   );
