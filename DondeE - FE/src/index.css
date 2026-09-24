@@ -131,3 +131,18 @@ input[type="range"]::-webkit-slider-thumb:hover {
   to { opacity: 1; }
 }
 .animate-fade-in { animation: fade-in 0.25s ease-out forwards; }
+
+/* Leaflet custom dark theme & pin resets */
+.leaflet-container {
+  background: #07071a !important;
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+}
+.custom-venue-pin, .user-loc-dot {
+  background: transparent !important;
+  border: none !important;
+}
+.leaflet-tile {
+  filter: none;
+}

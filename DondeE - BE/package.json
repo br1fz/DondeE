@@ -9,10 +9,12 @@
     "start": "node dist/server.js"
   },
   "dependencies": {
+    "@types/sql.js": "^1.4.11",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^5.1.0",
-    "pg": "^8.16.3"
+    "pg": "^8.16.3",
+    "sql.js": "^1.14.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
