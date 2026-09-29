@@ -247,4 +247,4 @@ Proyecto desarrollado para la asignatura **ICI 324 - Bases de Datos y Programaci
 - **Jorge Bahamondes**
 - **Bruno Díaz**
 
-*Universidad Técnica Federico Santa María / Escuela de Ingeniería Informática — 2026.*
+*Universidad de Valparaíso / Escuela de Ingeniería Informática — 2026.*
