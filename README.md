@@ -129,6 +129,16 @@ docker compose ps
 * **Ver logs del sistema:** `docker compose logs -f`
 * **Detener servicios:** `docker compose down`
 
+#### Conectarse a PostgreSQL y ejecutar consultas
+
+Con los contenedores activos y desde la carpeta raíz del proyecto, abre una consola SQL dentro del contenedor de la base de datos:
+
+```powershell
+docker compose exec db psql -U postgres -d dondee_db
+```
+
+En el prompt `dondee_db=#` puedes ejecutar consultas SQL; cada sentencia debe terminar en punto y coma (`;`). Para salir, escribe `\q`. En `DondeE - BD/database/06_consultas.sql` hay ejemplos: ejecuta las consultas `SELECT` individualmente y revisa las demás antes de usarlas, porque algunas modifican o eliminan datos.
+
 ---
 
 ### Método 2: Ejecución Local Nativa (Sin Docker)
