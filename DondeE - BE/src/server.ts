@@ -97,6 +97,83 @@ app.post("/api/reservations", async (request, response) => {
   });
 });
 
+// ============================================================================
+// NUEVAS 4 CONSULTAS - RÚBRICA (ÁLGEBRA RELACIONAL Y SQL AVANZADO)
+// ============================================================================
+
+// 1. Resumen por Recinto (Agrupación y Función de Agregación)
+app.get("/api/analytics/venues-summary", async (_request, response, next) => {
+  try {
+    const sql = `
+      SELECT r.id_recinto, r.nombre_local, COUNT(e.id_evento) AS total_eventos, COALESCE(SUM(e.aforo_total), 0) AS capacidad_total_eventos, ROUND(COALESCE(AVG(e.precio_entrada), 0), 2) AS precio_promedio
+      FROM recinto r
+      LEFT JOIN evento e ON r.id_recinto = e.id_recinto
+      GROUP BY r.id_recinto, r.nombre_local
+      ORDER BY total_eventos DESC
+    `;
+    const rows = await dbManager.query(sql);
+    response.json(rows);
+  } catch (error) {
+    next(error);
+  }
+});
+
+// 2. Ranking de Locales (HAVING)
+app.get("/api/venues/top-rated", async (_request, response, next) => {
+  try {
+    const sql = `
+      SELECT r.nombre_local, COUNT(res.id_resena) AS cantidad_resenas, ROUND(AVG(res.calificacion), 1) AS promedio_real
+      FROM recinto r
+      INNER JOIN resena res ON r.id_recinto = res.id_recinto
+      GROUP BY r.id_recinto, r.nombre_local
+      HAVING COUNT(res.id_resena) >= 1
+      ORDER BY promedio_real DESC, cantidad_resenas DESC
+      LIMIT 5
+    `;
+    const rows = await dbManager.query(sql);
+    response.json(rows);
+  } catch (error) {
+    next(error);
+  }
+});
+
+// 3. Alerta de Aforo Crítico (Operación Matemática en WHERE)
+app.get("/api/events/almost-sold-out", async (_request, response, next) => {
+  try {
+    const sql = `
+      SELECT e.id_evento, e.titulo, r.nombre_local, e.aforo_disponible, e.aforo_total, ROUND((e.aforo_disponible::numeric / e.aforo_total::numeric) * 100, 1) AS porcentaje_disponible
+      FROM evento e
+      INNER JOIN recinto r ON e.id_recinto = r.id_recinto
+      WHERE e.aforo_disponible > 0 AND (e.aforo_disponible::numeric / e.aforo_total::numeric) <= 0.20
+      ORDER BY porcentaje_disponible ASC
+    `;
+    const rows = await dbManager.query(sql);
+    response.json(rows);
+  } catch (error) {
+    next(error);
+  }
+});
+
+// 4. Usuarios Inactivos (EXCEPT)
+app.get("/api/users/inactive", async (_request, response, next) => {
+  try {
+    const sql = `
+      SELECT id_usuario, nombre, email
+      FROM usuario
+      EXCEPT
+      SELECT u.id_usuario, u.nombre, u.email
+      FROM usuario u
+      INNER JOIN reserva res ON u.id_usuario = res.id_usuario
+      WHERE res.estado_pago = 'PAGADO'
+    `;
+    const rows = await dbManager.query(sql);
+    response.json(rows);
+  } catch (error) {
+    next(error);
+  }
+});
+
+
 app.use((_request, response) => {
   response.status(404).json({ error: "Ruta no encontrada" });
 });

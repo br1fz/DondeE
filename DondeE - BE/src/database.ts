@@ -269,6 +269,21 @@ class DatabaseManager {
   async getAllEvents(): Promise<EventRow[]> {
     return this.events;
   }
+
+  // Permite ejecutar consultas SQL complejas
+  async query(sql: string, params: any[] = []): Promise<any[]> {
+    if (this.isPgAvailable) {
+      try {
+        const res = await this.pgPool.query(sql, params);
+        return res.rows;
+      } catch (err) {
+        console.error("Error executing SQL query:", err);
+        throw err;
+      }
+    }
+    console.warn("⚠️ PostgreSQL offline. No se puede ejecutar la consulta compleja (Álgebra Relacional). Retornando datos mock de fallback.");
+    return [];
+  }
 }
 
 export const dbManager = new DatabaseManager();

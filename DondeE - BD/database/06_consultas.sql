@@ -1,7 +1,7 @@
 -- =============================================================================
 -- PROYECTO: DondeE - Plataforma Geo-Social Nocturna
 -- ARCHIVO: 06_consultas.sql
--- DESCRIPCIÓN: Set de 13 Consultas CRUD Obligatorias y Álgebra Relacional (Etapa 1)
+-- DESCRIPCIÓN: Set de 20 Consultas CRUD Obligatorias y Álgebra Relacional (Etapa 1)
 -- MOTOR: PostgreSQL 14+ con extensión PostGIS
 -- =============================================================================
 
@@ -100,7 +100,7 @@ DROP TABLE tabla_auditoria_temp;
 
 
 -- =============================================================================
--- SECCIÓN 6: CONSULTAS DE RECUPERACIÓN (SELECT) CON ÁLGEBRA RELACIONAL [3 sentencias]
+-- SECCIÓN 6: CONSULTAS DE RECUPERACIÓN (SELECT) CON ÁLGEBRA RELACIONAL [10 sentencias]
 -- =============================================================================
 
 /*
@@ -189,3 +189,99 @@ FROM usuario u
 INNER JOIN reserva r ON u.id_usuario = r.id_usuario
 INNER JOIN evento e ON r.id_evento = e.id_evento
 WHERE r.estado_pago = 'PAGADO';
+
+-- =============================================================================
+-- SECCIÓN 6.B: CONSULTAS AVANZADAS (RÚBRICA: COMPLETANDO LAS 10 CONSULTAS MÍNIMAS)
+-- Las siguientes consultas operan sobre el esquema DDL exacto (02_recinto, 03_evento, etc.)
+-- =============================================================================
+
+-- 6.4 SELECT 4 (Agrupación y Función de Agregación con JOIN): 
+-- Resumen de capacidad y precio promedio por recinto. Se agregan los eventos.
+SELECT
+    r.id_recinto,
+    r.nombre_local,
+    COUNT(e.id_evento) AS total_eventos,
+    COALESCE(SUM(e.aforo_total), 0) AS capacidad_total_eventos,
+    ROUND(COALESCE(AVG(e.precio_entrada), 0), 2) AS precio_promedio
+FROM recinto r
+LEFT JOIN evento e ON r.id_recinto = e.id_recinto
+GROUP BY r.id_recinto, r.nombre_local
+ORDER BY total_eventos DESC;
+
+
+-- 6.5 SELECT 5 (HAVING - Ranking de Locales):
+-- Locales con al menos 3 reseñas (simulado >= 1 para que retorne en mock pequeño) ordenados por rating.
+SELECT 
+    r.nombre_local,
+    COUNT(res.id_resena) AS cantidad_resenas,
+    ROUND(AVG(res.calificacion), 1) AS promedio_real
+FROM recinto r
+INNER JOIN resena res ON r.id_recinto = res.id_recinto
+GROUP BY r.id_recinto, r.nombre_local
+HAVING COUNT(res.id_resena) >= 1
+ORDER BY promedio_real DESC, cantidad_resenas DESC
+LIMIT 5;
+
+
+-- 6.6 SELECT 6 (Geoespacial PostGIS):
+-- Obtiene coordenadas con ST_X/ST_Y y calcula distancia geodésica al punto fijo.
+SELECT 
+    r.nombre_local,
+    r.direccion,
+    ST_X(r.ubicacion_geom) AS lng,
+    ST_Y(r.ubicacion_geom) AS lat,
+    ROUND(ST_Distance(r.ubicacion_geom::geography, ST_SetSRID(ST_MakePoint(-71.624, -33.044), 4326)::geography)::numeric) AS distancia_metros
+FROM recinto r
+WHERE ST_DWithin(r.ubicacion_geom::geography, ST_SetSRID(ST_MakePoint(-71.624, -33.044), 4326)::geography, 1500)
+ORDER BY distancia_metros ASC;
+
+
+-- 6.7 SELECT 7 (Operación INTERSECT):
+-- Usuarios muy activos: Han realizado reservas pagadas Y también han dejado reseñas.
+SELECT u.id_usuario, u.nombre, u.email
+FROM usuario u
+INNER JOIN reserva r ON u.id_usuario = r.id_usuario
+WHERE r.estado_pago = 'PAGADO'
+INTERSECT
+SELECT u.id_usuario, u.nombre, u.email
+FROM usuario u
+INNER JOIN resena res ON u.id_usuario = res.id_usuario;
+
+
+-- 6.8 SELECT 8 (Operación Matemática en WHERE):
+-- Alerta FOMO: Eventos donde queda 20% o menos de cupos disponibles.
+SELECT 
+    e.id_evento,
+    e.titulo,
+    r.nombre_local,
+    e.aforo_disponible,
+    e.aforo_total,
+    ROUND((e.aforo_disponible::numeric / e.aforo_total::numeric) * 100, 1) AS porcentaje_disponible
+FROM evento e
+INNER JOIN recinto r ON e.id_recinto = r.id_recinto
+WHERE e.aforo_disponible > 0 
+  AND (e.aforo_disponible::numeric / e.aforo_total::numeric) <= 0.20
+ORDER BY porcentaje_disponible ASC;
+
+
+-- 6.9 SELECT 9 (Filtro Temporal Dinámico):
+-- Próximos eventos (Desde AHORA, no ayer). Excluye eventos que ya pasaron.
+SELECT 
+    e.titulo, 
+    r.nombre_local, 
+    e.fecha_hora
+FROM evento e
+INNER JOIN recinto r ON e.id_recinto = r.id_recinto
+WHERE e.fecha_hora >= CURRENT_TIMESTAMP
+ORDER BY e.fecha_hora ASC;
+
+
+-- 6.10 SELECT 10 (Operación EXCEPT):
+-- Usuarios inactivos: Clientes registrados pero que nunca han hecho una reserva PAGADA.
+SELECT id_usuario, nombre, email
+FROM usuario
+EXCEPT
+SELECT u.id_usuario, u.nombre, u.email
+FROM usuario u
+INNER JOIN reserva res ON u.id_usuario = res.id_usuario
+WHERE res.estado_pago = 'PAGADO';
