@@ -1,10 +1,10 @@
-# Plan de Consultas SQL y Álgebra Relacional 🗄️📐
+# Plan de Consultas SQL y Álgebra Relacional
 **Proyecto:** DondeE — Plataforma Geo-Social de Vida Nocturna  
 **Asignatura:** ICI 324 - Bases de Datos y Programación Web (2026)  
 
 ---
 
-## 🎯 Objetivo Académico
+## Objetivo Académico
 
 Catálogo de las **10 Consultas Obligatorias** integradas en el sistema para cumplir con la Rúbrica de Evaluación (Nivel Logrado). Estas consultas operan sobre el esquema DDL exacto del proyecto (ver `06_consultas.sql`) y demuestran el uso de operadores avanzados.
 

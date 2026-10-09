@@ -1,10 +1,10 @@
-# DondeE - Backend (BE) 🗄️⚡
+# DondeE - Backend (BE)
 
 API RESTful y motor relacional/espacial para **DondeE**, plataforma geo-social de vida nocturna. Desarrollada con **Node.js, Express 5, TypeScript y PostgreSQL con extensión PostGIS**.
 
 ---
 
-## 🚀 Características Principales
+## Características Principales
 
 1. **Búsqueda Multi-Entidad en Tiempo Real (`/api/search`)**:
    - Búsqueda simultánea sobre **localidades/sectores**, **eventos nocturnos** y **locales comerciales** (clubs, pubs, bares).
@@ -19,7 +19,7 @@ API RESTful y motor relacional/espacial para **DondeE**, plataforma geo-social d
 
 ---
 
-## 🛠️ Endpoints de la API
+## Endpoints de la API
 
 | Método | Endpoint | Descripción | Parámetros / Body |
 | :--- | :--- | :--- | :--- |
@@ -34,7 +34,7 @@ API RESTful y motor relacional/espacial para **DondeE**, plataforma geo-social d
 
 ---
 
-## 💻 Instalación y Ejecución
+## Instalación y Ejecución
 
 ```bash
 # 1. Navegar a la carpeta backend
@@ -54,7 +54,7 @@ El servidor quedará disponible en **`http://localhost:3001`**.
 
 ---
 
-## 🧪 Verificación Rápida
+## Verificación Rápida
 
 Puedes comprobar que el backend está respondiendo ejecutando:
 
