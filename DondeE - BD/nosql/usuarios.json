@@ -1,0 +1,106 @@
+[
+  {
+    "id_usuario": 1,
+    "nombre": "Administrador General DondeE",
+    "email": "admin@dondee.cl",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "ADMIN",
+    "fecha_registro": "2026-09-01T10:00:00.000Z"
+  },
+  {
+    "id_usuario": 2,
+    "nombre": "Valentina Morales",
+    "email": "valen.morales@gmail.com",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "CLIENTE",
+    "fecha_registro": "2026-09-10T14:30:00.000Z"
+  },
+  {
+    "id_usuario": 3,
+    "nombre": "Diego Silva",
+    "email": "diego.silva@alumnos.usm.cl",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "CLIENTE",
+    "fecha_registro": "2026-09-11T16:15:00.000Z"
+  },
+  {
+    "id_usuario": 4,
+    "nombre": "Camila Rojas",
+    "email": "camila.rojas@gmail.com",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "CLIENTE",
+    "fecha_registro": "2026-09-12T11:00:00.000Z"
+  },
+  {
+    "id_usuario": 5,
+    "nombre": "Ignacio Valenzuela",
+    "email": "ignacio.valenzuela@gmail.com",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "CLIENTE",
+    "fecha_registro": "2026-09-12T19:20:00.000Z"
+  },
+  {
+    "id_usuario": 6,
+    "nombre": "Sofía Henríquez",
+    "email": "sofia.henriquez@outlook.com",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "CLIENTE",
+    "fecha_registro": "2026-09-13T18:45:00.000Z"
+  },
+  {
+    "id_usuario": 7,
+    "nombre": "Matías Tapia",
+    "email": "matias.tapia@alumnos.uv.cl",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "CLIENTE",
+    "fecha_registro": "2026-09-14T20:10:00.000Z"
+  },
+  {
+    "id_usuario": 8,
+    "nombre": "Francisca Contreras",
+    "email": "fran.contreras@gmail.com",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "CLIENTE",
+    "fecha_registro": "2026-09-15T15:30:00.000Z"
+  },
+  {
+    "id_usuario": 9,
+    "nombre": "Lucas Sepúlveda",
+    "email": "lucas.sepulveda@gmail.com",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "CLIENTE",
+    "fecha_registro": "2026-09-15T22:00:00.000Z"
+  },
+  {
+    "id_usuario": 10,
+    "nombre": "Host Valparaíso Puerto SpA",
+    "email": "contacto@valpopuerto.cl",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "HOST",
+    "fecha_registro": "2026-09-02T12:00:00.000Z"
+  },
+  {
+    "id_usuario": 11,
+    "nombre": "Host Cerros Alegre & Concepción",
+    "email": "administracion@cerroalegre.cl",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "HOST",
+    "fecha_registro": "2026-09-02T12:30:00.000Z"
+  },
+  {
+    "id_usuario": 12,
+    "nombre": "Host Viña Poniente & Casino",
+    "email": "contacto@vinaponiente.cl",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "HOST",
+    "fecha_registro": "2026-09-03T09:15:00.000Z"
+  },
+  {
+    "id_usuario": 13,
+    "nombre": "Host Reñaca Beach Clubs",
+    "email": "contacto@renacabeach.cl",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "HOST",
+    "fecha_registro": "2026-09-03T10:00:00.000Z"
+  }
+]

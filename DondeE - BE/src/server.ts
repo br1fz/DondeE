@@ -9,9 +9,10 @@ const port = Number(process.env.PORT ?? 3001);
 app.use(cors());
 app.use(express.json());
 
-// Initialize Database connection (PostgreSQL or Relational SQL fallback)
+// Inicializar conexion a MongoDB Atlas / Motor NoSQL Local
 await dbManager.init();
 
+// 1. Estado y Salud del Backend NoSQL
 app.get("/api/health", async (_request, response, next) => {
   try {
     const health = await dbManager.getHealth();
@@ -21,7 +22,7 @@ app.get("/api/health", async (_request, response, next) => {
   }
 });
 
-// Full Multi-Entity Database Search (venues, events, sectors/localities)
+// 2. Busqueda Multi-Entidad (Sectores, Eventos, Recintos)
 app.get("/api/search", async (request, response, next) => {
   try {
     const query = String(request.query.q ?? "");
@@ -32,6 +33,7 @@ app.get("/api/search", async (request, response, next) => {
   }
 });
 
+// 3. Listado General de Recintos
 app.get("/api/venues", async (_request, response, next) => {
   try {
     const venues = await dbManager.getAllVenues();
@@ -41,6 +43,20 @@ app.get("/api/venues", async (_request, response, next) => {
   }
 });
 
+// 4. Busqueda Geoespacial NoSQL (GeoJSON Point $near / 2dsphere)
+app.get("/api/venues/near", async (request, response, next) => {
+  try {
+    const lng = Number(request.query.lng ?? -71.6245);
+    const lat = Number(request.query.lat ?? -33.0425);
+    const maxDistance = Number(request.query.maxDistance ?? 3000);
+    const venues = await dbManager.getVenuesNear(lng, lat, maxDistance);
+    response.json(venues);
+  } catch (error) {
+    next(error);
+  }
+});
+
+// 5. Listado General de Eventos
 app.get("/api/events", async (_request, response, next) => {
   try {
     const events = await dbManager.getAllEvents();
@@ -50,129 +66,120 @@ app.get("/api/events", async (_request, response, next) => {
   }
 });
 
-app.get("/api/users", async (_request, response) => {
-  response.json([
-    { id_usuario: 1, nombre: "Valentina Morales", email: "valen.morales@gmail.com", rol: "CLIENTE" },
-    { id_usuario: 2, nombre: "Diego Silva", email: "diego.silva@alumnos.usm.cl", rol: "CLIENTE" },
-    { id_usuario: 3, nombre: "Camila Rojas", email: "camila.rojas@gmail.com", rol: "CLIENTE" },
-    { id_usuario: 4, nombre: "Host Valparaíso Puerto SpA", email: "contacto@valpopuerto.cl", rol: "HOST" },
-  ]);
+// 6. Listado de Usuarios
+app.get("/api/users", async (_request, response, next) => {
+  try {
+    const users = await dbManager.getAllUsers();
+    response.json(users);
+  } catch (error) {
+    next(error);
+  }
 });
 
-app.get("/api/reviews", async (_request, response) => {
-  response.json([
-    {
-      id_resena: 1,
-      calificacion: 5,
-      comentario: "Excelente ambiente, la terraza tiene vista panorámica al puerto.",
-      fecha_publicacion: new Date().toISOString(),
-      user_name: "Valentina Morales",
-      id_recinto: 1,
-    },
-  ]);
+// 7. Reseñas Sociales por Recinto
+app.get("/api/reviews", async (request, response, next) => {
+  try {
+    const venueId = request.query.venueId ? Number(request.query.venueId) : undefined;
+    const reviews = await dbManager.getReviews(venueId);
+    response.json(reviews);
+  } catch (error) {
+    next(error);
+  }
 });
 
-app.post("/api/reviews", async (request, response) => {
-  const { rating, comment, userId, venueId } = request.body;
-  response.status(201).json({
-    id_resena: Date.now(),
-    calificacion: rating,
-    comentario: comment,
-    fecha_publicacion: new Date().toISOString(),
-    id_usuario: userId,
-    id_recinto: venueId,
-  });
+// 8. Crear Nueva Reseña
+app.post("/api/reviews", async (request, response, next) => {
+  try {
+    const { rating, comment, userId, venueId, userName } = request.body;
+    if (!rating || !venueId || !userId) {
+      return response.status(400).json({ error: "Campos obligatorios: rating, venueId, userId" });
+    }
+    const created = await dbManager.createReview({
+      rating: Number(rating),
+      comment: String(comment || ""),
+      userId: Number(userId),
+      venueId: Number(venueId),
+      userName
+    });
+    response.status(201).json(created);
+  } catch (error) {
+    next(error);
+  }
 });
 
-app.post("/api/reservations", async (request, response) => {
-  const { userId, eventId, quantity, totalPaid } = request.body;
-  response.status(201).json({
-    id_reserva: Date.now(),
-    estado_pago: "PAGADO",
-    cantidad_entradas: quantity,
-    total_pagado: totalPaid,
-    id_usuario: userId,
-    id_evento: eventId,
-    fecha_reserva: new Date().toISOString(),
-  });
+// 9. Crear Reserva de Entradas (Transaccional)
+app.post("/api/reservations", async (request, response, next) => {
+  try {
+    const { userId, eventId, quantity, totalPaid, userName } = request.body;
+    if (!userId || !eventId || !quantity) {
+      return response.status(400).json({ error: "Campos obligatorios: userId, eventId, quantity" });
+    }
+    const created = await dbManager.createReservation({
+      userId: Number(userId),
+      eventId: Number(eventId),
+      quantity: Number(quantity),
+      totalPaid: Number(totalPaid || 0),
+      userName
+    });
+    response.status(201).json(created);
+  } catch (error) {
+    next(error);
+  }
 });
 
 // ============================================================================
-// NUEVAS 4 CONSULTAS - RÚBRICA (ÁLGEBRA RELACIONAL Y SQL AVANZADO)
+// CONSULTAS DE RÚBRICA TRADUCIDAS A MQL Y AGGREGATION PIPELINES (ENTREGA 2)
 // ============================================================================
 
-// 1. Resumen por Recinto (Agrupación y Función de Agregación)
+// 10. Resumen por Recinto (Aggregation Pipeline: $group + métricas)
 app.get("/api/analytics/venues-summary", async (_request, response, next) => {
   try {
-    const sql = `
-      SELECT r.id_recinto, r.nombre_local, COUNT(e.id_evento) AS total_eventos, COALESCE(SUM(e.aforo_total), 0) AS capacidad_total_eventos, ROUND(COALESCE(AVG(e.precio_entrada), 0), 2) AS precio_promedio
-      FROM recinto r
-      LEFT JOIN evento e ON r.id_recinto = e.id_recinto
-      GROUP BY r.id_recinto, r.nombre_local
-      ORDER BY total_eventos DESC
-    `;
-    const rows = await dbManager.query(sql);
+    const rows = await dbManager.getVenuesSummary();
     response.json(rows);
   } catch (error) {
     next(error);
   }
 });
 
-// 2. Ranking de Locales (HAVING)
+// 11. Ranking de Locales Mejor Evaluados (Aggregation: $match sobre embebidos + $project + $sort)
 app.get("/api/venues/top-rated", async (_request, response, next) => {
   try {
-    const sql = `
-      SELECT r.nombre_local, COUNT(res.id_resena) AS cantidad_resenas, ROUND(AVG(res.calificacion), 1) AS promedio_real
-      FROM recinto r
-      INNER JOIN resena res ON r.id_recinto = res.id_recinto
-      GROUP BY r.id_recinto, r.nombre_local
-      HAVING COUNT(res.id_resena) >= 1
-      ORDER BY promedio_real DESC, cantidad_resenas DESC
-      LIMIT 5
-    `;
-    const rows = await dbManager.query(sql);
+    const rows = await dbManager.getTopRatedVenues();
     response.json(rows);
   } catch (error) {
     next(error);
   }
 });
 
-// 3. Alerta de Aforo Crítico (Operación Matemática en WHERE)
+// 12. Alerta de Aforo Crítico (MQL $expr con división aritmética en tiempo real)
 app.get("/api/events/almost-sold-out", async (_request, response, next) => {
   try {
-    const sql = `
-      SELECT e.id_evento, e.titulo, r.nombre_local, e.aforo_disponible, e.aforo_total, ROUND((e.aforo_disponible::numeric / e.aforo_total::numeric) * 100, 1) AS porcentaje_disponible
-      FROM evento e
-      INNER JOIN recinto r ON e.id_recinto = r.id_recinto
-      WHERE e.aforo_disponible > 0 AND (e.aforo_disponible::numeric / e.aforo_total::numeric) <= 0.20
-      ORDER BY porcentaje_disponible ASC
-    `;
-    const rows = await dbManager.query(sql);
+    const rows = await dbManager.getAlmostSoldOutEvents();
     response.json(rows);
   } catch (error) {
     next(error);
   }
 });
 
-// 4. Usuarios Inactivos (EXCEPT)
+// 13. Usuarios Inactivos (Aggregation $lookup + $match de arreglos vacíos)
 app.get("/api/users/inactive", async (_request, response, next) => {
   try {
-    const sql = `
-      SELECT id_usuario, nombre, email
-      FROM usuario
-      EXCEPT
-      SELECT u.id_usuario, u.nombre, u.email
-      FROM usuario u
-      INNER JOIN reserva res ON u.id_usuario = res.id_usuario
-      WHERE res.estado_pago = 'PAGADO'
-    `;
-    const rows = await dbManager.query(sql);
+    const rows = await dbManager.getInactiveUsers();
     response.json(rows);
   } catch (error) {
     next(error);
   }
 });
 
+// 14. Estadísticas de Colecciones NoSQL
+app.get("/api/nosql/collections", async (_request, response, next) => {
+  try {
+    const stats = await dbManager.getCollectionsStats();
+    response.json(stats);
+  } catch (error) {
+    next(error);
+  }
+});
 
 app.use((_request, response) => {
   response.status(404).json({ error: "Ruta no encontrada" });
@@ -184,5 +191,5 @@ app.use((error: Error, _request: Request, response: Response, _next: NextFunctio
 });
 
 app.listen(port, () => {
-  console.log(`DondeE API escuchando en http://localhost:${port}`);
+  console.log(`DondeE API NoSQL escuchando en http://localhost:${port}`);
 });

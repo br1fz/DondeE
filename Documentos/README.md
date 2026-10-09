@@ -207,21 +207,29 @@ DondeE/
 ├── Documentos/
 │   ├── README.md               # Documentación maestra del proyecto
 │   ├── Analisis_Migracion_NoSQL_MongoDB.md # Plan de migración a NoSQL (Entrega 2)
-│   ├── proximas API.md         # Especificación de álgebra relacional y nuevos endpoints
+│   ├── Documentacion_API_REST.md # Documentación oficial de la API REST (Entrega 2 NoSQL)
+│   ├── proximas API.md         # Especificación de álgebra relacional y consultas de rúbrica
 │   ├── Informe_DondeE.pdf      # Informe académico detallado
 │   └── Presentacion DondeE-1.pdf # Diapositivas de presentación del proyecto
 ├── DondeE - BD/
-│   └── database/
-│       ├── init.sql            # Definición DDL, tablas, llaves foráneas y tipos
-│       ├── 06_consultas.sql    # Consultas CRUD y álgebra relacional
-│       └── 07_mock_valparaiso_vina.sql # Datos mock reales de Valparaíso y Viña
+│   ├── database/
+│   │   ├── init.sql            # Definición DDL, tablas, llaves foráneas y tipos
+│   │   ├── 06_consultas.sql    # Consultas CRUD y álgebra relacional
+│   │   └── 07_mock_valparaiso_vina.sql # Datos mock reales de Valparaíso y Viña
+│   └── nosql/
+│       ├── recintos.json       # Colección NoSQL de 42 locales con subdocumentos y GeoJSON
+│       ├── eventos.json        # Colección NoSQL de 126 eventos nocturnos
+│       ├── usuarios.json       # Colección NoSQL de usuarios de la plataforma
+│       └── reservas.json       # Colección NoSQL de transacciones de reservas
 ├── DondeE - BE/
 │   ├── Dockerfile              # Contenedor Node.js 20 Alpine multi-stage
 │   ├── .dockerignore
 │   ├── src/
-│   │   ├── database.ts         # Conexión PostgreSQL/PostGIS + motor relacional fallback
+│   │   ├── database.ts         # Capa de persistencia NoSQL MongoDB Atlas + Fallback
 │   │   ├── eventsData.ts       # Dataset de 126 eventos estructurados
-│   │   └── server.ts           # API Express (endpoints /api/search, /api/health, etc.)
+│   │   ├── export-nosql-json.ts # Exportador de colecciones canonicas a JSON
+│   │   ├── seed-mongodb.ts     # Script de sembrado de esquemas e índices en Atlas
+│   │   └── server.ts           # API Express (14 endpoints REST NoSQL y analíticas)
 │   ├── package.json
 │   └── tsconfig.json
 └── DondeE - FE/

@@ -6,13 +6,16 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "seed": "tsx src/seed-mongodb.ts",
+    "export-json": "tsx src/export-nosql-json.ts"
   },
   "dependencies": {
     "@types/sql.js": "^1.4.11",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^5.1.0",
+    "mongodb": "^7.7.0",
     "pg": "^8.16.3",
     "sql.js": "^1.14.2"
   },

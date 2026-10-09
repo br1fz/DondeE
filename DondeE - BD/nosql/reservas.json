@@ -1,0 +1,74 @@
+[
+  {
+    "id_reserva": 1,
+    "fecha_reserva": "2026-10-09T10:00:00.000Z",
+    "estado_pago": "PAGADO",
+    "cantidad_entradas": 2,
+    "total_pagado": 20000,
+    "usuario": {
+      "id_usuario": 2,
+      "nombre": "Valentina Morales",
+      "email": "valen.morales@gmail.com"
+    },
+    "evento": {
+      "id_evento": 1,
+      "titulo": "Valpo Techno Rave: 3 Niveles en Vivo",
+      "nombre_local": "Club El Huevo",
+      "fecha_hora": "Hoy, Sáb 21 Sep · 23:00 - 05:30"
+    }
+  },
+  {
+    "id_reserva": 2,
+    "fecha_reserva": "2026-10-08T18:00:00.000Z",
+    "estado_pago": "PAGADO",
+    "cantidad_entradas": 1,
+    "total_pagado": 8000,
+    "usuario": {
+      "id_usuario": 3,
+      "nombre": "Diego Silva",
+      "email": "diego.silva@alumnos.usm.cl"
+    },
+    "evento": {
+      "id_evento": 2,
+      "titulo": "Indie Rock Porteño & Post-Punk Fest",
+      "nombre_local": "Club El Huevo",
+      "fecha_hora": "Próximo Vie 27 Sep · 22:00 - 05:00"
+    }
+  },
+  {
+    "id_reserva": 3,
+    "fecha_reserva": "2026-10-09T08:30:00.000Z",
+    "estado_pago": "PAGADO",
+    "cantidad_entradas": 2,
+    "total_pagado": 12000,
+    "usuario": {
+      "id_usuario": 4,
+      "nombre": "Camila Rojas",
+      "email": "camila.rojas@gmail.com"
+    },
+    "evento": {
+      "id_evento": 3,
+      "titulo": "Fiesta Mechona Universitaria Gran Valpo",
+      "nombre_local": "Club El Huevo",
+      "fecha_hora": "Sáb 04 Oct · 22:30 - 05:30"
+    }
+  },
+  {
+    "id_reserva": 4,
+    "fecha_reserva": "2026-10-09T12:15:00.000Z",
+    "estado_pago": "PAGADO",
+    "cantidad_entradas": 3,
+    "total_pagado": 15000,
+    "usuario": {
+      "id_usuario": 5,
+      "nombre": "Ignacio Valenzuela",
+      "email": "ignacio.valenzuela@gmail.com"
+    },
+    "evento": {
+      "id_evento": 4,
+      "titulo": "Noche de Clásicos Porteños & Bohemia Viva",
+      "nombre_local": "Bar La Playa",
+      "fecha_hora": "Hoy, Sáb 21 Sep · 21:00 - 04:00"
+    }
+  }
+]
