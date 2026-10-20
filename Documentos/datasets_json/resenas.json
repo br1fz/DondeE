@@ -1,0 +1,706 @@
+[
+  {
+    "_id": {
+      "$oid": "67069b120000000500000001"
+    },
+    "id_resena": 1,
+    "id_recinto": 1,
+    "nombre_local": "Club El Huevo",
+    "calificacion": 5,
+    "comentario": "Los 3 pisos de El Huevo nunca defraudan. El sótano de techno subterráneo es insuperable en la Quinta Región.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 2,
+      "nombre": "Diego Silva",
+      "email": "diego.silva@alumnos.usm.cl"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000002"
+    },
+    "id_resena": 2,
+    "id_recinto": 1,
+    "nombre_local": "Club El Huevo",
+    "calificacion": 5,
+    "comentario": "Excelente control de aforo en la entrada, la aplicación funcionó perfecto con el QR.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 1,
+      "nombre": "Valentina Morales",
+      "email": "valen.morales@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000003"
+    },
+    "id_resena": 3,
+    "id_recinto": 2,
+    "nombre_local": "Bar La Playa",
+    "calificacion": 5,
+    "comentario": "Patrimonio vivo de Valparaíso. Sentarse en la barra a escuchar boleros con un buen borgoña es una experiencia única.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 4,
+      "nombre": "Ignacio Valenzuela",
+      "email": "ignacio.valenzuela@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000004"
+    },
+    "id_resena": 4,
+    "id_recinto": 3,
+    "nombre_local": "Bar Cinzano",
+    "calificacion": 5,
+    "comentario": "La bohemia porteña en su máxima expresión. Los cantores de tango en vivo le dan un toque inolvidable.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 8,
+      "nombre": "Lucas Sepúlveda",
+      "email": "lucas.sepulveda@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000005"
+    },
+    "id_resena": 5,
+    "id_recinto": 4,
+    "nombre_local": "Terraza Bellavista Valpo",
+    "calificacion": 5,
+    "comentario": "La vista a los barcos iluminados es alucinante. Cócteles 10/10 y gran ambiente.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 3,
+      "nombre": "Camila Rojas",
+      "email": "camila.rojas@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000006"
+    },
+    "id_resena": 6,
+    "id_recinto": 5,
+    "nombre_local": "El Gato en la Ventana",
+    "calificacion": 5,
+    "comentario": "El corazón del carrete universitario. Precios accesibles y el mejor ambiente para empezar la noche.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 6,
+      "nombre": "Matías Tapia",
+      "email": "matias.tapia@alumnos.uv.cl"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000007"
+    },
+    "id_resena": 7,
+    "id_recinto": 6,
+    "nombre_local": "El Internado Resto-Cultural",
+    "calificacion": 5,
+    "comentario": "El cuarteto de jazz y la panorámica al mar son insuperables. Lugar perfecto para una noche tranquila.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 5,
+      "nombre": "Sofía Henríquez",
+      "email": "sofia.henriquez@outlook.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000008"
+    },
+    "id_resena": 8,
+    "id_recinto": 7,
+    "nombre_local": "Cervecería Altamira",
+    "calificacion": 5,
+    "comentario": "La cerveza Mestiza y el maridaje con empanadas de carne al vino tinto son de otro planeta.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 8,
+      "nombre": "Lucas Sepúlveda",
+      "email": "lucas.sepulveda@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000009"
+    },
+    "id_resena": 9,
+    "id_recinto": 8,
+    "nombre_local": "Mascara Pub & Club",
+    "calificacion": 5,
+    "comentario": "El mejor club indie/alternativo de Valparaíso. Fiesta garantizada y siempre la mejor selección musical.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 2,
+      "nombre": "Diego Silva",
+      "email": "diego.silva@alumnos.usm.cl"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000050000000a"
+    },
+    "id_resena": 10,
+    "id_recinto": 9,
+    "nombre_local": "La Piedra Feliz",
+    "calificacion": 5,
+    "comentario": "Pisar La Piedra Feliz es sentir la historia viva de los carnavales porteños. Banda en vivo monumental.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 4,
+      "nombre": "Ignacio Valenzuela",
+      "email": "ignacio.valenzuela@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000050000000b"
+    },
+    "id_resena": 11,
+    "id_recinto": 10,
+    "nombre_local": "Bar Liberty",
+    "calificacion": 5,
+    "comentario": "Un museo vivo. Cantar cuecas espontáneas con los vecinos en la barra no tiene comparación en ningún otro lado.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 8,
+      "nombre": "Lucas Sepúlveda",
+      "email": "lucas.sepulveda@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000050000000c"
+    },
+    "id_resena": 12,
+    "id_recinto": 11,
+    "nombre_local": "Páramo Bar",
+    "calificacion": 4,
+    "comentario": "Excelente música britpop y cervezas a buen precio en la barra.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 2,
+      "nombre": "Diego Silva",
+      "email": "diego.silva@alumnos.usm.cl"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000050000000d"
+    },
+    "id_resena": 13,
+    "id_recinto": 12,
+    "nombre_local": "El Rincón de las Guitarras",
+    "calificacion": 5,
+    "comentario": "Si quieres conocer el verdadero espíritu de Valparaíso, este es el lugar. Las guitarras sonando en vivo te erizan la piel.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 4,
+      "nombre": "Ignacio Valenzuela",
+      "email": "ignacio.valenzuela@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000050000000e"
+    },
+    "id_resena": 14,
+    "id_recinto": 13,
+    "nombre_local": "Bar Proa Valparaíso",
+    "calificacion": 4,
+    "comentario": "Muy buena terraza con vista al puerto y los barcos militares. La tabla proa viene bien servida.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 6,
+      "nombre": "Matías Tapia",
+      "email": "matias.tapia@alumnos.uv.cl"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000050000000f"
+    },
+    "id_resena": 15,
+    "id_recinto": 14,
+    "nombre_local": "Pagano Club",
+    "calificacion": 5,
+    "comentario": "Fiesta insuperable, sonido envolvente y mucha producción en el escenario. De los mejores clubes de Valpo.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 1,
+      "nombre": "Valentina Morales",
+      "email": "valen.morales@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000010"
+    },
+    "id_resena": 16,
+    "id_recinto": 15,
+    "nombre_local": "Waddington Bar & Resto",
+    "calificacion": 5,
+    "comentario": "Barrio universitario de Playa Ancha en su gloria. Acogedor y con excelente música en vinilo.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 6,
+      "nombre": "Matías Tapia",
+      "email": "matias.tapia@alumnos.uv.cl"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000011"
+    },
+    "id_resena": 17,
+    "id_recinto": 16,
+    "nombre_local": "Bar Flamingo",
+    "calificacion": 5,
+    "comentario": "El sonido de los vinilos y el gin tonic de lavanda hacen de este lugar una joya escondida.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 5,
+      "nombre": "Sofía Henríquez",
+      "email": "sofia.henriquez@outlook.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000012"
+    },
+    "id_resena": 18,
+    "id_recinto": 17,
+    "nombre_local": "House Rock Bar",
+    "calificacion": 4,
+    "comentario": "Guitarras distorsionadas, buena onda y tributos excelentes a Iron Maiden y Led Zeppelin.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 4,
+      "nombre": "Ignacio Valenzuela",
+      "email": "ignacio.valenzuela@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000013"
+    },
+    "id_resena": 19,
+    "id_recinto": 18,
+    "nombre_local": "Fauna Restaurant & Bar",
+    "calificacion": 5,
+    "comentario": "Una de las mejores vistas de todo Chile. Pisco sour y atardecer perfecto.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 1,
+      "nombre": "Valentina Morales",
+      "email": "valen.morales@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000014"
+    },
+    "id_resena": 20,
+    "id_recinto": 19,
+    "nombre_local": "Trolebús Bar",
+    "calificacion": 5,
+    "comentario": "Muy buena temática urbana y las IPAs de la Quinta Región rotan siempre frescas.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 8,
+      "nombre": "Lucas Sepúlveda",
+      "email": "lucas.sepulveda@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000015"
+    },
+    "id_resena": 21,
+    "id_recinto": 20,
+    "nombre_local": "Restobar El Cielo",
+    "calificacion": 4,
+    "comentario": "El remate clásico de la Subida Ecuador. Para ir a bailar con amigos sin complicaciones.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 6,
+      "nombre": "Matías Tapia",
+      "email": "matias.tapia@alumnos.uv.cl"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000016"
+    },
+    "id_resena": 22,
+    "id_recinto": 21,
+    "nombre_local": "Club Subterráneo Valpo",
+    "calificacion": 5,
+    "comentario": "Sonido Funktion-One impresionante en los muros de piedra antiguos. La mejor fiesta techno porteña.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 2,
+      "nombre": "Diego Silva",
+      "email": "diego.silva@alumnos.usm.cl"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000017"
+    },
+    "id_resena": 23,
+    "id_recinto": 22,
+    "nombre_local": "Club OVO (Enjoy Viña)",
+    "calificacion": 5,
+    "comentario": "La discoteca más elegante de Viña. Los juegos de luces y el servicio VIP en las mesas son de estándar mundial.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 7,
+      "nombre": "Francisca Contreras",
+      "email": "fran.contreras@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000018"
+    },
+    "id_resena": 24,
+    "id_recinto": 22,
+    "nombre_local": "Club OVO (Enjoy Viña)",
+    "calificacion": 5,
+    "comentario": "Muy prendida la noche, los DJs tocan una mezcla perfecta de reggaeton y electrónica.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 1,
+      "nombre": "Valentina Morales",
+      "email": "valen.morales@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000019"
+    },
+    "id_resena": 25,
+    "id_recinto": 23,
+    "nombre_local": "Journal Bar & Resto",
+    "calificacion": 5,
+    "comentario": "Un infaltable de los viernes en Poniente. Las tablas para picar son generosas y la música es buenísima.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 3,
+      "nombre": "Camila Rojas",
+      "email": "camila.rojas@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000050000001a"
+    },
+    "id_resena": 26,
+    "id_recinto": 24,
+    "nombre_local": "Stylo Sunset & Lounge",
+    "calificacion": 5,
+    "comentario": "Excelente ambientación y vista al mar. Los tragos de autor están perfectamente equilibrados.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 5,
+      "nombre": "Sofía Henríquez",
+      "email": "sofia.henriquez@outlook.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000050000001b"
+    },
+    "id_resena": 27,
+    "id_recinto": 25,
+    "nombre_local": "Living Club Reñaca",
+    "calificacion": 5,
+    "comentario": "¡Reñaca con el mar al lado es insuperable! Reservar por la app nos ahorró la tremenda fila de entrada.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 7,
+      "nombre": "Francisca Contreras",
+      "email": "fran.contreras@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000050000001c"
+    },
+    "id_resena": 28,
+    "id_recinto": 26,
+    "nombre_local": "La Tertulia Cervecería",
+    "calificacion": 5,
+    "comentario": "La mejor pizarra de IPAs y Stouts en Viña Centro. Para los amantes de la buena cerveza este es el templo.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 8,
+      "nombre": "Lucas Sepúlveda",
+      "email": "lucas.sepulveda@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000050000001d"
+    },
+    "id_resena": 29,
+    "id_recinto": 27,
+    "nombre_local": "Bar Hollywood Viña",
+    "calificacion": 4,
+    "comentario": "Muy prendido para ir en grupo de amigas. Ponen puros clásicos bailables que todos se saben.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 3,
+      "nombre": "Camila Rojas",
+      "email": "camila.rojas@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000050000001e"
+    },
+    "id_resena": 30,
+    "id_recinto": 28,
+    "nombre_local": "Del Barrio Pub",
+    "calificacion": 5,
+    "comentario": "Buena música chilena y argentina, excelente ambiente de barrio para juntarse a conversar y tomar algo.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 4,
+      "nombre": "Ignacio Valenzuela",
+      "email": "ignacio.valenzuela@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000050000001f"
+    },
+    "id_resena": 31,
+    "id_recinto": 29,
+    "nombre_local": "Club de la Cerveza Viña",
+    "calificacion": 5,
+    "comentario": "Variedad insólita de estilos cerveceros. El patio interior es súper cómodo.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 8,
+      "nombre": "Lucas Sepúlveda",
+      "email": "lucas.sepulveda@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000020"
+    },
+    "id_resena": 32,
+    "id_recinto": 30,
+    "nombre_local": "Boca de Pez Restobar",
+    "calificacion": 5,
+    "comentario": "El pisco sour con ají verde macerado y las machas a la parmesana son un imperdible.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 1,
+      "nombre": "Valentina Morales",
+      "email": "valen.morales@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000021"
+    },
+    "id_resena": 33,
+    "id_recinto": 31,
+    "nombre_local": "Valpo Bier Viña",
+    "calificacion": 4,
+    "comentario": "Buena onda, schops a excelente temperatura y promos universitarias convenientes.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 2,
+      "nombre": "Diego Silva",
+      "email": "diego.silva@alumnos.usm.cl"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000022"
+    },
+    "id_resena": 34,
+    "id_recinto": 32,
+    "nombre_local": "El Irlandés Pub Viña",
+    "calificacion": 5,
+    "comentario": "La mejor Guinness de barril de la Quinta Región. Excelente ambiente de pub europeo.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 4,
+      "nombre": "Ignacio Valenzuela",
+      "email": "ignacio.valenzuela@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000023"
+    },
+    "id_resena": 35,
+    "id_recinto": 33,
+    "nombre_local": "Sunset Lounge Reñaca",
+    "calificacion": 5,
+    "comentario": "Ver ponerse el sol con el mar rompiendo en las rocas y un cóctel de autor es impagable.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 5,
+      "nombre": "Sofía Henríquez",
+      "email": "sofia.henriquez@outlook.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000024"
+    },
+    "id_resena": 36,
+    "id_recinto": 34,
+    "nombre_local": "Terraza 8 Norte",
+    "calificacion": 5,
+    "comentario": "El rooftop más ondero de 8 Norte. Música electrónica suave y carta de tragos exquisita.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 3,
+      "nombre": "Camila Rojas",
+      "email": "camila.rojas@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000025"
+    },
+    "id_resena": 37,
+    "id_recinto": 35,
+    "nombre_local": "Murano Viña Club",
+    "calificacion": 5,
+    "comentario": "Pista llena de energía toda la noche. El sistema de sonido suena fuertísimo.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 7,
+      "nombre": "Francisca Contreras",
+      "email": "fran.contreras@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000026"
+    },
+    "id_resena": 38,
+    "id_recinto": 36,
+    "nombre_local": "Deck 00 Reñaca",
+    "calificacion": 5,
+    "comentario": "Bailar con los pies prácticamente en la playa no tiene precio. Sets impecables.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 2,
+      "nombre": "Diego Silva",
+      "email": "diego.silva@alumnos.usm.cl"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000027"
+    },
+    "id_resena": 39,
+    "id_recinto": 37,
+    "nombre_local": "Pub Scratch Viña",
+    "calificacion": 4,
+    "comentario": "Buen ambiente para cantar rock con los amigos y pasar un rato entretenido.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 4,
+      "nombre": "Ignacio Valenzuela",
+      "email": "ignacio.valenzuela@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000028"
+    },
+    "id_resena": 40,
+    "id_recinto": 38,
+    "nombre_local": "Tromba Bar & Kitchen",
+    "calificacion": 5,
+    "comentario": "El gin tonic con romero quemado y pomelo rosado es una maravilla. Carta gastronómica de lujo.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 5,
+      "nombre": "Sofía Henríquez",
+      "email": "sofia.henriquez@outlook.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000500000029"
+    },
+    "id_resena": 41,
+    "id_recinto": 39,
+    "nombre_local": "Cervecería Taverna Viña",
+    "calificacion": 5,
+    "comentario": "Un agrado de lugar para escapar del centro de Viña. Estacionamiento fácil y cervezas artesanales premium.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 8,
+      "nombre": "Lucas Sepúlveda",
+      "email": "lucas.sepulveda@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000050000002a"
+    },
+    "id_resena": 42,
+    "id_recinto": 40,
+    "nombre_local": "Gatsby Lounge Viña",
+    "calificacion": 5,
+    "comentario": "Ambiente sofisticado como pocos en la región. El cóctel ahumado con madera de roble es impresionante.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 1,
+      "nombre": "Valentina Morales",
+      "email": "valen.morales@gmail.com"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000050000002b"
+    },
+    "id_resena": 43,
+    "id_recinto": 41,
+    "nombre_local": "Reñaca Sunset Club",
+    "calificacion": 5,
+    "comentario": "Tremenda fiesta al aire libre y la brisa del mar te mantiene prendido toda la noche.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 2,
+      "nombre": "Diego Silva",
+      "email": "diego.silva@alumnos.usm.cl"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000050000002c"
+    },
+    "id_resena": 44,
+    "id_recinto": 42,
+    "nombre_local": "Club Soho Viña",
+    "calificacion": 5,
+    "comentario": "El mejor carrete universitario de los jueves y viernes en Viña. Buenas barras y mucha onda.",
+    "fecha": "2026-10-07T12:00:00.000Z",
+    "usuario": {
+      "id_usuario": 6,
+      "nombre": "Matías Tapia",
+      "email": "matias.tapia@alumnos.uv.cl"
+    }
+  }
+]

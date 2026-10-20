@@ -1,0 +1,166 @@
+[
+  {
+    "_id": {
+      "$oid": "67069b120000000100000001"
+    },
+    "id_usuario": 1,
+    "nombre": "Valentina Morales",
+    "email": "valen.morales@gmail.com",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "CLIENTE",
+    "ciudad": "Viña del Mar",
+    "bio": "Aficionada a las terrazas sunset frente al mar y la coctelería de autor en San Martín.",
+    "fecha_registro": "2026-09-01T12:00:00.000Z"
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000100000002"
+    },
+    "id_usuario": 2,
+    "nombre": "Diego Silva",
+    "email": "diego.silva@alumnos.usm.cl",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "CLIENTE",
+    "ciudad": "Valparaíso",
+    "bio": "Estudiante USM Casa Central. Asistente frecuente a tocatas y pistas de baile de la bohemia porteña.",
+    "fecha_registro": "2026-09-01T12:00:00.000Z"
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000100000003"
+    },
+    "id_usuario": 3,
+    "nombre": "Camila Rojas",
+    "email": "camila.rojas@gmail.com",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "CLIENTE",
+    "ciudad": "Viña del Mar",
+    "bio": "Reseñadora en Google Local Guides. Frecuente en bares gastronómicos de 3 Poniente y Reñaca.",
+    "fecha_registro": "2026-09-01T12:00:00.000Z"
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000100000004"
+    },
+    "id_usuario": 4,
+    "nombre": "Ignacio Valenzuela",
+    "email": "ignacio.valenzuela@gmail.com",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "CLIENTE",
+    "ciudad": "Valparaíso",
+    "bio": "Amante del rock clásico, la bohemia en Barrio Puerto y los recitales en vivo.",
+    "fecha_registro": "2026-09-01T12:00:00.000Z"
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000100000005"
+    },
+    "id_usuario": 5,
+    "nombre": "Sofía Henríquez",
+    "email": "sofia.henriquez@outlook.com",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "CLIENTE",
+    "ciudad": "Viña del Mar",
+    "bio": "Diseñadora gráfica. Fanática de las noches de jazz íntimo en Cerro Alegre y cervezas IPAs.",
+    "fecha_registro": "2026-09-01T12:00:00.000Z"
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000100000006"
+    },
+    "id_usuario": 6,
+    "nombre": "Matías Tapia",
+    "email": "matias.tapia@alumnos.uv.cl",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "CLIENTE",
+    "ciudad": "Valparaíso",
+    "bio": "Estudiante de Arquitectura en la Universidad de Valparaíso. Carrete en Subida Ecuador y Cerro Alegre.",
+    "fecha_registro": "2026-09-01T12:00:00.000Z"
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000100000007"
+    },
+    "id_usuario": 7,
+    "nombre": "Francisca Contreras",
+    "email": "fran.contreras@gmail.com",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "CLIENTE",
+    "ciudad": "Viña del Mar",
+    "bio": "Residente de Reñaca. Siempre presente en fiestas frente a la playa y música urbana.",
+    "fecha_registro": "2026-09-01T12:00:00.000Z"
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000100000008"
+    },
+    "id_usuario": 8,
+    "nombre": "Lucas Sepúlveda",
+    "email": "lucas.sepulveda@gmail.com",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "CLIENTE",
+    "ciudad": "Valparaíso",
+    "bio": "Sommelier y cervecero aficionado de la V Región. Explorador de cantinas históricas.",
+    "fecha_registro": "2026-09-01T12:00:00.000Z"
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000100000009"
+    },
+    "id_usuario": 9,
+    "nombre": "Host Valparaíso Puerto SpA",
+    "email": "contacto@valpopuerto.cl",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "HOST",
+    "ciudad": "Valparaíso",
+    "fecha_registro": "2026-08-15T10:00:00.000Z"
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000010000000a"
+    },
+    "id_usuario": 10,
+    "nombre": "Host Cerros Alegre & Concepción",
+    "email": "administracion@cerroalegre.cl",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "HOST",
+    "ciudad": "Valparaíso",
+    "fecha_registro": "2026-08-18T11:30:00.000Z"
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000010000000b"
+    },
+    "id_usuario": 11,
+    "nombre": "Host Viña Poniente & Casino",
+    "email": "contacto@vinaponiente.cl",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "HOST",
+    "ciudad": "Viña del Mar",
+    "fecha_registro": "2026-08-20T14:15:00.000Z"
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000010000000c"
+    },
+    "id_usuario": 12,
+    "nombre": "Host Reñaca Beach Clubs",
+    "email": "contacto@renacabeach.cl",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "HOST",
+    "ciudad": "Viña del Mar",
+    "fecha_registro": "2026-08-22T16:45:00.000Z"
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000010000000d"
+    },
+    "id_usuario": 13,
+    "nombre": "Administrador General DondeE",
+    "email": "admin@dondee.cl",
+    "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+    "rol": "ADMIN",
+    "ciudad": "Gran Valparaíso",
+    "fecha_registro": "2026-08-01T09:00:00.000Z"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "typeRoots": ["../DondeE - FE/node_modules/@types"]
+  },
+  "include": ["export_mongodb_datasets.ts"]
+}

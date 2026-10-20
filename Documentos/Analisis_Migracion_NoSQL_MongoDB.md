@@ -81,9 +81,10 @@ erDiagram
     }
 ```
 
-### Fortalezas y Limitaciones del Modelo Actual:
-* **Fortaleza SQL:** Integridad referencial estricta vía `FOREIGN KEY` y chequeos a nivel de motor (`CHECK aforo_disponible <= aforo_total`).
-* **Fricción en DondeE:** La aplicación web es de **lectura masiva en tiempo real** (usuarios explorando locales en el mapa, filtrando por barrios y consultando eventos). Cada consulta de la interfaz requiere ejecutar múltiples `JOIN` entre `recinto`, `evento`, `resena` y `usuario`, agregando costo computacional innecesario en bases de datos relacionales tradicionales.
+### Fortalezas y limitaciones del modelo actual
+* **Fortaleza SQL:** integridad referencial mediante `FOREIGN KEY` y restricciones `CHECK`, además del índice GiST para coordenadas.
+* **Patrones de acceso de DondeE:** las lecturas principales son explorar recintos cercanos, consultar una cartelera por fecha/género y abrir la ficha de un evento con su recinto. Las reservas y reseñas son escrituras menos frecuentes que las búsquedas.
+* **Trade-off:** MongoDB puede devolver datos de lectura relacionados con menos consultas al usar referencias extendidas, pero no es automáticamente más rápido que PostgreSQL. Las referencias, índices y duplicaciones propuestas se justifican por estos patrones; la elección debe validarse con mediciones y carga representativa.
 
 ---
 
@@ -91,33 +92,45 @@ erDiagram
 
 El error más común al migrar de SQL a NoSQL es realizar una copia 1:1 de tablas a colecciones (anti-patrón relacional en MongoDB). En MongoDB debemos diseñar considerando **cómo la aplicación consulta los datos (Access Patterns)**.
 
-### Matriz de Decisión Arquitectural
+### Matriz de decisión arquitectural: destino de cada tabla y relación
 
-| Entidad / Relación | Decisión NoSQL | Justificación Técnica |
+Se conservan cinco colecciones, pero no se copia la estructura relacional de forma mecánica. Los identificadores numéricos de origen se mantienen para trazabilidad y compatibilidad de la API; `_id` es la clave primaria propia de MongoDB. Las referencias entre colecciones usan los identificadores numéricos de origen para que sean legibles y sencillas de migrar.
+
+| Tabla y relación de origen | Destino y estrategia | Consulta que lo justifica, crecimiento y costo |
 | :--- | :--- | :--- |
-| **Recinto -> Reseñas (1:N)** | **EMBEBER** (Array de subdocumentos) | Las reseñas de un local casi nunca se leen aisladas; se despliegan junto con la ficha del recinto en la ventana inferior (*Bottom Sheet*). Embeberlas permite obtener el recinto, sus reseñas y calcular su rating promedio en **1 sola lectura de disco (Single Document Read)**. |
-| **Recinto -> Host (N:1)** | **EMBEBER INFORMACIÓN BÁSICA** (*Extended Reference*) | Guardamos un snapshot del host `{ id_host, nombre, email }` dentro del documento del recinto. No se necesita hacer `JOIN` con la tabla de usuarios para mostrar el responsable del recinto. |
-| **Recinto -> Eventos (1:N)** | **COLECCIÓN INDEPENDIENTE + DESNORMALIZACIÓN** | Aunque un evento pertenece a un recinto, los eventos tienen su propio ciclo de vida: la cartelera busca eventos por fecha, artista y género musical independientemente del mapa. Embeber cientos de eventos en el recinto provocaría que el documento del recinto exceda los límites recomendados (máx. 16 MB en BSON) y dificultaría la indexación de eventos. |
-| **Evento -> Recinto (N:1)** | **DESNORMALIZAR DATOS CLAVE DEL RECINTO** | En cada evento guardamos el `id_recinto`, `nombre_local`, `direccion`, `ciudad` y sus coordenadas `ubicacion`. Así, cuando el buscador devuelve un evento, la interfaz ya tiene las coordenadas para posicionar la cámara del mapa (`flyTo`) sin consultar la colección de recintos. |
-| **Usuario -> Reservas (1:N)** | **COLECCIÓN SEPARADA CON REFERENCIA Y SNAPSHOT** | Las reservas son transacciones financieras. Se guardan en una colección `reservas` independiente con referencias a `id_usuario` y `id_evento`, pero guardando un *snapshot inmutable* del evento (título, precio pagado y fecha al momento de la compra). |
+| `usuario` (entidad) | Colección `usuarios`; documento independiente. | Se consulta/autentica por email y puede tener muchas reservas y reseñas durante toda su vida. Mantenerla separada evita duplicar credenciales y evita un documento de usuario de crecimiento ilimitado. Nunca se exponen `password_hash` ni datos privados en proyecciones públicas. |
+| `usuario` 1:N `recinto` por `id_host` | `recintos.host` contiene una referencia extendida acotada: `id_usuario` y `nombre`. | La ficha/resultado del mapa puede mostrar el nombre del host sin otro lookup. El nombre cambia poco, pero se duplica si administra varios recintos; su actualización se propaga en el ETL o en la operación de cambio de nombre. No se copia email ni hash de contraseña. |
+| `recinto` 1:N `evento` por `id_recinto` | Colección independiente `eventos`; en cada evento se guarda `id_recinto` y un snapshot de lectura limitado (`nombre_local`, `direccion`, `ubicacion`). | Los eventos se filtran por fecha, precio y categoría sin partir desde un recinto. La relación puede crecer con el tiempo, por lo que un arreglo embebido haría crecer indefinidamente el documento y dificultaría la paginación y el índice de cartelera. El snapshot ahorra un lookup en el mapa, pero puede quedar desactualizado; cambios de nombre/dirección/coordenadas requieren propagar el cambio a los eventos o refrescar el snapshot. |
+| `recinto` 1:N `resena` por `id_recinto` y `usuario` 1:N `resena` por `id_usuario` | Colección independiente `resenas`, con ambas referencias y snapshot del nombre público del autor. En `recintos` se mantiene solo `rating_promedio` y `resenas_count` como agregados de lectura. | Las reseñas crecen sin límite y se consultan/paginan por recinto; por eso no se embeben. El resumen evita calcular todas las reseñas para cada tarjeta, pero duplica datos derivados. Cada alta válida actualiza la reseña y el resumen de forma atómica en una transacción; los agregados también pueden recalcularse desde `resenas` para auditoría. Si se requiere anonimización, se cambia/elimina el snapshot junto con la cuenta según la política definida. |
+| `usuario` 1:N `reserva` por `id_usuario` | Colección independiente `reservas` con `id_usuario` y snapshot mínimo de compra. | El historial puede crecer sin límite y se consulta por usuario; separarlo permite paginación y conserva el registro de la transacción aunque cambie el perfil. No se anida en `usuarios`. |
+| `evento` 1:N `reserva` por `id_evento` | `reservas` conserva `id_evento` y snapshot de título, fecha, recinto y precio unitario pagado. | Una reserva debe preservar qué se compró aunque el evento se edite o ya no se publique. La referencia permite navegar al evento vigente; el snapshot evita alterar el historial. Se indexan estado/fecha si los informes lo requieren. |
+
+#### Respuesta ante cambios de uso
+* **Si una consulta nueva muestra siempre las últimas tres reseñas junto a la ficha:** se podría guardar en el recinto una ventana acotada de las tres reseñas más recientes, manteniendo `resenas` como colección fuente. La ventana se reemplaza en cada alta; nunca se convierte en un arreglo completo e ilimitado.
+* **Si las reseñas pasan a ser el centro de la aplicación:** se consulta y pagina `resenas` directamente, con índices por recinto/fecha y autor; no se duplica el historial dentro del recinto.
+* **Si los eventos por recinto fueran pocos, inmutables y solo se leyeran desde la ficha:** se podría evaluar embebido. El patrón actual de cartelera independiente y el crecimiento temporal hacen preferible la colección separada.
+* **Costo de snapshots:** cada copia mejora lecturas, pero añade almacenamiento y propagación de cambios. Se actualizan al editar el recinto; la información histórica de una reserva, en cambio, no se sobrescribe.
 
 ---
 
 ## 4. Formato y Esquema de las Colecciones JSON / BSON
 
-A continuación se detalla la conversión exacta de tipos de datos relacionales a tipos BSON/JSON de MongoDB:
+A continuación se detalla la conversión de los tipos relacionales a BSON:
 
-* **Identificadores:** `BIGSERIAL` / `BIGINT` -> Se mantiene el campo numérico (`id_recinto`, `id_evento`, etc.) para **retrocompatibilidad 100% con el Frontend**, acompañado del identificador nativo `_id: ObjectId(...)`.
-* **Geometría Espacial:** `GEOMETRY(POINT, 4326)` -> Objeto **GeoJSON Point**:
+* **Identificadores:** `BIGSERIAL` / `BIGINT` se conserva como BSON `Long` (`id_*`, Extended JSON `{"$numberLong":"1"}`) para no truncar el entero de 64 bits; cada documento también tiene un `_id` `ObjectId` nativo. La API debe seguir publicando los identificadores que espera actualmente el frontend y serializar `Long` de forma segura.
+* **Geometría espacial:** `GEOMETRY(POINT, 4326)` -> objeto **GeoJSON Point**:
   ```json
   "ubicacion": {
     "type": "Point",
     "coordinates": [-71.6245, -33.0425]
   }
   ```
-  *(Orden estándar: [Longitud, Latitud] en WGS84)*
-* **Fechas:** `TIMESTAMP` -> Cadenas en formato **ISO 8601** (`YYYY-MM-DDTHH:mm:ss.sssZ`) que MongoDB interpreta y almacena internamente como `BSON UTC Date`.
-* **Moneda / Montos:** `NUMERIC(10,2)` -> Números flotantes de doble precisión (`Double`) o `Decimal128` en MongoDB.
+  Coordenadas en orden `[longitud, latitud]`, WGS84/SRID 4326. En migración se valida rango y orden antes de crear el índice `2dsphere`.
+* **Fechas:** `TIMESTAMP` se migra a BSON `Date` usando Extended JSON (`{"$date":"...Z"}`). El SQL no declara zona horaria; el ETL confirma la zona de sesión de PostgreSQL y la convención de los datos (por ejemplo, `America/Santiago` para las fechas locales del mock) antes de convertir a UTC. No trata el valor ingenuo como UTC sin verificación.
+* **Moneda:** `NUMERIC(10,2)` se migra a `Decimal128` (Extended JSON `{"$numberDecimal":"..."}`), no a `Double`, para evitar errores de redondeo monetario.
+* **Nulos y campos ausentes:** `descripcion` y `comentario` pueden ser `null` en SQL; el ETL conserva `null` o los omite con una regla única documentada. No inventa valores fuente.
+
+> Los ejemplos siguientes están escritos como **MongoDB Extended JSON v2**: siguen siendo JSON válido y expresan tipos BSON (`ObjectId`, `Date`, `Decimal128`, `Long`). Se muestra un documento de ejemplo por cada una de las cinco colecciones. Los `ObjectId` y fechas son ilustrativos; para migrar se conserva la fecha extraída de cada fila. Las propiedades `ciudad`, `sector`, `tipo`, `artistas`, `ticket_provider`, `rating_promedio` y `resenas_count` no son columnas del DDL SQL actual: cuando se incluyan, son datos derivados o metadatos de la aplicación y deben etiquetarse como tales en el ETL; no se presentan como columnas migradas.
 
 ---
 
@@ -127,43 +140,24 @@ Contendrá los **42 locales validados** (21 en Valparaíso y 21 en Viña del Mar
 ```json
 {
   "_id": { "$oid": "67069b12a01b4c0001000001" },
-  "id_recinto": 1,
+  "id_recinto": { "$numberLong": "1" },
   "nombre_local": "Club El Huevo",
   "direccion": "Blanco 1386, Valparaíso",
-  "sector": "Barrio Puerto / Blanco",
-  "ciudad": "Valparaíso",
-  "tipo": "club",
   "patente_municipal": "PAT-VALP-001",
   "estado_validacion": "APROBADO",
-  "aforo_total": 500,
-  "aforo_disponible": 42,
-  "precio_entrada": 10000,
-  "rating": 4.8,
-  "reviews_count": 420,
   "ubicacion": {
     "type": "Point",
     "coordinates": [-71.6245, -33.0425]
   },
   "host": {
-    "id_usuario": 9,
-    "nombre": "Host Valparaíso Puerto SpA",
-    "email": "contacto@valpopuerto.cl"
+    "id_usuario": { "$numberLong": "9" },
+    "nombre": "Host Valparaíso Puerto SpA"
   },
-  "resenas": [
-    {
-      "id_resena": 1,
-      "calificacion": 5,
-      "comentario": "Los 3 ambientes de El Huevo estuvieron increíbles. La pista subterránea de techno estuvo a otro nivel.",
-      "fecha": "2026-10-07T12:00:00.000Z",
-      "usuario": {
-        "id_usuario": 2,
-        "nombre": "Diego Silva",
-        "email": "diego.silva@alumnos.usm.cl"
-      }
-    }
-  ]
+  "rating_promedio": 5.0,
+  "resenas_count": 1
 }
 ```
+`id_host` se transforma en `host.id_usuario`. `rating_promedio` y `resenas_count` son campos derivados de la colección `resenas`; se mantienen sincronizados y no reemplazan el detalle de reseñas. La ciudad puede derivarse de `direccion` para la búsqueda, pero no es columna de `recinto`.
 
 ---
 
@@ -173,29 +167,28 @@ Contendrá los **126 eventos nocturnos** generados en la base de datos (3 por ca
 ```json
 {
   "_id": { "$oid": "67069b12a01b4c0002000001" },
-  "id_evento": 1,
+  "id_evento": { "$numberLong": "1" },
   "titulo": "Noche Estelar en Club El Huevo",
   "descripcion": "Evento principal de fin de semana con producción especial de Club El Huevo",
-  "fecha_hora": "2026-10-10T22:30:00.000Z",
-  "precio_entrada": 8000.00,
+  "fecha_hora": { "$date": "2026-10-11T01:30:00.000Z" },
+  "precio_entrada": { "$numberDecimal": "8000.00" },
   "categoria_musical": "Hits & Bailable",
   "aforo_total": 250,
   "aforo_disponible": 35,
-  "id_recinto": 1,
-  "nombre_local": "Club El Huevo",
-  "direccion": "Blanco 1386, Valparaíso",
-  "ciudad": "Valparaíso",
-  "ubicacion": {
-    "type": "Point",
-    "coordinates": [-71.6245, -33.0425]
+  "id_recinto": { "$numberLong": "1" },
+  "recinto": {
+    "nombre_local": "Club El Huevo",
+    "direccion": "Blanco 1386, Valparaíso",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [-71.6245, -33.0425]
+    }
   },
-  "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80",
-  "productora": "Producción Central Club El Huevo",
-  "ticket_provider": "Passline Oficial",
-  "hot": true,
-  "artistas": ["DJ Residente El Huevo", "VJ Live Set"]
+  "fecha_hora_origen_zona": "2026-10-10T22:30:00",
+  "zona_horaria_origen": "America/Santiago"
 }
 ```
+El evento coincide con el primer evento insertado para el recinto 1 en `07_mock_valparaiso_vina.sql`. La fecha UTC se convierte desde las 22:30 de Chile (UTC-3 en esa fecha); se conserva también la fecha/hora local de origen para trazabilidad. Los metadatos visuales de eventos que existan solo en el frontend se agregarían como datos de aplicación, no como columnas SQL.
 
 ---
 
@@ -205,14 +198,16 @@ Contendrá los asistentes registrados, administradores y hosts comerciales.
 ```json
 {
   "_id": { "$oid": "67069b12a01b4c0003000001" },
-  "id_usuario": 1,
+  "id_usuario": { "$numberLong": "1" },
   "nombre": "Valentina Morales",
   "email": "valen.morales@gmail.com",
-  "password_hash": "$2b$12$e8Y6bF0ZzLkW6v3nK0gM5.U3X8P2v8J9fK2A7B6C5D4E3F2G1H0I",
+  "password_hash": "<hash_bcrypt_migrado_desde_la_base>",
   "rol": "CLIENTE",
-  "fecha_registro": "2026-09-20T14:30:00.000Z"
+  "fecha_registro": { "$date": "2026-09-20T17:30:00.000Z" },
+  "zona_horaria_origen": "America/Santiago"
 }
 ```
+El hash es un marcador, no un valor utilizable. En un ETL real se conserva el hash existente sin registrarlo en documentación ni logs. En una consulta pública se excluyen siempre `password_hash` y otros campos de autenticación.
 
 ---
 
@@ -222,62 +217,90 @@ Contendrá las transacciones de compra de tickets con snapshot histórico.
 ```json
 {
   "_id": { "$oid": "67069b12a01b4c0004000001" },
-  "id_reserva": 1,
-  "fecha_reserva": "2026-10-09T13:00:00.000Z",
+  "id_reserva": { "$numberLong": "1" },
+  "fecha_reserva": { "$date": "2026-10-19T22:55:48.616Z" },
   "estado_pago": "PAGADO",
   "cantidad_entradas": 2,
-  "total_pagado": 20000.00,
-  "usuario": {
-    "id_usuario": 1,
-    "nombre": "Valentina Morales",
-    "email": "valen.morales@gmail.com"
-  },
-  "evento": {
-    "id_evento": 1,
-    "titulo": "Noche Estelar en Club El Huevo",
-    "fecha_hora": "2026-10-10T22:30:00.000Z",
+  "total_pagado": { "$numberDecimal": "20000.00" },
+  "id_usuario": { "$numberLong": "1" },
+  "id_evento": { "$numberLong": "1" },
+  "compra_snapshot": {
+    "titulo_evento": "Noche Estelar en Club El Huevo",
+    "fecha_hora_evento": { "$date": "2026-10-11T01:30:00.000Z" },
     "nombre_local": "Club El Huevo"
+  },
+  "zona_horaria_origen": "America/Santiago"
+}
+```
+`id_usuario` e `id_evento` apuntan a las colecciones respectivas. El snapshot es inmutable y refleja la compra histórica. `total_pagado` corresponde a la columna SQL; el esquema relacional no guarda el precio unitario en el momento de la compra, por lo que no debe reconstruirse ni inventarse desde el precio actual del evento. De hecho, el mock de la primera reserva guarda 20.000 para dos entradas del evento 1, aunque el precio de ese evento es 8.000; el ETL conserva ambos valores de origen y reporta la diferencia para revisión, sin descartar la reserva.
+
+---
+
+### 4.5. Colección: `resenas`
+Se migra aquí cada fila de `resena`; no se almacena una lista completa dentro del recinto.
+
+```json
+{
+  "_id": { "$oid": "67069b12a01b4c0005000001" },
+  "id_resena": { "$numberLong": "1" },
+  "id_recinto": { "$numberLong": "1" },
+  "id_usuario": { "$numberLong": "2" },
+  "calificacion": 5,
+  "comentario": "Los 3 ambientes de El Huevo estuvieron increíbles. La pista subterránea de techno estuvo a otro nivel.",
+  "fecha_publicacion": { "$date": "2026-10-17T00:00:00.000Z" },
+  "zona_horaria_origen": "America/Santiago",
+  "autor_snapshot": {
+    "nombre": "Diego Silva"
   }
 }
 ```
+`autor_snapshot.nombre` es una copia de presentación de `usuario.nombre`; `id_usuario` sigue siendo la referencia fuente. No se copia email. Esta colección permite ordenar y paginar las reseñas de un recinto sin cargar el historial completo.
+
+### Consulta principal resuelta por colección
+
+| Colección | Consulta de la aplicación |
+| :--- | :--- |
+| `recintos` | Buscar y filtrar locales por coordenadas/cercanía, estado y dirección; mostrar el resumen de rating. |
+| `eventos` | Buscar cartelera por fecha, categoría, precio y cupos; entregar también el snapshot del recinto para ubicar el evento. |
+| `usuarios` | Autenticar por email y consultar perfil por `id_usuario`; nunca devolver el hash en respuestas públicas. |
+| `reservas` | Consultar historial paginado por usuario y evento, conservar estado y montos pagados. |
+| `resenas` | Listar reseñas paginadas de un recinto, ordenadas por fecha, o filtrar por autor. |
 
 ---
 
 ## 5. Procedimiento de Traspaso y Generación de Datasets JSON
 
-Para poblar MongoDB Atlas sin perder datos ni consistencia, se define un **Pipeline de Extracción, Transformación y Carga (ETL)**:
+Para poblar MongoDB Atlas sin perder datos ni consistencia, se propone un **Pipeline de Extracción, Transformación y Carga (ETL)**. El documento describe el diseño del proceso; la existencia de este plan no significa que el backend actual ya esté migrado ni que los archivos de exportación ya estén generados.
 
 ```mermaid
 flowchart LR
     A["PostgreSQL DDL + Mocks<br/>(DondeE - BD/database/)"] --> B["Script de Transformación ETL<br/>(Node.js / TypeScript)"]
-    B --> C["Archivos JSON Estructurados<br/>(recintos.json, eventos.json, etc.)"]
+    B --> C["Extended JSON v2<br/>(cinco colecciones)"]
     C --> D["MongoDB Atlas Cluster<br/>(dondee_db)"]
 ```
 
-### Reglas de Transformación del Pipeline ETL:
-1. **Conversión PostGIS -> GeoJSON:**
-   * La sentencia SQL `ST_SetSRID(ST_MakePoint(-71.6245, -33.0425), 4326)` se transforma a:
-     `{ "type": "Point", "coordinates": [-71.6245, -33.0425] }`.
-2. **Cálculo de Agregaciones en Tiempo de Carga:**
-   * A partir de las reseñas registradas en SQL para cada local, se calculan y guardan los valores iniciales `rating` y `reviews_count` directamente en el documento del recinto.
-3. **Validación de Integridad:**
-   * Verificar que todas las coordenadas de longitud estén entre `-71.70` y `-71.40` y latitudes entre `-33.10` y `-32.90` (cuenca urbana de Valparaíso y Viña del Mar).
-   * Validar que ningún evento tenga `aforo_disponible > aforo_total`.
+### Reglas y controles del ETL
+1. **Inventario antes de migrar:** extraer las cinco tablas completas y sus columnas desde `database/init.sql`; no inferir que una colección está completa a partir de un ejemplo. Preservar cada PK como `id_*` y cada FK como referencia numérica.
+2. **Conversión espacial:** convertir `ST_X(ubicacion_geom)` a longitud y `ST_Y(ubicacion_geom)` a latitud, en ese orden, dentro de GeoJSON `Point`. Validar que el punto sea válido y tenga SRID 4326; no depender solamente de rangos aproximados.
+3. **Conversión temporal:** el SQL define `TIMESTAMP` sin zona. Confirmar la zona de sesión PostgreSQL; interpretar las fechas locales del mock con `America/Santiago` cuando corresponda, convertir a UTC BSON `Date` y conservar la convención de zona en el proceso. Las fechas por defecto (`CURRENT_TIMESTAMP`) se extraen de la fila real y no se inventan en el ETL.
+4. **Montos y restricciones:** convertir `NUMERIC(10,2)` a `Decimal128`; verificar `precio_entrada >= 0`, `total_pagado >= 0`, `cantidad_entradas` entre 1 y 5, calificación entre 1 y 5 y `0 <= aforo_disponible <= aforo_total`.
+5. **Agregados:** calcular `rating_promedio` y `resenas_count` desde la colección fuente `resenas`; incluir recintos sin reseñas con promedio/count definidos según una política explícita (por ejemplo, `null` y `0`). En escrituras nuevas, mantener ambos campos y la reseña en la misma transacción; ofrecer un proceso de reconciliación que los recalcule.
+6. **Campos derivados:** `ciudad`, `sector`, `tipo` y los metadatos visuales no presentes en el DDL se obtienen de una fuente de aplicación documentada o se omiten. Registrar su procedencia y regla de transformación; no completarlos con datos supuestos.
+7. **Conteos e integridad referencial:** comprobar que cada tabla destino tenga el mismo conteo que la extracción (el mock inicial espera 12 usuarios, 42 recintos, 126 eventos, 4 reservas y 5 reseñas si se ejecuta una sola vez sobre una BD vacía). Validar que cada `id_host`, `id_recinto`, `id_usuario` e `id_evento` referenciado exista.
+8. **Carga repetible:** usar claves únicas y `bulkWrite` con `upsert` según PK de origen para que repetir una carga no duplique datos; cargar primero usuarios y recintos, después eventos, reservas y reseñas. Conservar reporte de filas rechazadas y causa, sin guardar contraseñas ni URI en logs.
+
+> Los conteos anteriores describen el script de datos de demostración `07_mock_valparaiso_vina.sql`, no límites del sistema. Si ese SQL se ejecuta varias veces, sus `ON CONFLICT DO NOTHING` y las claves generadas afectan los resultados; el ETL debe contar lo efectivamente extraído.
 
 ---
 
 ## 6. Implementación en MongoDB Atlas
 
-### 6.1. Configuración de Seguridad y Red (Network Access)
-El usuario proporcionó las credenciales del clúster:
-* **Usuario:** `brunodiazfer1998_db_user`
-* **Contraseña:** `R13BtQy6J4KaW3Np`
-* **IP actual:** `200.14.70.4`
-
-> [!WARNING]
-> **Riesgo Operativo de IP Dinámica:**  
-> La IP `200.14.70.4` corresponde a una conexión residencial chilena dinámica. Si la IP del router se renueva o si los compañeros de equipo intentan conectarse desde sus hogares, la conexión será rechazada con error `MongoServerSelectionError: connection timed out`.  
-> **Recomendación para la Entrega:** En la consola de MongoDB Atlas -> **Network Access**, agregar la regla temporal `0.0.0.0/0` (*Allow access from anywhere*) para garantizar que la aplicación funcione en cualquier equipo o entorno de evaluación del profesor.
+### 6.1. Configuración de seguridad y red (Network Access)
+* No se documentan usuarios, contraseñas, URI completas ni direcciones IP personales en el repositorio.
+* Una versión anterior de este documento contenía datos de acceso al clúster. **Se deben rotar/revocar esas credenciales inmediatamente** en Atlas: borrar el texto del archivo no lo elimina del historial Git ni invalida el secreto.
+* En Atlas se autoriza solo la IP pública vigente de cada integrante o una red privada/VPN administrada. No se recomienda `0.0.0.0/0`: permite intentos de conexión desde cualquier origen y no es necesario para solucionar cambios de IP; actualícese la regla restringida cuando cambie la IP.
+* Crear un usuario de base de datos dedicado a la aplicación con privilegios mínimos sobre `dondee_db`; separar credenciales de desarrollo y producción. No reutilizar credenciales personales.
+* Mantener `.env` fuera del control de versiones, comprobarlo con `git status`/`.gitignore` antes de publicar y compartir solo `.env.example` con nombres de variables y valores vacíos.
 
 ---
 
@@ -285,35 +308,78 @@ El usuario proporcionó las credenciales del clúster:
 En el archivo `DondeE - BE/.env` del backend se configurará:
 ```env
 PORT=3001
-MONGODB_URI=mongodb+srv://brunodiazfer1998_db_user:R13BtQy6J4KaW3Np@<nombre-cluster>.mongodb.net/dondee_db?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://<usuario>:<password>@<cluster>/<database>?retryWrites=true&w=majority
 MONGODB_DBNAME=dondee_db
 ```
+Los marcadores angulares son placeholders, no valores para copiar literalmente. La URI real solo existe como variable secreta de entorno; si la contraseña contiene caracteres reservados, debe codificarse como componente URI. En producción se recomienda un gestor de secretos.
 
 ---
 
-### 6.3. Índices Indispensables en MongoDB
-Para que el motor NoSQL supere en rendimiento a PostgreSQL, se deben crear los siguientes índices obligatorios:
+### 6.3. Índices según los patrones de consulta
+Los índices evitan escaneos completos en las consultas frecuentes, pero ocupan espacio y encarecen cada escritura. Se crean en la carga inicial y se validan con `explain("executionStats")`; no se afirma una mejora frente a PostgreSQL sin mediciones comparables.
 
 ```javascript
-// 1. Índice Geoespacial 2dsphere para búsqueda por radio y cercanía GPS
-db.recintos.createIndex({ "ubicacion": "2dsphere" });
-db.eventos.createIndex({ "ubicacion": "2dsphere" });
+// Búsqueda por cercanía en recintos y eventos.
+db.recintos.createIndex({ ubicacion: "2dsphere" });
+db.eventos.createIndex({ "recinto.ubicacion": "2dsphere" });
 
-// 2. Índice único para evitar duplicación de cuentas de usuario
-db.usuarios.createIndex({ "email": 1 }, { unique: true });
+// Claves únicas para conservar identidad y evitar duplicados del origen.
+db.usuarios.createIndex({ email: 1 }, { unique: true });
+db.recintos.createIndex({ id_recinto: 1 }, { unique: true });
+db.eventos.createIndex({ id_evento: 1 }, { unique: true });
+db.reservas.createIndex({ id_reserva: 1 }, { unique: true });
+db.resenas.createIndex({ id_resena: 1 }, { unique: true });
 
-// 3. Índice para acelerar la búsqueda por ID numérico (compatibilidad frontend)
-db.recintos.createIndex({ "id_recinto": 1 }, { unique: true });
-db.eventos.createIndex({ "id_evento": 1 }, { unique: true });
+// Búsqueda textual; cada colección admite un índice de texto compuesto.
+db.recintos.createIndex(
+  { nombre_local: "text", direccion: "text" },
+  { default_language: "spanish", name: "recintos_texto" }
+);
+db.eventos.createIndex(
+  { titulo: "text", descripcion: "text", categoria_musical: "text" },
+  { default_language: "spanish", name: "eventos_texto" }
+);
 
-// 4. Índices de texto compuesto para la barra de búsqueda en tiempo real
-db.recintos.createIndex({ "nombre_local": "text", "direccion": "text", "sector": "text", "ciudad": "text" });
-db.eventos.createIndex({ "titulo": "text", "descripcion": "text", "categoria_musical": "text" });
-
-// 5. Índices de filtrado frecuente
-db.eventos.createIndex({ "precio_entrada": 1, "aforo_disponible": 1 });
-db.eventos.createIndex({ "fecha_hora": 1 });
+// Cartelera, lecturas por recinto, historial y reseñas paginadas.
+db.eventos.createIndex({ fecha_hora: 1, categoria_musical: 1, precio_entrada: 1 });
+db.eventos.createIndex({ id_recinto: 1, fecha_hora: 1 });
+db.reservas.createIndex({ id_usuario: 1, fecha_reserva: -1 });
+db.reservas.createIndex({ id_evento: 1, estado_pago: 1 });
+db.resenas.createIndex({ id_recinto: 1, fecha_publicacion: -1 });
+db.resenas.createIndex({ id_usuario: 1, fecha_publicacion: -1 });
 ```
+El índice único por `email` requiere normalizar el email (por ejemplo, `trim` y minúsculas) antes de insertar. El índice de texto no sustituye el filtro geoespacial ni garantiza equivalencia exacta con el buscador actual; la API debe definir qué campos busca y manejar consultas sin resultados.
+
+### 6.4. Validación de esquema e integridad
+MongoDB no crea claves foráneas automáticamente. Se combinan validadores de colección para restricciones locales y validaciones/transacciones de aplicación para referencias y operaciones que afectan varios documentos. Ejemplo de validación de eventos:
+
+```javascript
+db.runCommand({
+  collMod: "eventos",
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: [
+        "id_evento", "titulo", "fecha_hora", "precio_entrada",
+        "aforo_total", "aforo_disponible", "id_recinto"
+      ],
+      properties: {
+        id_evento: { bsonType: "long" },
+        titulo: { bsonType: "string", maxLength: 150 },
+        fecha_hora: { bsonType: "date" },
+        precio_entrada: { bsonType: "decimal", minimum: 0 },
+        aforo_total: { bsonType: ["int", "long"], minimum: 1 },
+        aforo_disponible: { bsonType: ["int", "long"], minimum: 0 },
+        id_recinto: { bsonType: "long" }
+      }
+    }
+  },
+  validationLevel: "strict",
+  validationAction: "error"
+});
+```
+Este `collMod` se ejecuta cuando la colección ya existe; para una colección nueva, se define el mismo validador al crearla y antes de cargar los datos.
+La aplicación además comprueba `aforo_disponible <= aforo_total` y la existencia del recinto antes de aceptar el evento. Para una reserva, el descuento de cupos se realiza con una actualización condicional (`aforo_disponible >= cantidad`) y la inserción de la reserva en una transacción; si no hay cupos o una operación falla, no se confirma ninguna de las dos escrituras.
 
 ---
 
@@ -331,10 +397,11 @@ A continuación se presenta la tabla de equivalencias de las consultas académic
 * **MongoDB (MQL):**
   ```javascript
   db.eventos.find(
-    { precio_entrada: { $gt: 10000 }, aforo_disponible: { $gt: 0 } },
-    { projection: { _id: 0, titulo: 1, fecha_hora: 1, precio_entrada: 1 } }
+    { precio_entrada: { $gt: Decimal128("10000.00") }, aforo_disponible: { $gt: 0 } },
+    { _id: 0, titulo: 1, fecha_hora: 1, precio_entrada: 1 }
   );
   ```
+  Esta proyección corresponde a la forma correcta de `find(filtro, proyección)`. `Decimal128` mantiene coherencia con la conversión monetaria definida arriba.
 
 ---
 
@@ -354,7 +421,7 @@ A continuación se presenta la tabla de equivalencias de las consultas académic
         $maxDistance: 3000
       }
     }
-  }, { nombre_local: 1, direccion: 1 });
+  }, { _id: 0, nombre_local: 1, direccion: 1 });
   ```
 
 ---
@@ -371,14 +438,39 @@ A continuación se presenta la tabla de equivalencias de las consultas académic
   ```
 * **MongoDB (Aggregation Pipeline):**
   ```javascript
-  db.eventos.aggregate([
+  db.recintos.aggregate([
+    {
+      $lookup: {
+        from: "eventos",
+        localField: "id_recinto",
+        foreignField: "id_recinto",
+        as: "eventos"
+      }
+    },
+    { $unwind: { path: "$eventos", preserveNullAndEmptyArrays: true } },
     {
       $group: {
         _id: "$id_recinto",
         nombre_local: { $first: "$nombre_local" },
-        total_eventos: { $sum: 1 },
-        capacidad_total: { $sum: "$aforo_total" },
-        precio_promedio: { $avg: "$precio_entrada" }
+        total_eventos: {
+          $sum: { $cond: [{ $ifNull: ["$eventos.id_evento", false] }, 1, 0] }
+        },
+        capacidad_total: {
+          $sum: { $ifNull: ["$eventos.aforo_total", 0] }
+        },
+        precio_promedio_sin_redondear: { $avg: "$eventos.precio_entrada" }
+      }
+    },
+    {
+      $project: {
+        _id: 0,
+        id_recinto: "$_id",
+        nombre_local: 1,
+        total_eventos: 1,
+        capacidad_total: 1,
+        precio_promedio: {
+          $round: [{ $ifNull: ["$precio_promedio_sin_redondear", 0] }, 2]
+        }
       }
     },
     { $sort: { total_eventos: -1 } }
@@ -398,20 +490,37 @@ A continuación se presenta la tabla de equivalencias de las consultas académic
   ORDER BY promedio_real DESC
   LIMIT 5;
   ```
-* **MongoDB (Embebido o Aggregation):**
-  Al estar embebidas las reseñas en `recintos`:
+* **MongoDB (Aggregation):**
+Las reseñas viven en la colección independiente `resenas`; se agregan por recinto:
   ```javascript
-  db.recintos.aggregate([
-    { $match: { "resenas.0": { $exists: true } } },
+  db.resenas.aggregate([
     {
-      $project: {
-        nombre_local: 1,
-        cantidad_resenas: { $size: "$resenas" },
-        promedio_real: { $avg: "$resenas.calificacion" }
+      $group: {
+        _id: "$id_recinto",
+        cantidad_resenas: { $sum: 1 },
+        promedio_real: { $avg: "$calificacion" }
       }
     },
+    { $match: { cantidad_resenas: { $gte: 1 } } },
     { $sort: { promedio_real: -1, cantidad_resenas: -1 } },
-    { $limit: 5 }
+    { $limit: 5 },
+    {
+      $lookup: {
+        from: "recintos",
+        localField: "_id",
+        foreignField: "id_recinto",
+        as: "recinto"
+      }
+    },
+    { $unwind: "$recinto" },
+    {
+      $project: {
+        _id: 0,
+        nombre_local: "$recinto.nombre_local",
+        cantidad_resenas: 1,
+        promedio_real: { $round: ["$promedio_real", 1] }
+      }
+    }
   ]);
   ```
 
@@ -426,12 +535,26 @@ A continuación se presenta la tabla de equivalencias de las consultas académic
   ```
 * **MongoDB (Expresión Aritmética `$expr`):**
   ```javascript
-  db.eventos.find({
-    aforo_disponible: { $gt: 0 },
-    $expr: {
-      $lte: [ { $divide: ["$aforo_disponible", "$aforo_total"] }, 0.20 ]
+  db.eventos.aggregate([
+    {
+      $match: {
+        aforo_disponible: { $gt: 0 },
+        $expr: {
+          $lte: [{ $divide: ["$aforo_disponible", "$aforo_total"] }, 0.20]
+        }
+      }
+    },
+    {
+      $project: {
+        _id: 0,
+        id_evento: 1,
+        titulo: 1,
+        nombre_local: "$recinto.nombre_local",
+        aforo_disponible: 1,
+        aforo_total: 1
+      }
     }
-  });
+  ]);
   ```
 
 ---
@@ -450,13 +573,20 @@ A continuación se presenta la tabla de equivalencias de las consultas académic
     {
       $lookup: {
         from: "reservas",
-        localField: "id_usuario",
-        foreignField: "usuario.id_usuario",
+        let: { usuarioId: "$id_usuario" },
+        pipeline: [
+          {
+            $match: {
+              estado_pago: "PAGADO",
+              $expr: { $eq: ["$id_usuario", "$$usuarioId"] }
+            }
+          }
+        ],
         as: "compras"
       }
     },
-    { $match: { "compras": { $size: 0 } } },
-    { $project: { id_usuario: 1, nombre: 1, email: 1 } }
+    { $match: { compras: { $eq: [] } } },
+    { $project: { _id: 0, id_usuario: 1, nombre: 1, email: 1 } }
   ]);
   ```
 
@@ -489,22 +619,26 @@ flowchart TD
    ```bash
    cd "DondeE - BE"
    npm install mongodb
-   npm install -D @types/mongodb
    ```
+   El driver oficial `mongodb` incluye sus tipos TypeScript; no se requiere `@types/mongodb`.
 2. **Refactorización de `DondeE - BE/src/database.ts`:**
    * Crear instancia singleton de `MongoClient` usando la URI de MongoDB Atlas.
    * Modificar el método `search(q)` para utilizar consultas de texto o expresiones regulares optimizadas sobre las colecciones `recintos` y `eventos`.
    * Modificar `getHealth()` para reportar el estado de la conexión a MongoDB Atlas y las versiones de motor y colecciones.
-   * Mantener el mecanismo de **failover seguro en memoria** en caso de pérdida transitoria de conexión a internet.
+   * Conservar los contratos REST solo después de adaptar y probar cada respuesta frente a los tipos que consume el frontend. Si MongoDB no está disponible, informar el error mediante el estado de salud y un error HTTP; no confirmar escrituras en un motor en memoria que pueda divergir silenciosamente.
 3. **Persistencia Transaccional:**
-   * Actualizar los métodos `POST /api/reviews` y `POST /api/reservations` para realizar escrituras atómicas en las colecciones de MongoDB (`updateOne` con `$push` para reseñas y `insertOne` para reservas).
+   * `POST /api/reviews`: validar usuario y recinto, insertar en `resenas` y actualizar `rating_promedio`/`resenas_count` en la misma transacción.
+   * `POST /api/reservations`: validar usuario/evento y disponibilidad, descontar cupos con una condición atómica, insertar la reserva con sus snapshots y confirmar todo en una transacción. El driver requiere un replica set para las transacciones multi-documento; Atlas lo proporciona, pero la configuración local también debe contemplarlo.
+   * En todos los endpoints, proyectar solo campos permitidos y nunca devolver `password_hash`.
+
+> Este apartado es un plan de migración. El backend actualmente descrito en `DondeE - BE` usa PostgreSQL/SQL.js; no debe presentarse como ya conectado a MongoDB hasta implementar y probar el adaptador.
 
 ---
 
 ## 9. Hoja de Ruta de Ejecución Recomendada
 
 ```
-[Fase 1] Generación de los archivos JSON de datos (recintos.json, eventos.json, usuarios.json, reservas.json).
+[Fase 1] Generación y revisión de Extended JSON v2 (recintos, eventos, usuarios, reservas y resenas).
    |
    v
 [Fase 2] Creación del script de Seed / Carga automática en MongoDB Atlas con configuración de índices.
