@@ -1,0 +1,4330 @@
+[
+  {
+    "_id": {
+      "$oid": "67069b120000000300000001"
+    },
+    "id_evento": 1,
+    "titulo": "Valpo Techno Rave: 3 Niveles en Vivo",
+    "descripcion": "Tres pisos con sets extendidos de DJs porteños e internacionales en la legendaria bodega subterránea.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "23:00 - 05:30",
+    "precio_entrada": 10000,
+    "categoria_musical": "Techno · Industrial · Dark Minimal",
+    "aforo_total": 500,
+    "aforo_disponible": 42,
+    "id_recinto": 1,
+    "nombre_local": "Club El Huevo",
+    "direccion": "Blanco 1386, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Barrio Puerto / Blanco",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6245,
+        -33.0425
+      ]
+    },
+    "artistas": [
+      "DJ Matías Valpo",
+      "Elena K (Berlín)",
+      "Sintetizadores del Puerto"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Valpo Underground",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000002"
+    },
+    "id_evento": 2,
+    "titulo": "Indie Rock Porteño & Post-Punk Fest",
+    "descripcion": "Festival con 4 bandas en vivo en el escenario central y pista pop bailable hasta el amanecer.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Próximo Vie 27 Sep",
+    "horario": "22:00 - 05:00",
+    "precio_entrada": 8000,
+    "categoria_musical": "Indie Rock · Britpop · Post-Punk",
+    "aforo_total": 450,
+    "aforo_disponible": 60,
+    "id_recinto": 1,
+    "nombre_local": "Club El Huevo",
+    "direccion": "Blanco 1386, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Barrio Puerto / Blanco",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6245,
+        -33.0425
+      ]
+    },
+    "artistas": [
+      "Los Invasores de Valpo",
+      "Dúo Frecuencia",
+      "DJ Britpop"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&h=600&fit=crop&auto=format",
+    "productora": "Productora Transistor",
+    "ticket_provider": "Passline",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000003"
+    },
+    "id_evento": 3,
+    "titulo": "Fiesta Mechona Universitaria Gran Valpo",
+    "descripcion": "La bienvenida semestral universitaria más masiva del puerto con cotillón y barra libre inicial.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 04 Oct",
+    "horario": "22:30 - 05:30",
+    "precio_entrada": 6000,
+    "categoria_musical": "Hits · Reggaeton Old School · Cumbia",
+    "aforo_total": 500,
+    "aforo_disponible": 85,
+    "id_recinto": 1,
+    "nombre_local": "Club El Huevo",
+    "direccion": "Blanco 1386, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Barrio Puerto / Blanco",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6245,
+        -33.0425
+      ]
+    },
+    "artistas": [
+      "DJ Pancho Valpo",
+      "DJ Black Cat"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia El Huevo",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000004"
+    },
+    "id_evento": 4,
+    "titulo": "Noche de Bohemia Porteña & Boleros",
+    "descripcion": "Encuentro acústico con cantores populares porteños, pisco sour tradicional y relato histórico.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "21:00 - 02:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Bohemia · Acústico · Boleros",
+    "aforo_total": 120,
+    "aforo_disponible": 18,
+    "id_recinto": 2,
+    "nombre_local": "Bar La Playa",
+    "direccion": "Serrano 568, Barrio Puerto, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Barrio Puerto Histórico",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.631,
+        -33.0375
+      ]
+    },
+    "artistas": [
+      "Trío Los Porteños",
+      "Cantoras del Puerto"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Bar La Playa",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000005"
+    },
+    "id_evento": 5,
+    "titulo": "Ciclo de Rock Clásico y Blues de Barrio Puerto",
+    "descripcion": "Armónica, guitarras vintage y clásicos de Creedence, Los Jaivas y Eric Clapton en vivo.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "21:30 - 02:00",
+    "precio_entrada": 3000,
+    "categoria_musical": "Classic Rock · Blues · 70s",
+    "aforo_total": 110,
+    "aforo_disponible": 25,
+    "id_recinto": 2,
+    "nombre_local": "Bar La Playa",
+    "direccion": "Serrano 568, Barrio Puerto, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Barrio Puerto Histórico",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.631,
+        -33.0375
+      ]
+    },
+    "artistas": [
+      "Banda Viento Sur Blues"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "Música en el Puerto SpA",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000006"
+    },
+    "id_evento": 6,
+    "titulo": "Festival del Terremoto y Cueca Brava",
+    "descripcion": "Degustación de pipeño artesanal con helado de piña y duelos de cueca brava porteña espontánea.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 04 Oct",
+    "horario": "20:00 - 03:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Cueca Brava · Folclor Urbano",
+    "aforo_total": 120,
+    "aforo_disponible": 30,
+    "id_recinto": 2,
+    "nombre_local": "Bar La Playa",
+    "direccion": "Serrano 568, Barrio Puerto, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Barrio Puerto Histórico",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.631,
+        -33.0375
+      ]
+    },
+    "artistas": [
+      "Los Bravos de Serrano"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Bar La Playa",
+    "ticket_provider": "Toliv",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000007"
+    },
+    "id_evento": 7,
+    "titulo": "Noche de Tangos & Milonga Porteña",
+    "descripcion": "Orquesta de bandoneón, piano y voz en el rincón más icónico de Plaza Aníbal Pinto.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "20:30 - 01:30",
+    "precio_entrada": 4000,
+    "categoria_musical": "Tango · Vals · Milonga",
+    "aforo_total": 110,
+    "aforo_disponible": 15,
+    "id_recinto": 3,
+    "nombre_local": "Bar Cinzano",
+    "direccion": "Plaza Aníbal Pinto 1182, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Plaza Aníbal Pinto",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6248,
+        -33.0445
+      ]
+    },
+    "artistas": [
+      "Maestro Raúl y su Bandoneón",
+      "Voz Tanguera del Puerto"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "Club de Tango Valparaíso",
+    "ticket_provider": "Ticketmaster",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000008"
+    },
+    "id_evento": 8,
+    "titulo": "Cena Maridaje & Boleros Inolvidables",
+    "descripcion": "Menú porteño de 3 tiempos con maridaje de vinos del Valle de Leyda y boleros en vivo.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 25 Sep",
+    "horario": "21:00 - 00:30",
+    "precio_entrada": 18000,
+    "categoria_musical": "Boleros · Acústico",
+    "aforo_total": 90,
+    "aforo_disponible": 20,
+    "id_recinto": 3,
+    "nombre_local": "Bar Cinzano",
+    "direccion": "Plaza Aníbal Pinto 1182, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Plaza Aníbal Pinto",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6248,
+        -33.0445
+      ]
+    },
+    "artistas": [
+      "Dúo Armonía Bohemia"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Cinzano",
+    "ticket_provider": "Ticketmaster",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000009"
+    },
+    "id_evento": 9,
+    "titulo": "Homenaje a la Bohemia Porteña del Siglo XX",
+    "descripcion": "Tertulia con poetas, cronistas y música tradicional en honor a las leyendas del puerto.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "21:00 - 02:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Folclor · Narrativa · Canto Popular",
+    "aforo_total": 110,
+    "aforo_disponible": 28,
+    "id_recinto": 3,
+    "nombre_local": "Bar Cinzano",
+    "direccion": "Plaza Aníbal Pinto 1182, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Plaza Aníbal Pinto",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6248,
+        -33.0445
+      ]
+    },
+    "artistas": [
+      "Cantores Patrimoniales de Valparaíso"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Colectivo Cultural Puerto Abierto",
+    "ticket_provider": "Ticketmaster",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000000a"
+    },
+    "id_evento": 10,
+    "titulo": "Sunset Sessions Bahía: Deep House & Disco",
+    "descripcion": "Atardecer privilegiado frente a la bahía porteña con cócteles de autor y electrónica elegante.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "19:30 - 03:30",
+    "precio_entrada": 6000,
+    "categoria_musical": "Deep House · Nu Disco · Sunset",
+    "aforo_total": 180,
+    "aforo_disponible": 31,
+    "id_recinto": 4,
+    "nombre_local": "Terraza Bellavista Valpo",
+    "direccion": "Blanco 1240, Bellavista, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Bellavista / Vista Bahía",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.622,
+        -33.044
+      ]
+    },
+    "artistas": [
+      "DJ Vicente Luna",
+      "DJ Alondra Valpo"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&h=600&fit=crop&auto=format",
+    "productora": "Sundeck Sessions",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000000b"
+    },
+    "id_evento": 11,
+    "titulo": "Moonlight Rooftop: Afro House Vibe",
+    "descripcion": "Percusiones en vivo sincronizadas con ritmos afro-house sobre la bahía iluminada.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "22:00 - 04:00",
+    "precio_entrada": 7000,
+    "categoria_musical": "Afro House · Organic Techno",
+    "aforo_total": 180,
+    "aforo_disponible": 45,
+    "id_recinto": 4,
+    "nombre_local": "Terraza Bellavista Valpo",
+    "direccion": "Blanco 1240, Bellavista, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Bellavista / Vista Bahía",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.622,
+        -33.044
+      ]
+    },
+    "artistas": [
+      "Batuque Live & DJ Kutral"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Fauna Producciones",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000000c"
+    },
+    "id_evento": 12,
+    "titulo": "Sunday Chill & Gin Tonic Tasting",
+    "descripcion": "Cierre de fin de semana con degustación de 5 destilados costeros y ambient house.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Dom 28 Sep",
+    "horario": "18:00 - 01:00",
+    "precio_entrada": 5000,
+    "categoria_musical": "Downtempo · Chill Out",
+    "aforo_total": 150,
+    "aforo_disponible": 50,
+    "id_recinto": 4,
+    "nombre_local": "Terraza Bellavista Valpo",
+    "direccion": "Blanco 1240, Bellavista, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Bellavista / Vista Bahía",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.622,
+        -33.044
+      ]
+    },
+    "artistas": [
+      "DJ Mar Adentro"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Terraza Bellavista",
+    "ticket_provider": "Passline",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000000d"
+    },
+    "id_evento": 13,
+    "titulo": "Fiesta Universitaria Cumming Live",
+    "descripcion": "Pachanga, cumbia porteña y cerveza artesanal por jarra en Subida Ecuador.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "21:30 - 03:30",
+    "precio_entrada": 3000,
+    "categoria_musical": "Cumbia · Ska · Pachanga",
+    "aforo_total": 90,
+    "aforo_disponible": 12,
+    "id_recinto": 5,
+    "nombre_local": "El Gato en la Ventana",
+    "direccion": "Cumming 113, Subida Ecuador, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Subida Ecuador / Cumming",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6272,
+        -33.0448
+      ]
+    },
+    "artistas": [
+      "Banda Los Del Cerro",
+      "DJ Universitario"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia El Gato",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000000e"
+    },
+    "id_evento": 14,
+    "titulo": "Noche de Cumbia Casera & Piscolas 2x1",
+    "descripcion": "Ritmos tropicales urbanos y la clásica piscola porteña para celebrar a mitad de semana.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 25 Sep",
+    "horario": "20:00 - 03:00",
+    "precio_entrada": 2000,
+    "categoria_musical": "Cumbia Villera · Tropical",
+    "aforo_total": 90,
+    "aforo_disponible": 25,
+    "id_recinto": 5,
+    "nombre_local": "El Gato en la Ventana",
+    "direccion": "Cumming 113, Subida Ecuador, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Subida Ecuador / Cumming",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6272,
+        -33.0448
+      ]
+    },
+    "artistas": [
+      "DJ Cumbia Brava"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&auto=format",
+    "productora": "La Clave Productora",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000000f"
+    },
+    "id_evento": 15,
+    "titulo": "Ska & Reggae Night Subida Ecuador",
+    "descripcion": "Bandas locales de brass y percusión con todo el poder del ska porteño.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "22:00 - 03:30",
+    "precio_entrada": 3500,
+    "categoria_musical": "Ska · Reggae · Dub",
+    "aforo_total": 90,
+    "aforo_disponible": 18,
+    "id_recinto": 5,
+    "nombre_local": "El Gato en la Ventana",
+    "direccion": "Cumming 113, Subida Ecuador, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Subida Ecuador / Cumming",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6272,
+        -33.0448
+      ]
+    },
+    "artistas": [
+      "Puerto Ska Orquesta"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&h=600&fit=crop&auto=format",
+    "productora": "Valpo Sonido Urbano",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000010"
+    },
+    "id_evento": 16,
+    "titulo": "Jazz & Wine en Cerro Alegre",
+    "descripcion": "Cata guiada de vinos de Casablanca maridados con tapas y cuarteto de jazz en la sala subterránea.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "20:00 - 01:00",
+    "precio_entrada": 5000,
+    "categoria_musical": "Jazz · Soul · Fusión",
+    "aforo_total": 80,
+    "aforo_disponible": 9,
+    "id_recinto": 6,
+    "nombre_local": "El Internado Resto-Cultural",
+    "direccion": "Pasaje Dimalow 167, Cerro Alegre, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Cerro Alegre / Paseo Dimalow",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6288,
+        -33.0412
+      ]
+    },
+    "artistas": [
+      "Valparaíso Jazz Quartet"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?w=800&h=600&fit=crop&auto=format",
+    "productora": "Club de Jazz de la Quinta",
+    "ticket_provider": "Toliv",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000011"
+    },
+    "id_evento": 17,
+    "titulo": "Sesiones Acústicas Mirador Dimalow",
+    "descripcion": "Concierto íntimo con cantautores de música indie y folk chileno frente a la bahía.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "20:30 - 00:30",
+    "precio_entrada": 6000,
+    "categoria_musical": "Indie Folk · Acústico",
+    "aforo_total": 75,
+    "aforo_disponible": 16,
+    "id_recinto": 6,
+    "nombre_local": "El Internado Resto-Cultural",
+    "direccion": "Pasaje Dimalow 167, Cerro Alegre, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Cerro Alegre / Paseo Dimalow",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6288,
+        -33.0412
+      ]
+    },
+    "artistas": [
+      "Cantautora Laura Paz",
+      "Ignacio Soler"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "Productora Transistor",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000012"
+    },
+    "id_evento": 18,
+    "titulo": "Noche de Cortometrajes & Electrónica Experimental",
+    "descripcion": "Proyecciones audiovisuales de cineastas porteños acompañadas de ambient live sets.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 02 Oct",
+    "horario": "19:30 - 23:30",
+    "precio_entrada": 4000,
+    "categoria_musical": "Ambient · Cine Arte · Modular",
+    "aforo_total": 70,
+    "aforo_disponible": 22,
+    "id_recinto": 6,
+    "nombre_local": "El Internado Resto-Cultural",
+    "direccion": "Pasaje Dimalow 167, Cerro Alegre, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Cerro Alegre / Paseo Dimalow",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6288,
+        -33.0412
+      ]
+    },
+    "artistas": [
+      "Sintetizadores de la Costa"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&h=600&fit=crop&auto=format",
+    "productora": "Festival de Cine Recobrado",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000013"
+    },
+    "id_evento": 19,
+    "titulo": "Altamira Craft Beer Fest & Jazz Manouche",
+    "descripcion": "Lanzamiento de la nueva IPA de primavera con orquesta de swing gitano y maridaje cervecero.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "20:00 - 01:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Gypsy Jazz · Swing · Craft Beer",
+    "aforo_total": 140,
+    "aforo_disponible": 24,
+    "id_recinto": 7,
+    "nombre_local": "Cervecería Altamira",
+    "direccion": "Av. Elías 122, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Pie de Ascensor Reina Victoria",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6265,
+        -33.0438
+      ]
+    },
+    "artistas": [
+      "Manouche Valpo Trío"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1538488881523-29497e556e43?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Altamira",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000014"
+    },
+    "id_evento": 20,
+    "titulo": "Catas a Ciegas: Estilos Británicos y Alemanes",
+    "descripcion": "Taller interactivo de cata de 6 estilos históricos guiado por el maestro cervecero.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Mié 24 Sep",
+    "horario": "19:30 - 22:30",
+    "precio_entrada": 15000,
+    "categoria_musical": "Cata Guiada · Degustación",
+    "aforo_total": 50,
+    "aforo_disponible": 12,
+    "id_recinto": 7,
+    "nombre_local": "Cervecería Altamira",
+    "direccion": "Av. Elías 122, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Pie de Ascensor Reina Victoria",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6265,
+        -33.0438
+      ]
+    },
+    "artistas": [
+      "Maestro Cervecero Altamira"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Asociación Cervecera V Región",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000015"
+    },
+    "id_evento": 21,
+    "titulo": "Rockabilly & Burgers Night",
+    "descripcion": "Música de los años 50s, contrabajo en vivo, hamburguesas gourmet y pintas de cerveza roja.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "21:00 - 02:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Rockabilly · 50s Rock · American Pale Ale",
+    "aforo_total": 130,
+    "aforo_disponible": 35,
+    "id_recinto": 7,
+    "nombre_local": "Cervecería Altamira",
+    "direccion": "Av. Elías 122, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Pie de Ascensor Reina Victoria",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6265,
+        -33.0438
+      ]
+    },
+    "artistas": [
+      "Los Rebeldes del Puerto"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Altamira",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000016"
+    },
+    "id_evento": 22,
+    "titulo": "New Wave & Synthpop 80s Revival",
+    "descripcion": "Tributo bailable a Depeche Mode, The Cure, New Order y David Bowie en Plaza Aníbal Pinto.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "23:00 - 05:00",
+    "precio_entrada": 5000,
+    "categoria_musical": "New Wave · 80s Synth · Dark Wave",
+    "aforo_total": 220,
+    "aforo_disponible": 28,
+    "id_recinto": 8,
+    "nombre_local": "Mascara Pub & Club",
+    "direccion": "Plaza Aníbal Pinto 1178, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Plaza Aníbal Pinto",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6247,
+        -33.0442
+      ]
+    },
+    "artistas": [
+      "DJ DarkWave",
+      "VJ RetroVisión"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&h=600&fit=crop&auto=format",
+    "productora": "Club Fauna Showcase",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000017"
+    },
+    "id_evento": 23,
+    "titulo": "Noche Indie Pop & Emo Nostalgia 2000s",
+    "descripcion": "Las canciones que marcaron la adolescencia alternativa con pista encendida.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "23:00 - 04:30",
+    "precio_entrada": 4000,
+    "categoria_musical": "Indie Pop · Emo · Y2K",
+    "aforo_total": 200,
+    "aforo_disponible": 40,
+    "id_recinto": 8,
+    "nombre_local": "Mascara Pub & Club",
+    "direccion": "Plaza Aníbal Pinto 1178, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Plaza Aníbal Pinto",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6247,
+        -33.0442
+      ]
+    },
+    "artistas": [
+      "DJ EmoKids",
+      "DJ PopAlternative"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Productora Transistor",
+    "ticket_provider": "Passline",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000018"
+    },
+    "id_evento": 24,
+    "titulo": "Post-Punk Latinoamericano en Vivo",
+    "descripcion": "Presentación de dos bandas emergentes de Valparaíso y Santiago de post-punk y shoegaze.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 04 Oct",
+    "horario": "22:00 - 05:00",
+    "precio_entrada": 6000,
+    "categoria_musical": "Post-Punk · Shoegaze · Coldwave",
+    "aforo_total": 220,
+    "aforo_disponible": 50,
+    "id_recinto": 8,
+    "nombre_local": "Mascara Pub & Club",
+    "direccion": "Plaza Aníbal Pinto 1178, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Plaza Aníbal Pinto",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6247,
+        -33.0442
+      ]
+    },
+    "artistas": [
+      "Banda Niebla Porteña",
+      "Eco Fantasma"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&h=600&fit=crop&auto=format",
+    "productora": "Sello Fisura",
+    "ticket_provider": "Passline",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000019"
+    },
+    "id_evento": 25,
+    "titulo": "Noche de Salsa Brava & Timba con Orquesta",
+    "descripcion": "12 músicos en escena, pista de baile de madera y clase de salsa previa para calentar motores.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "22:00 - 05:00",
+    "precio_entrada": 8000,
+    "categoria_musical": "Salsa Brava · Timba Cubana · Son",
+    "aforo_total": 350,
+    "aforo_disponible": 45,
+    "id_recinto": 9,
+    "nombre_local": "La Piedra Feliz",
+    "direccion": "Av. Errázuriz 1054, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Av. Errázuriz / Borde Mar",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6212,
+        -33.0418
+      ]
+    },
+    "artistas": [
+      "Orquesta Puerto Son",
+      "DJ Azúcar"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&h=600&fit=crop&auto=format",
+    "productora": "Salsa en el Puerto Producciones",
+    "ticket_provider": "Ticketek",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000001a"
+    },
+    "id_evento": 26,
+    "titulo": "Carnaval de la Cumbia Chilenera",
+    "descripcion": "Grandes exponentes de la nueva cumbia chilena celebrando el folclor bailable del puerto.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "22:30 - 05:00",
+    "precio_entrada": 9000,
+    "categoria_musical": "Cumbia Porteña · Fiesta Carnaval",
+    "aforo_total": 350,
+    "aforo_disponible": 60,
+    "id_recinto": 9,
+    "nombre_local": "La Piedra Feliz",
+    "direccion": "Av. Errázuriz 1054, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Av. Errázuriz / Borde Mar",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6212,
+        -33.0418
+      ]
+    },
+    "artistas": [
+      "Combo Chiquillán",
+      "Los Porteños de la Noche"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Bizarro Live Series",
+    "ticket_provider": "Ticketek",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000001b"
+    },
+    "id_evento": 27,
+    "titulo": "Tributo a la Sonora Palacios y Tommy Rey",
+    "descripcion": "Recital homenaje con los himnos tradicionales que nunca faltan en ninguna fiesta chilena.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 04 Oct",
+    "horario": "22:00 - 04:30",
+    "precio_entrada": 7000,
+    "categoria_musical": "Cumbia Clásica · Sonora",
+    "aforo_total": 350,
+    "aforo_disponible": 75,
+    "id_recinto": 9,
+    "nombre_local": "La Piedra Feliz",
+    "direccion": "Av. Errázuriz 1054, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Av. Errázuriz / Borde Mar",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6212,
+        -33.0418
+      ]
+    },
+    "artistas": [
+      "Gran Sonora del Puerto"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia La Piedra Feliz",
+    "ticket_provider": "Ticketek",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000001c"
+    },
+    "id_evento": 28,
+    "titulo": "Canto de la Rueda: Cueca Brava Inmortal",
+    "descripcion": "Tradición viva en Plaza Echaurren: cantores de 3 generaciones en duelo lírico y panderos.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "18:00 - 02:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Cueca Brava · Folclor Urbano",
+    "aforo_total": 70,
+    "aforo_disponible": 11,
+    "id_recinto": 10,
+    "nombre_local": "Bar Liberty",
+    "direccion": "Cochrane 115, Plaza Echaurren, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Plaza Echaurren / Barrio Puerto",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6325,
+        -33.0365
+      ]
+    },
+    "artistas": [
+      "Los Chinganeros del Puerto"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Bar Liberty",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000001d"
+    },
+    "id_evento": 29,
+    "titulo": "Copa de Pipeño y Poesía de Cantina",
+    "descripcion": "Lectura de crónicas marinas y versos populares al calor de un buen jarro con frutilla.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 25 Sep",
+    "horario": "19:00 - 00:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Poesía Popular · Folclor",
+    "aforo_total": 65,
+    "aforo_disponible": 15,
+    "id_recinto": 10,
+    "nombre_local": "Bar Liberty",
+    "direccion": "Cochrane 115, Plaza Echaurren, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Plaza Echaurren / Barrio Puerto",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6325,
+        -33.0365
+      ]
+    },
+    "artistas": [
+      "Poetas de la Plaza Echaurren"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Sociedad de Escritores de Valparaíso",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000001e"
+    },
+    "id_evento": 30,
+    "titulo": "Aniversario Patrimonial de Barrio Puerto",
+    "descripcion": "Celebración comunitaria con acordeón, vals y chicha cocida tradicional.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 04 Oct",
+    "horario": "17:00 - 01:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Música Tradicional Porteña",
+    "aforo_total": 70,
+    "aforo_disponible": 14,
+    "id_recinto": 10,
+    "nombre_local": "Bar Liberty",
+    "direccion": "Cochrane 115, Plaza Echaurren, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Plaza Echaurren / Barrio Puerto",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6325,
+        -33.0365
+      ]
+    },
+    "artistas": [
+      "Acordeonistas de Valparaíso"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "Corporación Barrio Puerto",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000001f"
+    },
+    "id_evento": 31,
+    "titulo": "Underground Britpop & Madchester Night",
+    "descripcion": "Sesión dedicada a Oasis, Blur, The Stone Roses y Pulp en el sótano de Condell.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "21:00 - 03:00",
+    "precio_entrada": 2000,
+    "categoria_musical": "Britpop · Madchester · 90s Indie",
+    "aforo_total": 90,
+    "aforo_disponible": 16,
+    "id_recinto": 11,
+    "nombre_local": "Páramo Bar",
+    "direccion": "Condell 1395, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Condell / Teatro Municipal",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6235,
+        -33.0458
+      ]
+    },
+    "artistas": [
+      "DJ Noel",
+      "DJ Manchester"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Páramo",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000020"
+    },
+    "id_evento": 32,
+    "titulo": "Tributo Acústico a Los Bunkers & Los Prisioneros",
+    "descripcion": "Versiones desenchufadas con guitarra de palo y piano de los grandes himnos del rock chileno.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "21:30 - 02:00",
+    "precio_entrada": 3000,
+    "categoria_musical": "Rock Chileno · Acústico",
+    "aforo_total": 85,
+    "aforo_disponible": 20,
+    "id_recinto": 11,
+    "nombre_local": "Páramo Bar",
+    "direccion": "Condell 1395, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Condell / Teatro Municipal",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6235,
+        -33.0458
+      ]
+    },
+    "artistas": [
+      "Dúo Estación Central"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Acústicos del Centro",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000021"
+    },
+    "id_evento": 33,
+    "titulo": "Shoegaze & Noise Pop Session",
+    "descripcion": "Paredes de distorsión melódica y sintetizadores análogos en vivo.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 02 Oct",
+    "horario": "20:30 - 02:30",
+    "precio_entrada": 2500,
+    "categoria_musical": "Shoegaze · Dream Pop · Noise",
+    "aforo_total": 80,
+    "aforo_disponible": 24,
+    "id_recinto": 11,
+    "nombre_local": "Páramo Bar",
+    "direccion": "Condell 1395, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Condell / Teatro Municipal",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6235,
+        -33.0458
+      ]
+    },
+    "artistas": [
+      "Banda Resonancia"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&h=600&fit=crop&auto=format",
+    "productora": "Colectivo Ruido Porteño",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000022"
+    },
+    "id_evento": 34,
+    "titulo": "Fiesta de la Cueca Brava y Guitarrón",
+    "descripcion": "Canto a la rueda, chorrillanas de la casa y vino de la zona en mesas corridas.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "21:00 - 03:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Cueca Brava · Folclor · Cantina",
+    "aforo_total": 100,
+    "aforo_disponible": 14,
+    "id_recinto": 12,
+    "nombre_local": "El Rincón de las Guitarras",
+    "direccion": "Freire 631, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "El Almendral / Freire",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6185,
+        -33.0478
+      ]
+    },
+    "artistas": [
+      "Conjunto Las Guitarras del Almendral"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia El Rincón",
+    "ticket_provider": "Ticketmaster",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000023"
+    },
+    "id_evento": 35,
+    "titulo": "Noche de Valses Criollos y Milongas",
+    "descripcion": "Homenaje a los valses de puertos sudamericanos con requinto y guitarra criolla.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "21:30 - 02:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Vals Criollo · Música Latinoamericana",
+    "aforo_total": 95,
+    "aforo_disponible": 19,
+    "id_recinto": 12,
+    "nombre_local": "El Rincón de las Guitarras",
+    "direccion": "Freire 631, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "El Almendral / Freire",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6185,
+        -33.0478
+      ]
+    },
+    "artistas": [
+      "Guitarreros Porteños"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "Folcloristas Unidos de Valparaíso",
+    "ticket_provider": "Ticketmaster",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000024"
+    },
+    "id_evento": 36,
+    "titulo": "Gran Chingana Dieciochera Extendida",
+    "descripcion": "Remate patrio extendido con empanadas de horno, arrollado huaso y tonadas en vivo.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 04 Oct",
+    "horario": "20:00 - 03:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Tonadas · Cuecas · Folclor",
+    "aforo_total": 100,
+    "aforo_disponible": 22,
+    "id_recinto": 12,
+    "nombre_local": "El Rincón de las Guitarras",
+    "direccion": "Freire 631, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "El Almendral / Freire",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6185,
+        -33.0478
+      ]
+    },
+    "artistas": [
+      "Los Huasos del Puerto"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia El Rincón",
+    "ticket_provider": "Ticketmaster",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000025"
+    },
+    "id_evento": 37,
+    "titulo": "Classic Rock & Schops en Plaza Sotomayor",
+    "descripcion": "Tributo en vivo a The Rolling Stones y The Beatles con vista nocturna al monumento naval.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "20:30 - 02:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Classic Rock · 60s & 70s",
+    "aforo_total": 85,
+    "aforo_disponible": 20,
+    "id_recinto": 13,
+    "nombre_local": "Bar Proa Valparaíso",
+    "direccion": "Cochrane 451, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Plaza Sotomayor",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.628,
+        -33.039
+      ]
+    },
+    "artistas": [
+      "Banda The Ship Rockers"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Bar Proa",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000026"
+    },
+    "id_evento": 38,
+    "titulo": "Noche de Cervezas y Blues Eléctrico",
+    "descripcion": "Sesión de blues porteño con jam session abierta a músicos locales.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "21:00 - 02:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Electric Blues · Jam Session",
+    "aforo_total": 80,
+    "aforo_disponible": 25,
+    "id_recinto": 13,
+    "nombre_local": "Bar Proa Valparaíso",
+    "direccion": "Cochrane 451, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Plaza Sotomayor",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.628,
+        -33.039
+      ]
+    },
+    "artistas": [
+      "Valpo Blues Band"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1538488881523-29497e556e43?w=800&h=600&fit=crop&auto=format",
+    "productora": "Club de Músicos de Sotomayor",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000027"
+    },
+    "id_evento": 39,
+    "titulo": "Fiesta Marinera & Cocteles al Ron",
+    "descripcion": "Coctelería tropical, mojitos y ambiente marinero clásico frente al puerto comercial.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 04 Oct",
+    "horario": "21:00 - 02:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Rock Pop · Música de Taberna",
+    "aforo_total": 85,
+    "aforo_disponible": 28,
+    "id_recinto": 13,
+    "nombre_local": "Bar Proa Valparaíso",
+    "direccion": "Cochrane 451, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Plaza Sotomayor",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.628,
+        -33.039
+      ]
+    },
+    "artistas": [
+      "DJ Marinero"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Bar Proa",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000028"
+    },
+    "id_evento": 40,
+    "titulo": "Pagano Neon Extravaganza: Pop & Circuit",
+    "descripcion": "Gran fiesta de diversidad con drag show estelar, lásers de alta potencia y pista llena.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "23:30 - 05:30",
+    "precio_entrada": 8000,
+    "categoria_musical": "Circuit House · Pop Diva · EDM",
+    "aforo_total": 400,
+    "aforo_disponible": 36,
+    "id_recinto": 14,
+    "nombre_local": "Pagano Club",
+    "direccion": "Av. Errázuriz 1080, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Av. Errázuriz",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.621,
+        -33.0415
+      ]
+    },
+    "artistas": [
+      "DJ Diva Valpo",
+      "Performance Drag Queens"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Pagano",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000029"
+    },
+    "id_evento": 41,
+    "titulo": "Glow Party: Pista de Neón Ultravioleta",
+    "descripcion": "Pintura fluorescente gratis, pulseras glow y los mejores tracks de pop y reggaeton actual.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "23:00 - 05:00",
+    "precio_entrada": 7000,
+    "categoria_musical": "Reggaeton · Pop Urbano · Electro",
+    "aforo_total": 380,
+    "aforo_disponible": 50,
+    "id_recinto": 14,
+    "nombre_local": "Pagano Club",
+    "direccion": "Av. Errázuriz 1080, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Av. Errázuriz",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.621,
+        -33.0415
+      ]
+    },
+    "artistas": [
+      "DJ Glow",
+      "DJ Neon Star"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Club Fauna Showcase",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000002a"
+    },
+    "id_evento": 42,
+    "titulo": "Tribal House Massive en la Costanera",
+    "descripcion": "Sonidos envolventes de tribal house con percusionistas en tarima y fiesta hasta el amanecer.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 04 Oct",
+    "horario": "23:30 - 06:00",
+    "precio_entrada": 9000,
+    "categoria_musical": "Tribal House · Progressive",
+    "aforo_total": 400,
+    "aforo_disponible": 65,
+    "id_recinto": 14,
+    "nombre_local": "Pagano Club",
+    "direccion": "Av. Errázuriz 1080, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Av. Errázuriz",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.621,
+        -33.0415
+      ]
+    },
+    "artistas": [
+      "DJ Marcus Tribal (Santiago)"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&h=600&fit=crop&auto=format",
+    "productora": "Lotus On Tour",
+    "ticket_provider": "Passline",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000002b"
+    },
+    "id_evento": 43,
+    "titulo": "Playa Ancha Acústica & Vinos Costeros",
+    "descripcion": "Concierto acústico de cantautores porteños en el corazón señorial de Gran Bretaña.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "20:00 - 01:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Folk Urbano · Acústico · Vinos",
+    "aforo_total": 95,
+    "aforo_disponible": 19,
+    "id_recinto": 15,
+    "nombre_local": "Waddington Bar & Resto",
+    "direccion": "Av. Gran Bretaña 437, Playa Ancha, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Playa Ancha Histórico",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6395,
+        -33.0315
+      ]
+    },
+    "artistas": [
+      "Cantautores de Playa Ancha"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Waddington",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000002c"
+    },
+    "id_evento": 44,
+    "titulo": "Rock Latino & Noche de Schops 2x1",
+    "descripcion": "Tributo a Charly García, Soda Stereo y Los Jaivas con schops de cortesía en happy hour.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "21:00 - 02:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Rock Latino · 80s & 90s",
+    "aforo_total": 90,
+    "aforo_disponible": 25,
+    "id_recinto": 15,
+    "nombre_local": "Waddington Bar & Resto",
+    "direccion": "Av. Gran Bretaña 437, Playa Ancha, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Playa Ancha Histórico",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6395,
+        -33.0315
+      ]
+    },
+    "artistas": [
+      "Banda Faro Valparaíso"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1538488881523-29497e556e43?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Waddington",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000002d"
+    },
+    "id_evento": 45,
+    "titulo": "Jazz Manouche en el Barrio Inglés",
+    "descripcion": "Swing gitano acústico entre casonas patrimoniales con tablas de mariscos y quesos.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 02 Oct",
+    "horario": "20:30 - 00:30",
+    "precio_entrada": 3000,
+    "categoria_musical": "Swing · Jazz Gitano",
+    "aforo_total": 85,
+    "aforo_disponible": 28,
+    "id_recinto": 15,
+    "nombre_local": "Waddington Bar & Resto",
+    "direccion": "Av. Gran Bretaña 437, Playa Ancha, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Playa Ancha Histórico",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6395,
+        -33.0315
+      ]
+    },
+    "artistas": [
+      "Playa Ancha Swing Dúo"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?w=800&h=600&fit=crop&auto=format",
+    "productora": "Asociación Patrimonial Playa Ancha",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000002e"
+    },
+    "id_evento": 46,
+    "titulo": "Vinyl Only: Disco Funk & Soul en Urriola",
+    "descripcion": "Sesión pura en tornamesas analógicas con joyas de la música disco, funk de los 70s y coctelería.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "21:00 - 02:30",
+    "precio_entrada": 4000,
+    "categoria_musical": "Vinyl DJ Set · Funk · Soul · Disco",
+    "aforo_total": 65,
+    "aforo_disponible": 10,
+    "id_recinto": 16,
+    "nombre_local": "Bar Flamingo",
+    "direccion": "Urriola 560, Cerro Alegre, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Cerro Alegre / Urriola",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6268,
+        -33.0428
+      ]
+    },
+    "artistas": [
+      "Selector Viniloso",
+      "DJ Flamingo"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&h=600&fit=crop&auto=format",
+    "productora": "Secret Sessions Chile",
+    "ticket_provider": "Toliv",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000002f"
+    },
+    "id_evento": 47,
+    "titulo": "Cocktail Tasting & Downtempo Sessions",
+    "descripcion": "Recorrido por 4 creaciones de coctelería de autor con botánicos del Cerro Alegre y ambient chill.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 25 Sep",
+    "horario": "20:00 - 01:00",
+    "precio_entrada": 14000,
+    "categoria_musical": "Downtempo · Lo-Fi · Mixología",
+    "aforo_total": 55,
+    "aforo_disponible": 12,
+    "id_recinto": 16,
+    "nombre_local": "Bar Flamingo",
+    "direccion": "Urriola 560, Cerro Alegre, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Cerro Alegre / Urriola",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6268,
+        -33.0428
+      ]
+    },
+    "artistas": [
+      "Mixólogo Invitado & DJ LoFi Valpo"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Bar Flamingo",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000030"
+    },
+    "id_evento": 48,
+    "titulo": "Bossa Nova & Latin Jazz Night",
+    "descripcion": "Sonidos de guitarra acústica y voz con ritmo de Río de Janeiro en la noche templada de Cerro Alegre.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "21:30 - 01:30",
+    "precio_entrada": 5000,
+    "categoria_musical": "Bossa Nova · Latin Jazz",
+    "aforo_total": 60,
+    "aforo_disponible": 15,
+    "id_recinto": 16,
+    "nombre_local": "Bar Flamingo",
+    "direccion": "Urriola 560, Cerro Alegre, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Cerro Alegre / Urriola",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6268,
+        -33.0428
+      ]
+    },
+    "artistas": [
+      "Dúo Ipanema Porteño"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&h=600&fit=crop&auto=format",
+    "productora": "Música en el Puerto SpA",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000031"
+    },
+    "id_evento": 49,
+    "titulo": "Tributo a Metallica & Iron Maiden en Vivo",
+    "descripcion": "Noche de guitarras al máximo volumen, distorsión y los mayores clásicos del heavy metal en Subida Ecuador.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "22:00 - 03:30",
+    "precio_entrada": 2000,
+    "categoria_musical": "Heavy Metal · Thrash · Hard Rock",
+    "aforo_total": 85,
+    "aforo_disponible": 15,
+    "id_recinto": 17,
+    "nombre_local": "House Rock Bar",
+    "direccion": "Cumming 98, Subida Ecuador, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Subida Ecuador",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6268,
+        -33.0442
+      ]
+    },
+    "artistas": [
+      "Banda Metal Militia Valpo"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia House Rock",
+    "ticket_provider": "Ticketek",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000032"
+    },
+    "id_evento": 50,
+    "titulo": "Grunge 90s: Nirvana, Pearl Jam y Alice in Chains",
+    "descripcion": "Viaje directo a Seattle de los años noventa con bandas tributo en vivo y cerveza helada.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "21:30 - 03:00",
+    "precio_entrada": 3000,
+    "categoria_musical": "Grunge · 90s Rock Alternativo",
+    "aforo_total": 80,
+    "aforo_disponible": 20,
+    "id_recinto": 17,
+    "nombre_local": "House Rock Bar",
+    "direccion": "Cumming 98, Subida Ecuador, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Subida Ecuador",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6268,
+        -33.0442
+      ]
+    },
+    "artistas": [
+      "Seattle Sound Chile"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Subterráneo Rock Fest",
+    "ticket_provider": "Ticketek",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000033"
+    },
+    "id_evento": 51,
+    "titulo": "Duelo de Bandas Emergentes de la V Región",
+    "descripcion": "4 bandas de garage rock compitiendo por grabar su primer single profesional.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 02 Oct",
+    "horario": "20:00 - 02:00",
+    "precio_entrada": 2000,
+    "categoria_musical": "Garage Rock · Punk Rock",
+    "aforo_total": 85,
+    "aforo_disponible": 26,
+    "id_recinto": 17,
+    "nombre_local": "House Rock Bar",
+    "direccion": "Cumming 98, Subida Ecuador, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Subida Ecuador",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6268,
+        -33.0442
+      ]
+    },
+    "artistas": [
+      "Bandas Universitarias Emergentes"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&h=600&fit=crop&auto=format",
+    "productora": "Sello Rock Porteño",
+    "ticket_provider": "Ticketek",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000034"
+    },
+    "id_evento": 52,
+    "titulo": "Golden Hour & Mixología Botánica",
+    "descripcion": "El mejor sunset panorámico sobre Cerro Alegre maridado con tragos de autor y música balearic.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "18:30 - 00:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Balearic · Chill Out · Coctelería",
+    "aforo_total": 110,
+    "aforo_disponible": 14,
+    "id_recinto": 18,
+    "nombre_local": "Fauna Restaurant & Bar",
+    "direccion": "Pasaje Dimalow 166, Cerro Alegre, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Cerro Alegre",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6285,
+        -33.0415
+      ]
+    },
+    "artistas": [
+      "DJ Fauna Resident"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Fauna",
+    "ticket_provider": "Toliv",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000035"
+    },
+    "id_evento": 53,
+    "titulo": "Cata de Vinos Naturales & Gastronomía Costera",
+    "descripcion": "Degustación de productores de viñas campesinas del Valle de Casablanca y tapas del mar.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Mié 24 Sep",
+    "horario": "19:30 - 23:00",
+    "precio_entrada": 22000,
+    "categoria_musical": "Gastronómico · Cata Exclusiva",
+    "aforo_total": 60,
+    "aforo_disponible": 10,
+    "id_recinto": 18,
+    "nombre_local": "Fauna Restaurant & Bar",
+    "direccion": "Pasaje Dimalow 166, Cerro Alegre, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Cerro Alegre",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6285,
+        -33.0415
+      ]
+    },
+    "artistas": [
+      "Sommelier Fauna"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Ruta del Vino Casablanca",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000036"
+    },
+    "id_evento": 54,
+    "titulo": "Full Moon Lounge & Saxo en Vivo",
+    "descripcion": "Noche de luna llena sobre el mar con improvisación de saxofón sobre ritmos de deep house.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "20:00 - 02:00",
+    "precio_entrada": 6000,
+    "categoria_musical": "Live Sax · Deep House · Lounge",
+    "aforo_total": 110,
+    "aforo_disponible": 25,
+    "id_recinto": 18,
+    "nombre_local": "Fauna Restaurant & Bar",
+    "direccion": "Pasaje Dimalow 166, Cerro Alegre, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Cerro Alegre",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6285,
+        -33.0415
+      ]
+    },
+    "artistas": [
+      "Saxo Soul & DJ Vicente Luna"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&h=600&fit=crop&auto=format",
+    "productora": "Fauna Producciones",
+    "ticket_provider": "Toliv",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000037"
+    },
+    "id_evento": 55,
+    "titulo": "Noche Cervecera & Rock Porteño Clásico",
+    "descripcion": "Cervezas artesanales de la Quinta Región y tributo al rock porteño en calle Condell.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "19:00 - 02:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Rock Porteño · Cervezas · Tablas",
+    "aforo_total": 80,
+    "aforo_disponible": 18,
+    "id_recinto": 19,
+    "nombre_local": "Trolebús Bar",
+    "direccion": "Condell 1450, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Plaza Victoria / Condell",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6225,
+        -33.0465
+      ]
+    },
+    "artistas": [
+      "Banda Los Trolebuseros"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1538488881523-29497e556e43?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Trolebús Bar",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000038"
+    },
+    "id_evento": 56,
+    "titulo": "Torneo de Dardos & Happy Hour Artesanal",
+    "descripcion": "Competencia de dardos con premios en consumo cervecero y tablas calientes.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 25 Sep",
+    "horario": "19:30 - 01:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Pub Games · Pop Rock",
+    "aforo_total": 75,
+    "aforo_disponible": 22,
+    "id_recinto": 19,
+    "nombre_local": "Trolebús Bar",
+    "direccion": "Condell 1450, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Plaza Victoria / Condell",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6225,
+        -33.0465
+      ]
+    },
+    "artistas": [
+      "DJ Trole"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Trolebús Bar",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000039"
+    },
+    "id_evento": 57,
+    "titulo": "Indie Pop & Cerveza Roja Porteña",
+    "descripcion": "Música indie nacional e internacional con promociones en botellas de cervecerías de Valparaíso.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "20:00 - 02:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Indie Pop · Cerveza Artesanal",
+    "aforo_total": 80,
+    "aforo_disponible": 26,
+    "id_recinto": 19,
+    "nombre_local": "Trolebús Bar",
+    "direccion": "Condell 1450, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Plaza Victoria / Condell",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6225,
+        -33.0465
+      ]
+    },
+    "artistas": [
+      "DJ Indie Valparaíso"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Circuito Cervecero Porteño",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000003a"
+    },
+    "id_evento": 58,
+    "titulo": "Cumbia & Perreo en la Azotea de Subida Ecuador",
+    "descripcion": "La fiesta más desordenada y prendida al aire libre con las mejores piscolas de la subida.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "22:00 - 04:00",
+    "precio_entrada": 3000,
+    "categoria_musical": "Reggaeton · Cumbia Villera · Perreo",
+    "aforo_total": 90,
+    "aforo_disponible": 22,
+    "id_recinto": 20,
+    "nombre_local": "Restobar El Cielo",
+    "direccion": "San Juan de Dios 555, Subida Ecuador, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "San Juan de Dios / Subida Ecuador",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.628,
+        -33.046
+      ]
+    },
+    "artistas": [
+      "DJ El Cielo",
+      "Animación en Vivo"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia El Cielo",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000003b"
+    },
+    "id_evento": 59,
+    "titulo": "Jueves Universitario sin Frenos",
+    "descripcion": "Promoción de destilados, cerveza de barril y música ultrabailable para estudiantes universitarios.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 25 Sep",
+    "horario": "20:30 - 03:30",
+    "precio_entrada": 2000,
+    "categoria_musical": "Ultrabailable · Hits 2000s",
+    "aforo_total": 90,
+    "aforo_disponible": 30,
+    "id_recinto": 20,
+    "nombre_local": "Restobar El Cielo",
+    "direccion": "San Juan de Dios 555, Subida Ecuador, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "San Juan de Dios / Subida Ecuador",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.628,
+        -33.046
+      ]
+    },
+    "artistas": [
+      "DJ Subida"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800&h=600&fit=crop&auto=format",
+    "productora": "La Clave Productora",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000003c"
+    },
+    "id_evento": 60,
+    "titulo": "Noche de Trap & Freestyle Porteño",
+    "descripcion": "Batallas de exhibición de freestyle local y set extendido de trap latinoamericano.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "21:30 - 03:30",
+    "precio_entrada": 3000,
+    "categoria_musical": "Trap · Urban · Freestyle",
+    "aforo_total": 85,
+    "aforo_disponible": 28,
+    "id_recinto": 20,
+    "nombre_local": "Restobar El Cielo",
+    "direccion": "San Juan de Dios 555, Subida Ecuador, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "San Juan de Dios / Subida Ecuador",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.628,
+        -33.046
+      ]
+    },
+    "artistas": [
+      "MC Porteño",
+      "DJ TrapVibe"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&h=600&fit=crop&auto=format",
+    "productora": "Valpo Freestyle League",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000003d"
+    },
+    "id_evento": 61,
+    "titulo": "Underground Vault: Minimal & Hard Techno",
+    "descripcion": "Sonido de alta fidelidad entre muros de calicanto en una bodega de piedra del siglo XIX.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "23:30 - 06:00",
+    "precio_entrada": 7000,
+    "categoria_musical": "Minimal · Hard Techno · Dark Beat",
+    "aforo_total": 250,
+    "aforo_disponible": 30,
+    "id_recinto": 21,
+    "nombre_local": "Club Subterráneo Valpo",
+    "direccion": "Cochrane 560, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Barrio Puerto / Cochrane",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6295,
+        -33.0385
+      ]
+    },
+    "artistas": [
+      "DJ Andrés K (Berlín)",
+      "Valpo Modular Live"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&h=600&fit=crop&auto=format",
+    "productora": "Valpo Underground",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000003e"
+    },
+    "id_evento": 62,
+    "titulo": "Bassline & Drum and Bass Night",
+    "descripcion": "El poder del sub-bajo con los mejores exponentes del drum and bass y dubstep de Chile.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "23:00 - 05:30",
+    "precio_entrada": 6000,
+    "categoria_musical": "Drum and Bass · Jungle · Bassline",
+    "aforo_total": 240,
+    "aforo_disponible": 45,
+    "id_recinto": 21,
+    "nombre_local": "Club Subterráneo Valpo",
+    "direccion": "Cochrane 560, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Barrio Puerto / Cochrane",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6295,
+        -33.0385
+      ]
+    },
+    "artistas": [
+      "DJ BassVibe",
+      "MC Break"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Bass Coast Chile",
+    "ticket_provider": "Passline",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000003f"
+    },
+    "id_evento": 63,
+    "titulo": "Acid Techno & Modular Live Showcase",
+    "descripcion": "Sintetizadores análogos operados en tiempo real en una sesión hipnótica inmersiva.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 04 Oct",
+    "horario": "23:30 - 06:00",
+    "precio_entrada": 8000,
+    "categoria_musical": "Acid Techno · 303 Live",
+    "aforo_total": 250,
+    "aforo_disponible": 50,
+    "id_recinto": 21,
+    "nombre_local": "Club Subterráneo Valpo",
+    "direccion": "Cochrane 560, Valparaíso",
+    "ciudad": "Valparaíso",
+    "sector": "Barrio Puerto / Cochrane",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6295,
+        -33.0385
+      ]
+    },
+    "artistas": [
+      "Live Act AcidPorteño",
+      "DJ Sintoma"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&h=600&fit=crop&auto=format",
+    "productora": "Piknic Électronik On Tour",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000040"
+    },
+    "id_evento": 64,
+    "titulo": "Enjoy VIP Gala: Spring Electronic Night",
+    "descripcion": "La noche más glamurosa de la Quinta Región en Casino Enjoy. Show de láser robótico y sector VIP estelar.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "23:30 - 05:00",
+    "precio_entrada": 15000,
+    "categoria_musical": "EDM · Progressive · Reggaeton VIP",
+    "aforo_total": 450,
+    "aforo_disponible": 32,
+    "id_recinto": 22,
+    "nombre_local": "Club OVO (Enjoy Viña)",
+    "direccion": "Av. San Martín 199, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Av. San Martín / Casino",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5582,
+        -33.0185
+      ]
+    },
+    "artistas": [
+      "DJ Mauro Boss",
+      "DJ Fran Viña",
+      "VJ LaserFX"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&h=600&fit=crop&auto=format",
+    "productora": "Bizarro Live Series",
+    "ticket_provider": "Puntoticket",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000041"
+    },
+    "id_evento": 65,
+    "titulo": "Casino Royale: Champagne & Black Tie",
+    "descripcion": "Dress code elegante, barra abierta de bienvenida y la mejor música comercial de club internacional.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "23:00 - 05:00",
+    "precio_entrada": 18000,
+    "categoria_musical": "Hits · Commercial House · Urban VIP",
+    "aforo_total": 450,
+    "aforo_disponible": 50,
+    "id_recinto": 22,
+    "nombre_local": "Club OVO (Enjoy Viña)",
+    "direccion": "Av. San Martín 199, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Av. San Martín / Casino",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5582,
+        -33.0185
+      ]
+    },
+    "artistas": [
+      "DJ OVO Resident",
+      "Invitado Especial"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Enjoy Nightlife SpA",
+    "ticket_provider": "Puntoticket",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000042"
+    },
+    "id_evento": 66,
+    "titulo": "Reggaeton Old School vs New Trap",
+    "descripcion": "Duelo de clásicos de Daddy Yankee y Don Omar contra los éxitos de Bad Bunny y Feid.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 04 Oct",
+    "horario": "23:30 - 05:00",
+    "precio_entrada": 14000,
+    "categoria_musical": "Reggaeton Clásico · Trap Latino",
+    "aforo_total": 450,
+    "aforo_disponible": 60,
+    "id_recinto": 22,
+    "nombre_local": "Club OVO (Enjoy Viña)",
+    "direccion": "Av. San Martín 199, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Av. San Martín / Casino",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5582,
+        -33.0185
+      ]
+    },
+    "artistas": [
+      "DJ Black Vibe",
+      "DJ Sandunguero"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&h=600&fit=crop&auto=format",
+    "productora": "Productora Transistor",
+    "ticket_provider": "Puntoticket",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000043"
+    },
+    "id_evento": 67,
+    "titulo": "Indie Rock 90s & 2000s en Poniente",
+    "descripcion": "Tributo acústico a The Strokes, Arctic Monkeys y Franz Ferdinand con cervezas artesanales en 3 Poniente.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "21:00 - 02:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Indie Rock · Pop 90s · Britpop",
+    "aforo_total": 150,
+    "aforo_disponible": 44,
+    "id_recinto": 23,
+    "nombre_local": "Journal Bar & Resto",
+    "direccion": "3 Poniente 422, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "3 Poniente / Casco Gastronómico",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.555,
+        -33.0195
+      ]
+    },
+    "artistas": [
+      "Banda 3 Poniente",
+      "DJ IndieViña"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Journal Bar",
+    "ticket_provider": "Ticketek",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000044"
+    },
+    "id_evento": 68,
+    "titulo": "Noche de Burgers Gourmet & Craft Beer",
+    "descripcion": "Maridaje especial con 4 estilos cerveceros y hamburguesas artesanales con pan brioche.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Mié 24 Sep",
+    "horario": "19:00 - 01:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Classic Hits · Pop Rock",
+    "aforo_total": 130,
+    "aforo_disponible": 35,
+    "id_recinto": 23,
+    "nombre_local": "Journal Bar & Resto",
+    "direccion": "3 Poniente 422, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "3 Poniente / Casco Gastronómico",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.555,
+        -33.0195
+      ]
+    },
+    "artistas": [
+      "DJ Journal Selector"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1538488881523-29497e556e43?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Journal Bar",
+    "ticket_provider": "Ticketek",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000045"
+    },
+    "id_evento": 69,
+    "titulo": "Karaoke & Trasnoche de Viernes",
+    "descripcion": "Micrófono abierto para cantar los mejores clásicos y continuar con pista bailable hasta las 3 AM.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "22:00 - 03:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Karaoke · Hits en Español · Bailable",
+    "aforo_total": 150,
+    "aforo_disponible": 40,
+    "id_recinto": 23,
+    "nombre_local": "Journal Bar & Resto",
+    "direccion": "3 Poniente 422, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "3 Poniente / Casco Gastronómico",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.555,
+        -33.0195
+      ]
+    },
+    "artistas": [
+      "Animador Karaoke Viña"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Journal Bar",
+    "ticket_provider": "Ticketek",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000046"
+    },
+    "id_evento": 70,
+    "titulo": "Sunset Coast Sessions & Coctelería de Autor",
+    "descripcion": "Golden hour frente a la playa con música afro-house, mixología premium y terraza calefaccionada.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "19:00 - 03:30",
+    "precio_entrada": 7000,
+    "categoria_musical": "Afro House · Melodic Lounge",
+    "aforo_total": 110,
+    "aforo_disponible": 17,
+    "id_recinto": 24,
+    "nombre_local": "Stylo Sunset & Lounge",
+    "direccion": "Av. San Martín 540, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Av. San Martín / Playa Acapulco",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.554,
+        -33.015
+      ]
+    },
+    "artistas": [
+      "DJ SoulVibes",
+      "Mixólogo Stylo"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&h=600&fit=crop&auto=format",
+    "productora": "Sundeck Sessions",
+    "ticket_provider": "Toliv",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000047"
+    },
+    "id_evento": 71,
+    "titulo": "Noche de Gin Bar & Deep House",
+    "descripcion": "Más de 15 etiquetas de gin nacional e importado acompañadas de beats melódicos al pie del mar.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 25 Sep",
+    "horario": "20:00 - 02:30",
+    "precio_entrada": 5000,
+    "categoria_musical": "Deep House · Chill Beat",
+    "aforo_total": 100,
+    "aforo_disponible": 25,
+    "id_recinto": 24,
+    "nombre_local": "Stylo Sunset & Lounge",
+    "direccion": "Av. San Martín 540, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Av. San Martín / Playa Acapulco",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.554,
+        -33.015
+      ]
+    },
+    "artistas": [
+      "DJ GinTonic",
+      "DJ Marítimo"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Stylo",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000048"
+    },
+    "id_evento": 72,
+    "titulo": "Spring Opening Sunset Party",
+    "descripcion": "Celebración del inicio de la temporada primaveral con vista al ocaso y ambientación botánica.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 04 Oct",
+    "horario": "18:30 - 03:30",
+    "precio_entrada": 8000,
+    "categoria_musical": "Tropical House · Melodic Techno",
+    "aforo_total": 110,
+    "aforo_disponible": 20,
+    "id_recinto": 24,
+    "nombre_local": "Stylo Sunset & Lounge",
+    "direccion": "Av. San Martín 540, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Av. San Martín / Playa Acapulco",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.554,
+        -33.015
+      ]
+    },
+    "artistas": [
+      "DJ Luna Marina",
+      "Percusión Live"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?w=800&h=600&fit=crop&auto=format",
+    "productora": "Fauna Producciones",
+    "ticket_provider": "Toliv",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000049"
+    },
+    "id_evento": 73,
+    "titulo": "Reñaca Beach Fest: Sector 5 All Night",
+    "descripcion": "La fiesta frente al mar más cotizada de Reñaca. Disfruta de la brisa marina y sets bailables hasta el amanecer.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "23:00 - 05:30",
+    "precio_entrada": 12000,
+    "categoria_musical": "Urbano · Tech House · Fiesta",
+    "aforo_total": 300,
+    "aforo_disponible": 21,
+    "id_recinto": 25,
+    "nombre_local": "Living Club Reñaca",
+    "direccion": "Av. Borgoño 14555, Reñaca, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Reñaca / Sector 5 Costanera",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5435,
+        -32.973
+      ]
+    },
+    "artistas": [
+      "DJ Nico Reñaca",
+      "DJ Catita Waves"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&h=600&fit=crop&auto=format",
+    "productora": "Club del Sol Reñaca",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000004a"
+    },
+    "id_evento": 74,
+    "titulo": "Sunset to Sunrise: Electronic Waves",
+    "descripcion": "Transición desde la puesta de sol en las rocas hasta el clubbing de madrugada con tech house.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "20:00 - 05:00",
+    "precio_entrada": 14000,
+    "categoria_musical": "Tech House · Melodic · Beach Beats",
+    "aforo_total": 280,
+    "aforo_disponible": 35,
+    "id_recinto": 25,
+    "nombre_local": "Living Club Reñaca",
+    "direccion": "Av. Borgoño 14555, Reñaca, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Reñaca / Sector 5 Costanera",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5435,
+        -32.973
+      ]
+    },
+    "artistas": [
+      "DJ Sol de Mar",
+      "DJ WaveRider"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&h=600&fit=crop&auto=format",
+    "productora": "Piknic Électronik On Tour",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000004b"
+    },
+    "id_evento": 75,
+    "titulo": "Fiesta Universitaria Costanera Reñaca",
+    "descripcion": "La reunión de estudiantes de la Quinta Región y Santiago frente al mar con promociones exclusivas.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 04 Oct",
+    "horario": "23:00 - 05:30",
+    "precio_entrada": 10000,
+    "categoria_musical": "Reggaeton · Cumbia Pop · Hits",
+    "aforo_total": 300,
+    "aforo_disponible": 45,
+    "id_recinto": 25,
+    "nombre_local": "Living Club Reñaca",
+    "direccion": "Av. Borgoño 14555, Reñaca, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Reñaca / Sector 5 Costanera",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5435,
+        -32.973
+      ]
+    },
+    "artistas": [
+      "DJ Universitario Reñaca"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Living Club",
+    "ticket_provider": "Passline",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000004c"
+    },
+    "id_evento": 76,
+    "titulo": "Craft Beer Night & Tributo Acústico",
+    "descripcion": "Noche de degustación de cervezas IPAs y Stouts de la Quinta Región con presentación acústica en vivo.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "20:30 - 01:30",
+    "precio_entrada": 4000,
+    "categoria_musical": "Rock Acústico · Blues · Craft Beer",
+    "aforo_total": 95,
+    "aforo_disponible": 29,
+    "id_recinto": 26,
+    "nombre_local": "La Tertulia Cervecería",
+    "direccion": "1 Poniente 542, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "1 Poniente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5532,
+        -33.021
+      ]
+    },
+    "artistas": [
+      "Dúo Acústico Valparaíso"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1538488881523-29497e556e43?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia La Tertulia",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000004d"
+    },
+    "id_evento": 77,
+    "titulo": "Hop Attack: Festival de IPAs Extremas",
+    "descripcion": "Doble y Triple IPA en 6 canillas simultáneas con maridaje de pizzas picantes.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 25 Sep",
+    "horario": "19:00 - 02:00",
+    "precio_entrada": 5000,
+    "categoria_musical": "Rock Clásico · Degustación Lupulada",
+    "aforo_total": 90,
+    "aforo_disponible": 25,
+    "id_recinto": 26,
+    "nombre_local": "La Tertulia Cervecería",
+    "direccion": "1 Poniente 542, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "1 Poniente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5532,
+        -33.021
+      ]
+    },
+    "artistas": [
+      "DJ Rocker Poniente"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Cerveceros de Chile",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000004e"
+    },
+    "id_evento": 78,
+    "titulo": "Blues & Schops de Primavera",
+    "descripcion": "Armónica de Chicago, guitarras vintage y cervezas de guarda en 1 Poniente.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "21:00 - 02:30",
+    "precio_entrada": 4000,
+    "categoria_musical": "Chicago Blues · Rock Sureño",
+    "aforo_total": 95,
+    "aforo_disponible": 30,
+    "id_recinto": 26,
+    "nombre_local": "La Tertulia Cervecería",
+    "direccion": "1 Poniente 542, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "1 Poniente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5532,
+        -33.021
+      ]
+    },
+    "artistas": [
+      "Viña Blues Quartet"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia La Tertulia",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000004f"
+    },
+    "id_evento": 79,
+    "titulo": "Fiesta 90s & 2000s Pop Latino",
+    "descripcion": "Los mayores éxitos del pop en español e inglés en la animada terraza de San Martín con 6 Norte.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "22:00 - 04:00",
+    "precio_entrada": 5000,
+    "categoria_musical": "Pop Latino · 90s · Ultrabailable",
+    "aforo_total": 160,
+    "aforo_disponible": 25,
+    "id_recinto": 27,
+    "nombre_local": "Bar Hollywood Viña",
+    "direccion": "Av. San Martín 501, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Av. San Martín",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5545,
+        -33.016
+      ]
+    },
+    "artistas": [
+      "DJ Hollywood Viña"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Bar Hollywood",
+    "ticket_provider": "Ticketmaster",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000050"
+    },
+    "id_evento": 80,
+    "titulo": "Noche de Cumpleaños & Barra Libre Femenina",
+    "descripcion": "Celebración grupal con barra libre inicial de espumante y animación bailable.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "21:30 - 03:30",
+    "precio_entrada": 6000,
+    "categoria_musical": "Hits · Reggaeton · Comercial",
+    "aforo_total": 150,
+    "aforo_disponible": 40,
+    "id_recinto": 27,
+    "nombre_local": "Bar Hollywood Viña",
+    "direccion": "Av. San Martín 501, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Av. San Martín",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5545,
+        -33.016
+      ]
+    },
+    "artistas": [
+      "DJ Party Viña"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Bar Hollywood",
+    "ticket_provider": "Ticketmaster",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000051"
+    },
+    "id_evento": 81,
+    "titulo": "Tributo a Shakira, Chayanne y Luis Miguel",
+    "descripcion": "Canta y baila con los temas emblemáticos de la música pop latina con banda en vivo.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 02 Oct",
+    "horario": "21:00 - 02:00",
+    "precio_entrada": 4000,
+    "categoria_musical": "Pop Latino Clásico",
+    "aforo_total": 140,
+    "aforo_disponible": 35,
+    "id_recinto": 27,
+    "nombre_local": "Bar Hollywood Viña",
+    "direccion": "Av. San Martín 501, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Av. San Martín",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5545,
+        -33.016
+      ]
+    },
+    "artistas": [
+      "Banda Fiesta Latina"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "La Clave Productora",
+    "ticket_provider": "Ticketmaster",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000052"
+    },
+    "id_evento": 82,
+    "titulo": "Rock Latino Clásico & Chorrillana Porteña",
+    "descripcion": "La tradición de reunirse con amigos a escuchar Charly, Fito y Los Prisioneros mientras compartes tablas.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "20:30 - 03:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Rock Latino · 80s & 90s",
+    "aforo_total": 120,
+    "aforo_disponible": 30,
+    "id_recinto": 28,
+    "nombre_local": "Del Barrio Pub",
+    "direccion": "3 Poniente 431, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "3 Poniente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5552,
+        -33.0198
+      ]
+    },
+    "artistas": [
+      "Dúo Del Barrio"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Del Barrio Pub",
+    "ticket_provider": "Ticketek",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000053"
+    },
+    "id_evento": 83,
+    "titulo": "Noche de Borgoña & Cuecas Urbanas",
+    "descripcion": "Jarras de borgoña con frutilla fresca y cuecas en vivo para amenizar la tertulia.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 25 Sep",
+    "horario": "19:30 - 01:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Cueca Urbana · Folclor",
+    "aforo_total": 110,
+    "aforo_disponible": 35,
+    "id_recinto": 28,
+    "nombre_local": "Del Barrio Pub",
+    "direccion": "3 Poniente 431, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "3 Poniente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5552,
+        -33.0198
+      ]
+    },
+    "artistas": [
+      "Cantores de Poniente"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Del Barrio Pub",
+    "ticket_provider": "Ticketek",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000054"
+    },
+    "id_evento": 84,
+    "titulo": "Tributo a Los Tres y Pettinellis",
+    "descripcion": "Homenaje a la cumbre del rock chileno de los 90s con banda en vivo.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "21:30 - 02:30",
+    "precio_entrada": 3000,
+    "categoria_musical": "Rock Chileno · Jazz Guachaca",
+    "aforo_total": 120,
+    "aforo_disponible": 28,
+    "id_recinto": 28,
+    "nombre_local": "Del Barrio Pub",
+    "direccion": "3 Poniente 431, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "3 Poniente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5552,
+        -33.0198
+      ]
+    },
+    "artistas": [
+      "Banda Un Amor Violento"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Circuito Rock Quinta",
+    "ticket_provider": "Ticketek",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000055"
+    },
+    "id_evento": 85,
+    "titulo": "Oktoberfest Preview: Cervezas Alemanas en 4 Norte",
+    "descripcion": "Pinchado de barriles alemanes Weihenstephaner y Paulaner con pretzels y salchichas bávaras.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "18:00 - 02:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Cerveza Internacional · Folk Alemán",
+    "aforo_total": 130,
+    "aforo_disponible": 35,
+    "id_recinto": 29,
+    "nombre_local": "Club de la Cerveza Viña",
+    "direccion": "4 Norte 191, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "4 Norte",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5528,
+        -33.0175
+      ]
+    },
+    "artistas": [
+      "Música Tradicional Bávara & DJ Resident"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1538488881523-29497e556e43?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Club de la Cerveza",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000056"
+    },
+    "id_evento": 86,
+    "titulo": "Belgian Night: Abadías y Trapenses",
+    "descripcion": "Cata de cervezas belgas de alta graduación guiada por sommelier cervecero en el patio interior.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Mié 24 Sep",
+    "horario": "19:30 - 23:00",
+    "precio_entrada": 16000,
+    "categoria_musical": "Cata Guiada · Cerveza Belga",
+    "aforo_total": 60,
+    "aforo_disponible": 15,
+    "id_recinto": 29,
+    "nombre_local": "Club de la Cerveza Viña",
+    "direccion": "4 Norte 191, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "4 Norte",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5528,
+        -33.0175
+      ]
+    },
+    "artistas": [
+      "Sommelier Cervecero Doemens"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "Cerveceros de Chile",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000057"
+    },
+    "id_evento": 87,
+    "titulo": "Indie Pop & Garden Beats",
+    "descripcion": "Tarde y noche de relajo en el patio cervecero con selecciones de indie pop e indietrónica.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 04 Oct",
+    "horario": "17:00 - 01:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Indie Pop · Garden Chill",
+    "aforo_total": 120,
+    "aforo_disponible": 42,
+    "id_recinto": 29,
+    "nombre_local": "Club de la Cerveza Viña",
+    "direccion": "4 Norte 191, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "4 Norte",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5528,
+        -33.0175
+      ]
+    },
+    "artistas": [
+      "DJ Garden Beats"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Club de la Cerveza",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000058"
+    },
+    "id_evento": 88,
+    "titulo": "Noche de Pisco Sour Porteño & Ceviches Nocturnos",
+    "descripcion": "Degustación de destilados de los valles del Huasco y Elqui acompañados de pescados de roca.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "19:30 - 02:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Gastronomía Marina · Pisco Bar",
+    "aforo_total": 75,
+    "aforo_disponible": 12,
+    "id_recinto": 30,
+    "nombre_local": "Boca de Pez Restobar",
+    "direccion": "2 Poniente 342, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "2 Poniente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.554,
+        -33.0205
+      ]
+    },
+    "artistas": [
+      "Chef & Bartender Boca de Pez"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Boca de Pez",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000059"
+    },
+    "id_evento": 89,
+    "titulo": "Bossa Nova & Cócteles de Maracuyá",
+    "descripcion": "Música de raíz brasileña en vivo con guitarra acústica en un ambiente acogedor en 2 Poniente.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 25 Sep",
+    "horario": "20:30 - 00:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Bossa Nova · Acústico",
+    "aforo_total": 70,
+    "aforo_disponible": 18,
+    "id_recinto": 30,
+    "nombre_local": "Boca de Pez Restobar",
+    "direccion": "2 Poniente 342, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "2 Poniente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.554,
+        -33.0205
+      ]
+    },
+    "artistas": [
+      "Dúo Bossa Viña"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Boca de Pez",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000005a"
+    },
+    "id_evento": 90,
+    "titulo": "Piscos de Guarda & Charla Magistral",
+    "descripcion": "Cata de piscos envejecidos en barricas de roble francés guiada por sommelier invitado.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "19:00 - 22:30",
+    "precio_entrada": 15000,
+    "categoria_musical": "Cata Magistral · Destilados Chilenos",
+    "aforo_total": 50,
+    "aforo_disponible": 10,
+    "id_recinto": 30,
+    "nombre_local": "Boca de Pez Restobar",
+    "direccion": "2 Poniente 342, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "2 Poniente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.554,
+        -33.0205
+      ]
+    },
+    "artistas": [
+      "Sommelier Pisco Chile"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Pisco Spirits Chile",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000005b"
+    },
+    "id_evento": 91,
+    "titulo": "Viernes Universitario: 2x1 en Pintas Artesanales",
+    "descripcion": "Happy hour extendido para estudiantes con bandas universitarias y pantalla gigante para tocatas.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "19:00 - 02:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Rock Universitario · Cerveza Artesanal",
+    "aforo_total": 85,
+    "aforo_disponible": 23,
+    "id_recinto": 31,
+    "nombre_local": "Valpo Bier Viña",
+    "direccion": "5 Norte 145, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "5 Norte",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.552,
+        -33.0168
+      ]
+    },
+    "artistas": [
+      "Banda 5 Norte"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Valpo Bier",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000005c"
+    },
+    "id_evento": 92,
+    "titulo": "Torneo de Beer Pong & Cerveza Roja",
+    "descripcion": "Competencia de parejas con premios en barriles de 5 litros y música rock en vivo.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 25 Sep",
+    "horario": "20:00 - 01:30",
+    "precio_entrada": 3000,
+    "categoria_musical": "Pop Rock · Torneo Pub",
+    "aforo_total": 80,
+    "aforo_disponible": 20,
+    "id_recinto": 31,
+    "nombre_local": "Valpo Bier Viña",
+    "direccion": "5 Norte 145, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "5 Norte",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.552,
+        -33.0168
+      ]
+    },
+    "artistas": [
+      "DJ Valpo Bier"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Valpo Bier",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000005d"
+    },
+    "id_evento": 93,
+    "titulo": "Tributo a Foo Fighters & Red Hot Chili Peppers",
+    "descripcion": "Lo mejor del rock alternativo de los 90s y 2000s en vivo.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "21:30 - 02:30",
+    "precio_entrada": 3500,
+    "categoria_musical": "Alternative Rock · Grunge",
+    "aforo_total": 85,
+    "aforo_disponible": 25,
+    "id_recinto": 31,
+    "nombre_local": "Valpo Bier Viña",
+    "direccion": "5 Norte 145, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "5 Norte",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.552,
+        -33.0168
+      ]
+    },
+    "artistas": [
+      "Banda Chili Fighters"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1538488881523-29497e556e43?w=800&h=600&fit=crop&auto=format",
+    "productora": "Circuito Rock Quinta",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000005e"
+    },
+    "id_evento": 94,
+    "titulo": "St. Patrick's Vibe: Guinness & Celtic Rock",
+    "descripcion": "Cerveza negra de grifo, gaitas celtas en vivo, fish & chips tradicionales y dardos.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "19:00 - 02:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Celtic Rock · Irish Folk · Stouts",
+    "aforo_total": 100,
+    "aforo_disponible": 19,
+    "id_recinto": 32,
+    "nombre_local": "El Irlandés Pub Viña",
+    "direccion": "Blanco Encalada 150, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Plaza México / San Martín",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.557,
+        -33.019
+      ]
+    },
+    "artistas": [
+      "Banda Shamrock Chile"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia El Irlandés",
+    "ticket_provider": "Ticketek",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000005f"
+    },
+    "id_evento": 95,
+    "titulo": "Premier League & Pints de Sábado",
+    "descripcion": "Transmisión de partidos en pantallas gigantes con promociones de pintas de cerveza inglesa.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 27 Sep",
+    "horario": "15:00 - 21:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Sports Bar · Rock Británico",
+    "aforo_total": 95,
+    "aforo_disponible": 30,
+    "id_recinto": 32,
+    "nombre_local": "El Irlandés Pub Viña",
+    "direccion": "Blanco Encalada 150, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Plaza México / San Martín",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.557,
+        -33.019
+      ]
+    },
+    "artistas": [
+      "DJ Pub Selector"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia El Irlandés",
+    "ticket_provider": "Ticketek",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000060"
+    },
+    "id_evento": 96,
+    "titulo": "Irish Whiskey Tasting & Acoustic Session",
+    "descripcion": "Degustación guiada de 4 whiskeys irlandeses con acordes de guitarra acústica y violín.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 02 Oct",
+    "horario": "20:00 - 23:30",
+    "precio_entrada": 18000,
+    "categoria_musical": "Whiskey Tasting · Acústico",
+    "aforo_total": 60,
+    "aforo_disponible": 12,
+    "id_recinto": 32,
+    "nombre_local": "El Irlandés Pub Viña",
+    "direccion": "Blanco Encalada 150, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Plaza México / San Martín",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.557,
+        -33.019
+      ]
+    },
+    "artistas": [
+      "Sommelier Jameson & Violinista Invitado"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&h=600&fit=crop&auto=format",
+    "productora": "Irish Spirits Ambassador",
+    "ticket_provider": "Ticketek",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000061"
+    },
+    "id_evento": 97,
+    "titulo": "Reñaca Sunset Glow: Deep Beats & Cocktails",
+    "descripcion": "Puesta de sol en los acantilados de Reñaca con música orgánica y aperitivos con tónicas botánicas.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "18:00 - 03:00",
+    "precio_entrada": 8000,
+    "categoria_musical": "Sunset Beats · Deep House · Organic",
+    "aforo_total": 130,
+    "aforo_disponible": 16,
+    "id_recinto": 33,
+    "nombre_local": "Sunset Lounge Reñaca",
+    "direccion": "Av. Borgoño 12300, Reñaca, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Reñaca / Borde Costero",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.545,
+        -32.978
+      ]
+    },
+    "artistas": [
+      "DJ Sunset Reñaca",
+      "DJ Marítimo"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&h=600&fit=crop&auto=format",
+    "productora": "Sundeck Sessions",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000062"
+    },
+    "id_evento": 98,
+    "titulo": "Sunset Wine & Ostras Frescas del Litoral",
+    "descripcion": "Degustación de espumantes y vinos blancos costeros maridados con ostras vivas.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "18:30 - 01:00",
+    "precio_entrada": 22000,
+    "categoria_musical": "Lounge · Chill Out · Gourmet",
+    "aforo_total": 90,
+    "aforo_disponible": 18,
+    "id_recinto": 33,
+    "nombre_local": "Sunset Lounge Reñaca",
+    "direccion": "Av. Borgoño 12300, Reñaca, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Reñaca / Borde Costero",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.545,
+        -32.978
+      ]
+    },
+    "artistas": [
+      "DJ Chill Reñaca"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Sunset Lounge",
+    "ticket_provider": "Passline",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000063"
+    },
+    "id_evento": 99,
+    "titulo": "Afro & Melodic Beats under the Stars",
+    "descripcion": "Percusiones y beats envolventes frente a la rompiente del mar hasta la madrugada.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 04 Oct",
+    "horario": "21:30 - 03:30",
+    "precio_entrada": 9000,
+    "categoria_musical": "Afro House · Melodic Techno",
+    "aforo_total": 130,
+    "aforo_disponible": 25,
+    "id_recinto": 33,
+    "nombre_local": "Sunset Lounge Reñaca",
+    "direccion": "Av. Borgoño 12300, Reñaca, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Reñaca / Borde Costero",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.545,
+        -32.978
+      ]
+    },
+    "artistas": [
+      "DJ AfroCoast"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&h=600&fit=crop&auto=format",
+    "productora": "Fauna Producciones",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000064"
+    },
+    "id_evento": 100,
+    "titulo": "Rooftop 8 Norte: Nu Disco & Spritz Bar",
+    "descripcion": "Ambiente chic en Población Vergara con barra libre de spritz la primera hora y música disco moderna.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "20:00 - 03:30",
+    "precio_entrada": 5000,
+    "categoria_musical": "Nu Disco · Melodic House · Spritz",
+    "aforo_total": 120,
+    "aforo_disponible": 18,
+    "id_recinto": 34,
+    "nombre_local": "Terraza 8 Norte",
+    "direccion": "8 Norte 365, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "8 Norte / Población Vergara",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5515,
+        -33.0145
+      ]
+    },
+    "artistas": [
+      "DJ Chic Viña",
+      "DJ DiscoVibe"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Terraza 8 Norte",
+    "ticket_provider": "Toliv",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000065"
+    },
+    "id_evento": 101,
+    "titulo": "Noche de Tapas Españolas & Sangría de la Casa",
+    "descripcion": "Tortilla de patatas, jamón serrano y sangría refrescante en la terraza abierta de 8 Norte.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 25 Sep",
+    "horario": "19:30 - 01:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Lounge Latino · Tapas & Copas",
+    "aforo_total": 100,
+    "aforo_disponible": 30,
+    "id_recinto": 34,
+    "nombre_local": "Terraza 8 Norte",
+    "direccion": "8 Norte 365, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "8 Norte / Población Vergara",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5515,
+        -33.0145
+      ]
+    },
+    "artistas": [
+      "DJ Sangría Beats"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Terraza 8 Norte",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000066"
+    },
+    "id_evento": 102,
+    "titulo": "House Classics & Saxofón en Vivo",
+    "descripcion": "Los mayores himnos del house de los años 2000s acompañados de saxo en vivo sobre el rooftop.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "21:30 - 03:30",
+    "precio_entrada": 7000,
+    "categoria_musical": "Classic House · Live Saxophone",
+    "aforo_total": 120,
+    "aforo_disponible": 26,
+    "id_recinto": 34,
+    "nombre_local": "Terraza 8 Norte",
+    "direccion": "8 Norte 365, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "8 Norte / Población Vergara",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5515,
+        -33.0145
+      ]
+    },
+    "artistas": [
+      "Sax Live & DJ HouseViña"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Secret Sessions Chile",
+    "ticket_provider": "Toliv",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000067"
+    },
+    "id_evento": 103,
+    "titulo": "Murano Massive: Ultra Bailable & Perreo",
+    "descripcion": "Mega fiesta con cañón de confeti, lásers y los mejores temas urbanos para bailar hasta las 5:30 AM.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "23:30 - 05:30",
+    "precio_entrada": 10000,
+    "categoria_musical": "Reggaeton · Urbano · Bailable",
+    "aforo_total": 500,
+    "aforo_disponible": 55,
+    "id_recinto": 35,
+    "nombre_local": "Murano Viña Club",
+    "direccion": "Quillota 798, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Quillota / Sector Oriente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.545,
+        -33.0245
+      ]
+    },
+    "artistas": [
+      "DJ Murano Resident",
+      "Animador Show"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Murano Viña",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000068"
+    },
+    "id_evento": 104,
+    "titulo": "Fiesta Mechona Inter-Universitaria Viña",
+    "descripcion": "Reunión de federaciones universitarias con 2 pistas simultáneas: Pista Central Hits y Pista Electrónica.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "23:00 - 05:00",
+    "precio_entrada": 8000,
+    "categoria_musical": "Ultrabailable · EDM · Pop",
+    "aforo_total": 500,
+    "aforo_disponible": 70,
+    "id_recinto": 35,
+    "nombre_local": "Murano Viña Club",
+    "direccion": "Quillota 798, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Quillota / Sector Oriente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.545,
+        -33.0245
+      ]
+    },
+    "artistas": [
+      "DJ InterU",
+      "DJ BassViña"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&h=600&fit=crop&auto=format",
+    "productora": "La Clave Productora",
+    "ticket_provider": "Passline",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000069"
+    },
+    "id_evento": 105,
+    "titulo": "Old School Reggaeton Fest: 2000 al 2012",
+    "descripcion": "Dedicado a los orígenes del perreo: Don Omar, Wisin & Yandel, Plan B y Tego Calderón.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 04 Oct",
+    "horario": "23:30 - 05:30",
+    "precio_entrada": 9000,
+    "categoria_musical": "Reggaeton 2000s · Old School",
+    "aforo_total": 500,
+    "aforo_disponible": 80,
+    "id_recinto": 35,
+    "nombre_local": "Murano Viña Club",
+    "direccion": "Quillota 798, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Quillota / Sector Oriente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.545,
+        -33.0245
+      ]
+    },
+    "artistas": [
+      "DJ OldSchool Chile"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&h=600&fit=crop&auto=format",
+    "productora": "Productora Transistor",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000006a"
+    },
+    "id_evento": 106,
+    "titulo": "Deck Beach Session: Tech House on the Sand",
+    "descripcion": "Bailar descalzo en la arena con los mejores exponentes del tech house chileno frente a las olas de Reñaca.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "22:30 - 05:00",
+    "precio_entrada": 12000,
+    "categoria_musical": "Tech House · Afro House · Beach Party",
+    "aforo_total": 280,
+    "aforo_disponible": 26,
+    "id_recinto": 36,
+    "nombre_local": "Deck 00 Reñaca",
+    "direccion": "Av. Borgoño 14850, Reñaca, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Reñaca / Costanera",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.542,
+        -32.9715
+      ]
+    },
+    "artistas": [
+      "DJ Deck Resident",
+      "Invitado Santiago"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&h=600&fit=crop&auto=format",
+    "productora": "Club del Sol Reñaca",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000006b"
+    },
+    "id_evento": 107,
+    "titulo": "Fogón Nocturno & Deep Melodic Session",
+    "descripcion": "Fogones playeros, mantas y melodías envolventes de música electrónica melódica.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "21:00 - 04:00",
+    "precio_entrada": 10000,
+    "categoria_musical": "Melodic Techno · Deep House",
+    "aforo_total": 250,
+    "aforo_disponible": 35,
+    "id_recinto": 36,
+    "nombre_local": "Deck 00 Reñaca",
+    "direccion": "Av. Borgoño 14850, Reñaca, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Reñaca / Costanera",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.542,
+        -32.9715
+      ]
+    },
+    "artistas": [
+      "DJ Fogón Beats"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&h=600&fit=crop&auto=format",
+    "productora": "Sundeck Sessions",
+    "ticket_provider": "Passline",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000006c"
+    },
+    "id_evento": 108,
+    "titulo": "Full Moon Beach Rave en Reñaca",
+    "descripcion": "Rave costera bajo la luna llena con lásers proyectados hacia las olas del Pacífico.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 04 Oct",
+    "horario": "23:00 - 05:30",
+    "precio_entrada": 14000,
+    "categoria_musical": "Progressive House · Tech Beats",
+    "aforo_total": 280,
+    "aforo_disponible": 40,
+    "id_recinto": 36,
+    "nombre_local": "Deck 00 Reñaca",
+    "direccion": "Av. Borgoño 14850, Reñaca, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Reñaca / Costanera",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.542,
+        -32.9715
+      ]
+    },
+    "artistas": [
+      "DJ Luna de Reñaca"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Piknic Électronik On Tour",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000006d"
+    },
+    "id_evento": 109,
+    "titulo": "Rock En Vivo & Noche de Pizzas",
+    "descripcion": "Bandas tributo a Bon Jovi, Queen y Guns N' Roses con pizzas caseras a la piedra en 1 Poniente.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "21:00 - 03:30",
+    "precio_entrada": 3000,
+    "categoria_musical": "Rock Clásico · Glam Rock · Pizzas",
+    "aforo_total": 90,
+    "aforo_disponible": 15,
+    "id_recinto": 37,
+    "nombre_local": "Pub Scratch Viña",
+    "direccion": "1 Poniente 410, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "1 Poniente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5538,
+        -33.0205
+      ]
+    },
+    "artistas": [
+      "Banda Scratch Rockers"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Pub Scratch",
+    "ticket_provider": "Ticketek",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000006e"
+    },
+    "id_evento": 110,
+    "titulo": "Karaoke Party & Piscolas 2x1",
+    "descripcion": "Concurso de karaoke con premios en botellas y fiesta bailable post-concurso.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 25 Sep",
+    "horario": "21:30 - 03:00",
+    "precio_entrada": 2000,
+    "categoria_musical": "Karaoke · Hits Pop",
+    "aforo_total": 85,
+    "aforo_disponible": 25,
+    "id_recinto": 37,
+    "nombre_local": "Pub Scratch Viña",
+    "direccion": "1 Poniente 410, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "1 Poniente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5538,
+        -33.0205
+      ]
+    },
+    "artistas": [
+      "Animador Scratch"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Pub Scratch",
+    "ticket_provider": "Ticketek",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000006f"
+    },
+    "id_evento": 111,
+    "titulo": "Tributo a AC/DC y Led Zeppelin",
+    "descripcion": "Puro hard rock en vivo con solos de guitarra legendarios y schops helados.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "22:00 - 03:30",
+    "precio_entrada": 3500,
+    "categoria_musical": "Hard Rock · Heavy Blues",
+    "aforo_total": 90,
+    "aforo_disponible": 20,
+    "id_recinto": 37,
+    "nombre_local": "Pub Scratch Viña",
+    "direccion": "1 Poniente 410, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "1 Poniente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5538,
+        -33.0205
+      ]
+    },
+    "artistas": [
+      "Banda Highway Rock"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Circuito Rock Quinta",
+    "ticket_provider": "Ticketek",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000070"
+    },
+    "id_evento": 112,
+    "titulo": "Gin & Tonic Night: Aromas Botánicos",
+    "descripcion": "Noche de degustación de gin nacional artesanal con botánicos de la cordillera y música indie chill.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "19:30 - 02:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Indie Pop · Gin Bar · Cocina Urbana",
+    "aforo_total": 95,
+    "aforo_disponible": 14,
+    "id_recinto": 38,
+    "nombre_local": "Tromba Bar & Kitchen",
+    "direccion": "3 Poniente 320, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "3 Poniente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5555,
+        -33.0188
+      ]
+    },
+    "artistas": [
+      "DJ Tromba",
+      "Bartender Invitado"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Tromba",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000071"
+    },
+    "id_evento": 113,
+    "titulo": "Tapeo Porteño & Vermutería",
+    "descripcion": "La hora del vermut artesanal con tablas de conservas marinas y jamón serrano.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 25 Sep",
+    "horario": "19:00 - 00:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Vermut · Gastronómico · Bossa",
+    "aforo_total": 85,
+    "aforo_disponible": 22,
+    "id_recinto": 38,
+    "nombre_local": "Tromba Bar & Kitchen",
+    "direccion": "3 Poniente 320, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "3 Poniente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5555,
+        -33.0188
+      ]
+    },
+    "artistas": [
+      "Dúo Acústico Poniente"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Tromba",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000072"
+    },
+    "id_evento": 114,
+    "titulo": "Indie & Electronic Beats en Poniente",
+    "descripcion": "Coctelería de autor y sonidos de indietrónica para empezar la noche de fin de semana.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "21:00 - 02:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Indietrónica · House Lounge",
+    "aforo_total": 95,
+    "aforo_disponible": 20,
+    "id_recinto": 38,
+    "nombre_local": "Tromba Bar & Kitchen",
+    "direccion": "3 Poniente 320, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "3 Poniente",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5555,
+        -33.0188
+      ]
+    },
+    "artistas": [
+      "DJ IndieViña"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&h=600&fit=crop&auto=format",
+    "productora": "Club Fauna Showcase",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000073"
+    },
+    "id_evento": 115,
+    "titulo": "Southern Rock & BBQ Night",
+    "descripcion": "Costillares ahumados a la leña, hamburguesas caseras y lo mejor del rock sureño y country rock.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "19:00 - 01:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Southern Rock · Country · Craft Beer",
+    "aforo_total": 110,
+    "aforo_disponible": 22,
+    "id_recinto": 39,
+    "nombre_local": "Cervecería Taverna Viña",
+    "direccion": "1 Norte 1420, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "1 Norte / Sporting",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5385,
+        -33.026
+      ]
+    },
+    "artistas": [
+      "Banda Taverna Blues"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1538488881523-29497e556e43?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Taverna",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000074"
+    },
+    "id_evento": 116,
+    "titulo": "Pinchado de Barriles de Invierno",
+    "descripcion": "Cervezas Barley Wine y Imperial Stout envejecidas en roble para catar en copa.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Mié 24 Sep",
+    "horario": "19:30 - 23:30",
+    "precio_entrada": 0,
+    "categoria_musical": "Cerveza de Guarda · Degustación",
+    "aforo_total": 90,
+    "aforo_disponible": 28,
+    "id_recinto": 39,
+    "nombre_local": "Cervecería Taverna Viña",
+    "direccion": "1 Norte 1420, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "1 Norte / Sporting",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5385,
+        -33.026
+      ]
+    },
+    "artistas": [
+      "Maestro Cervecero Taverna"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&h=600&fit=crop&auto=format",
+    "productora": "Cerveceros de Chile",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000075"
+    },
+    "id_evento": 117,
+    "titulo": "Tributo Acústico a Creedence Clearwater Revival",
+    "descripcion": "Los mayores clásicos del rock de pantano en formato unplugged con schops de cortesía.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "21:00 - 02:00",
+    "precio_entrada": 0,
+    "categoria_musical": "Creedence Tribute · Rock Clásico",
+    "aforo_total": 110,
+    "aforo_disponible": 30,
+    "id_recinto": 39,
+    "nombre_local": "Cervecería Taverna Viña",
+    "direccion": "1 Norte 1420, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "1 Norte / Sporting",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5385,
+        -33.026
+      ]
+    },
+    "artistas": [
+      "Banda Fortunate Sons"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Taverna",
+    "ticket_provider": "Toliv",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000076"
+    },
+    "id_evento": 118,
+    "titulo": "Roaring 20s: Speakeasy & Electro Swing",
+    "descripcion": "Ingreso con contraseña secreta, cócteles ahumados en campana de cristal y ritmo de electro swing.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "21:00 - 03:00",
+    "precio_entrada": 6000,
+    "categoria_musical": "Electro Swing · Speakeasy · Mixología",
+    "aforo_total": 85,
+    "aforo_disponible": 11,
+    "id_recinto": 40,
+    "nombre_local": "Gatsby Lounge Viña",
+    "direccion": "Av. San Martín 380, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Av. San Martín / 4 Norte",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5555,
+        -33.017
+      ]
+    },
+    "artistas": [
+      "DJ Gatsby",
+      "Bailarinas Charleston"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&h=600&fit=crop&auto=format",
+    "productora": "Secret Sessions Chile",
+    "ticket_provider": "Ticketmaster",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000077"
+    },
+    "id_evento": 119,
+    "titulo": "Martini Masterclass & Jazz Trío",
+    "descripcion": "Taller para preparar el Dry Martini perfecto seguido de una velada de jazz en vivo.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 25 Sep",
+    "horario": "19:30 - 23:30",
+    "precio_entrada": 18000,
+    "categoria_musical": "Masterclass · Jazz Clásico",
+    "aforo_total": 60,
+    "aforo_disponible": 14,
+    "id_recinto": 40,
+    "nombre_local": "Gatsby Lounge Viña",
+    "direccion": "Av. San Martín 380, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Av. San Martín / 4 Norte",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5555,
+        -33.017
+      ]
+    },
+    "artistas": [
+      "Mixólogo Gatsby",
+      "Trío de Jazz Viña"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1575444758702-4a6b9222336e?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Gatsby Lounge",
+    "ticket_provider": "Ticketmaster",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000078"
+    },
+    "id_evento": 120,
+    "titulo": "Midnight Bourbon & Blues Acústico",
+    "descripcion": "Degustación de destilados añejos de Kentucky con acordes de guitarra blues intimista.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "21:30 - 02:30",
+    "precio_entrada": 8000,
+    "categoria_musical": "Bourbon Tasting · Delta Blues",
+    "aforo_total": 80,
+    "aforo_disponible": 16,
+    "id_recinto": 40,
+    "nombre_local": "Gatsby Lounge Viña",
+    "direccion": "Av. San Martín 380, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "Av. San Martín / 4 Norte",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5555,
+        -33.017
+      ]
+    },
+    "artistas": [
+      "Bluesman del Mar"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&auto=format",
+    "productora": "Spirits of America",
+    "ticket_provider": "Ticketmaster",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000300000079"
+    },
+    "id_evento": 121,
+    "titulo": "Reñaca Sunset Opening: Tech House",
+    "descripcion": "Apertura de temporada playera frente a la rompiente del sector 4 con DJ set estelar y láser al mar.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "21:00 - 05:00",
+    "precio_entrada": 10000,
+    "categoria_musical": "Tech House · Sunset Beats · Electrónica",
+    "aforo_total": 250,
+    "aforo_disponible": 18,
+    "id_recinto": 41,
+    "nombre_local": "Reñaca Sunset Club",
+    "direccion": "Av. Borgoño 13900, Sector 4, Reñaca",
+    "ciudad": "Viña del Mar",
+    "sector": "Reñaca / Sector 4",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.544,
+        -32.975
+      ]
+    },
+    "artistas": [
+      "DJ Reñaca Sunset",
+      "DJ Waves"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&h=600&fit=crop&auto=format",
+    "productora": "Club del Sol Reñaca",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000007a"
+    },
+    "id_evento": 122,
+    "titulo": "Corona Sunset Session & Cerveza con Limón",
+    "descripcion": "Ambiente playero relajado con barra abierta de cerveza inicial y deep house melódico.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 26 Sep",
+    "horario": "18:00 - 03:00",
+    "precio_entrada": 8000,
+    "categoria_musical": "Deep House · Tropical House",
+    "aforo_total": 230,
+    "aforo_disponible": 30,
+    "id_recinto": 41,
+    "nombre_local": "Reñaca Sunset Club",
+    "direccion": "Av. Borgoño 13900, Sector 4, Reñaca",
+    "ciudad": "Viña del Mar",
+    "sector": "Reñaca / Sector 4",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.544,
+        -32.975
+      ]
+    },
+    "artistas": [
+      "DJ Tropical Sunset"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&h=600&fit=crop&auto=format",
+    "productora": "Corona Sunsets",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000007b"
+    },
+    "id_evento": 123,
+    "titulo": "Fiesta de Amanecida en el Sector 4",
+    "descripcion": "Música continua frente a las olas hasta que el sol aparezca en el horizonte costero.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Sáb 04 Oct",
+    "horario": "23:00 - 06:00",
+    "precio_entrada": 12000,
+    "categoria_musical": "Electronic · Tech Beats",
+    "aforo_total": 250,
+    "aforo_disponible": 35,
+    "id_recinto": 41,
+    "nombre_local": "Reñaca Sunset Club",
+    "direccion": "Av. Borgoño 13900, Sector 4, Reñaca",
+    "ciudad": "Viña del Mar",
+    "sector": "Reñaca / Sector 4",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.544,
+        -32.975
+      ]
+    },
+    "artistas": [
+      "DJ Amanecer Reñaca"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Piknic Électronik On Tour",
+    "ticket_provider": "Passline",
+    "hot": true
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000007c"
+    },
+    "id_evento": 124,
+    "titulo": "Soho Fiesta Universitaria & Barra Abierta",
+    "descripcion": "Dos ambientes simultáneos: Pista Central con Reggaeton y Pista Alternativa con Pop 2000s.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Hoy, Sáb 21 Sep",
+    "horario": "23:00 - 05:00",
+    "precio_entrada": 7000,
+    "categoria_musical": "Pop Hits · Reggaeton · Comercial",
+    "aforo_total": 260,
+    "aforo_disponible": 34,
+    "id_recinto": 42,
+    "nombre_local": "Club Soho Viña",
+    "direccion": "7 Norte 445, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "7 Norte / Libertad",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.548,
+        -33.0155
+      ]
+    },
+    "artistas": [
+      "DJ Soho Resident",
+      "Animación en Vivo"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Club Soho",
+    "ticket_provider": "Passline",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000007d"
+    },
+    "id_evento": 125,
+    "titulo": "Jueves de Descontrol Universitario",
+    "descripcion": "El clásico carrete de los jueves en 7 Norte con entrada liberada hasta la medianoche.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Jue 25 Sep",
+    "horario": "22:30 - 04:30",
+    "precio_entrada": 5000,
+    "categoria_musical": "Ultrabailable · Pachanga · Cumbia Pop",
+    "aforo_total": 250,
+    "aforo_disponible": 50,
+    "id_recinto": 42,
+    "nombre_local": "Club Soho Viña",
+    "direccion": "7 Norte 445, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "7 Norte / Libertad",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.548,
+        -33.0155
+      ]
+    },
+    "artistas": [
+      "DJ Jueves Soho"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=800&h=600&fit=crop&auto=format",
+    "productora": "La Clave Productora",
+    "ticket_provider": "Passline",
+    "hot": false
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000030000007e"
+    },
+    "id_evento": 126,
+    "titulo": "Fiesta Black & White: Noche Monocromática",
+    "descripcion": "Viste de blanco o negro y recibe cóctel de bienvenida con show de luces ultravioleta.",
+    "fecha_hora": "2026-10-10T22:30:00.000Z",
+    "fecha_display": "Vie 03 Oct",
+    "horario": "23:00 - 05:00",
+    "precio_entrada": 6000,
+    "categoria_musical": "Hits · Electro Pop · Dance",
+    "aforo_total": 260,
+    "aforo_disponible": 45,
+    "id_recinto": 42,
+    "nombre_local": "Club Soho Viña",
+    "direccion": "7 Norte 445, Viña del Mar",
+    "ciudad": "Viña del Mar",
+    "sector": "7 Norte / Libertad",
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.548,
+        -33.0155
+      ]
+    },
+    "artistas": [
+      "DJ Soho Night"
+    ],
+    "banner_image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop&auto=format",
+    "productora": "Producción Propia Club Soho",
+    "ticket_provider": "Passline",
+    "hot": false
+  }
+]

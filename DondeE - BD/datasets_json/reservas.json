@@ -1,0 +1,234 @@
+[
+  {
+    "_id": {
+      "$oid": "67069b120000000400000001"
+    },
+    "id_reserva": 1,
+    "ticket_code": "VALP-HUEV-8821",
+    "fecha_reserva": "2026-09-21T18:30:00.000Z",
+    "estado_pago": "PAGADO",
+    "cantidad_entradas": 2,
+    "precio_unitario": 10000,
+    "cargo_servicio": 1000,
+    "total_pagado": 21000,
+    "ticket_provider": "Passline",
+    "transaction_token": "PL-TX-982147",
+    "usuario": {
+      "id_usuario": 1,
+      "nombre": "Valentina Morales",
+      "email": "valen.morales@gmail.com",
+      "ciudad": "Viña del Mar"
+    },
+    "evento": {
+      "id_evento": 1,
+      "titulo": "Valpo Techno Rave: 3 Niveles en Vivo",
+      "fecha_hora": "2026-09-21T23:00:00.000Z",
+      "nombre_local": "Club El Huevo",
+      "direccion": "Blanco 1386, Valparaíso",
+      "ciudad": "Valparaíso"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000400000002"
+    },
+    "id_reserva": 2,
+    "ticket_code": "VINA-OVO-4419",
+    "fecha_reserva": "2026-09-21T18:30:00.000Z",
+    "estado_pago": "PAGADO",
+    "cantidad_entradas": 1,
+    "precio_unitario": 15000,
+    "cargo_servicio": 750,
+    "total_pagado": 15750,
+    "ticket_provider": "Puntoticket",
+    "transaction_token": "PT-TX-441982",
+    "usuario": {
+      "id_usuario": 2,
+      "nombre": "Diego Silva",
+      "email": "diego.silva@alumnos.usm.cl",
+      "ciudad": "Valparaíso"
+    },
+    "evento": {
+      "id_evento": 64,
+      "titulo": "Enjoy VIP Gala: Spring Electronic Night",
+      "fecha_hora": "2026-09-21T23:00:00.000Z",
+      "nombre_local": "Club OVO (Enjoy Viña)",
+      "direccion": "Av. San Martín 199, Viña del Mar",
+      "ciudad": "Viña del Mar"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000400000003"
+    },
+    "id_reserva": 3,
+    "ticket_code": "VALP-TERR-7711",
+    "fecha_reserva": "2026-09-21T18:30:00.000Z",
+    "estado_pago": "PAGADO",
+    "cantidad_entradas": 2,
+    "precio_unitario": 6000,
+    "cargo_servicio": 600,
+    "total_pagado": 12600,
+    "ticket_provider": "Passline",
+    "transaction_token": "PL-TX-771109",
+    "usuario": {
+      "id_usuario": 3,
+      "nombre": "Camila Rojas",
+      "email": "camila.rojas@gmail.com",
+      "ciudad": "Viña del Mar"
+    },
+    "evento": {
+      "id_evento": 10,
+      "titulo": "Sunset Sessions Bahía: Deep House & Disco",
+      "fecha_hora": "2026-09-21T23:00:00.000Z",
+      "nombre_local": "Terraza Bellavista Valpo",
+      "direccion": "Blanco 1240, Bellavista, Valparaíso",
+      "ciudad": "Valparaíso"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000400000004"
+    },
+    "id_reserva": 4,
+    "ticket_code": "DONDEE-TK-004",
+    "fecha_reserva": "2026-10-09T13:00:00.000Z",
+    "estado_pago": "PAGADO",
+    "cantidad_entradas": 2,
+    "precio_unitario": 3000,
+    "cargo_servicio": 150,
+    "total_pagado": 6300,
+    "ticket_provider": "Toliv",
+    "transaction_token": "TX-TBK-100004",
+    "usuario": {
+      "id_usuario": 5,
+      "nombre": "Sofía Henríquez",
+      "email": "sofia.henriquez@outlook.com",
+      "ciudad": "Viña del Mar"
+    },
+    "evento": {
+      "id_evento": 13,
+      "titulo": "Fiesta Universitaria Cumming Live",
+      "fecha_hora": "2026-10-10T22:30:00.000Z",
+      "nombre_local": "El Gato en la Ventana",
+      "direccion": "Cumming 113, Subida Ecuador, Valparaíso",
+      "ciudad": "Valparaíso"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000400000005"
+    },
+    "id_reserva": 5,
+    "ticket_code": "DONDEE-TK-005",
+    "fecha_reserva": "2026-10-09T13:00:00.000Z",
+    "estado_pago": "PAGADO",
+    "cantidad_entradas": 2,
+    "precio_unitario": 5000,
+    "cargo_servicio": 250,
+    "total_pagado": 10500,
+    "ticket_provider": "Toliv",
+    "transaction_token": "TX-TBK-100005",
+    "usuario": {
+      "id_usuario": 6,
+      "nombre": "Matías Tapia",
+      "email": "matias.tapia@alumnos.uv.cl",
+      "ciudad": "Valparaíso"
+    },
+    "evento": {
+      "id_evento": 16,
+      "titulo": "Jazz & Wine en Cerro Alegre",
+      "fecha_hora": "2026-10-10T22:30:00.000Z",
+      "nombre_local": "El Internado Resto-Cultural",
+      "direccion": "Pasaje Dimalow 167, Cerro Alegre, Valparaíso",
+      "ciudad": "Valparaíso"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000400000006"
+    },
+    "id_reserva": 6,
+    "ticket_code": "DONDEE-TK-006",
+    "fecha_reserva": "2026-10-09T13:00:00.000Z",
+    "estado_pago": "PAGADO",
+    "cantidad_entradas": 2,
+    "precio_unitario": 0,
+    "cargo_servicio": 0,
+    "total_pagado": 0,
+    "ticket_provider": "Toliv",
+    "transaction_token": "TX-TBK-100006",
+    "usuario": {
+      "id_usuario": 7,
+      "nombre": "Francisca Contreras",
+      "email": "fran.contreras@gmail.com",
+      "ciudad": "Viña del Mar"
+    },
+    "evento": {
+      "id_evento": 19,
+      "titulo": "Altamira Craft Beer Fest & Jazz Manouche",
+      "fecha_hora": "2026-10-10T22:30:00.000Z",
+      "nombre_local": "Cervecería Altamira",
+      "direccion": "Av. Elías 122, Valparaíso",
+      "ciudad": "Valparaíso"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000400000007"
+    },
+    "id_reserva": 7,
+    "ticket_code": "DONDEE-TK-007",
+    "fecha_reserva": "2026-10-09T13:00:00.000Z",
+    "estado_pago": "PAGADO",
+    "cantidad_entradas": 2,
+    "precio_unitario": 5000,
+    "cargo_servicio": 250,
+    "total_pagado": 10500,
+    "ticket_provider": "Passline",
+    "transaction_token": "TX-TBK-100007",
+    "usuario": {
+      "id_usuario": 8,
+      "nombre": "Lucas Sepúlveda",
+      "email": "lucas.sepulveda@gmail.com",
+      "ciudad": "Valparaíso"
+    },
+    "evento": {
+      "id_evento": 22,
+      "titulo": "New Wave & Synthpop 80s Revival",
+      "fecha_hora": "2026-10-10T22:30:00.000Z",
+      "nombre_local": "Mascara Pub & Club",
+      "direccion": "Plaza Aníbal Pinto 1178, Valparaíso",
+      "ciudad": "Valparaíso"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000400000008"
+    },
+    "id_reserva": 8,
+    "ticket_code": "DONDEE-TK-008",
+    "fecha_reserva": "2026-10-09T13:00:00.000Z",
+    "estado_pago": "PAGADO",
+    "cantidad_entradas": 2,
+    "precio_unitario": 8000,
+    "cargo_servicio": 400,
+    "total_pagado": 16800,
+    "ticket_provider": "Ticketek",
+    "transaction_token": "TX-TBK-100008",
+    "usuario": {
+      "id_usuario": 1,
+      "nombre": "Valentina Morales",
+      "email": "valen.morales@gmail.com",
+      "ciudad": "Viña del Mar"
+    },
+    "evento": {
+      "id_evento": 25,
+      "titulo": "Noche de Salsa Brava & Timba con Orquesta",
+      "fecha_hora": "2026-10-10T22:30:00.000Z",
+      "nombre_local": "La Piedra Feliz",
+      "direccion": "Av. Errázuriz 1054, Valparaíso",
+      "ciudad": "Valparaíso"
+    }
+  }
+]

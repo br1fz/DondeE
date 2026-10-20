@@ -1,0 +1,2040 @@
+[
+  {
+    "_id": {
+      "$oid": "67069b120000000200000001"
+    },
+    "id_recinto": 1,
+    "nombre_local": "Club El Huevo",
+    "direccion": "Blanco 1386, Valparaíso",
+    "sector": "Barrio Puerto / Blanco",
+    "ciudad": "Valparaíso",
+    "tipo": "club",
+    "patente_municipal": "PAT-VALP-001",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 500,
+    "aforo_disponible": 42,
+    "precio_entrada": 10000,
+    "rating": 4.8,
+    "reviews_count": 420,
+    "genero_musical": "Techno · Indie · Pop",
+    "horario": "Jue a Sáb: 23:00 - 05:30",
+    "descripcion": "Mítico centro de eventos porteño con 3 pisos temáticos: Pista Central Pop, Subterráneo Techno y Terraza Rock.",
+    "ticket_provider": "Passline",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6245,
+        -33.0425
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 1,
+        "calificacion": 5,
+        "comentario": "Los 3 pisos de El Huevo nunca defraudan. El sótano de techno subterráneo es insuperable en la Quinta Región.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 2,
+          "nombre": "Diego Silva",
+          "email": "diego.silva@alumnos.usm.cl"
+        }
+      },
+      {
+        "id_resena": 2,
+        "calificacion": 5,
+        "comentario": "Excelente control de aforo en la entrada, la aplicación funcionó perfecto con el QR.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 1,
+          "nombre": "Valentina Morales",
+          "email": "valen.morales@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000002"
+    },
+    "id_recinto": 2,
+    "nombre_local": "Bar La Playa",
+    "direccion": "Serrano 568, Barrio Puerto, Valparaíso",
+    "sector": "Barrio Puerto Histórico",
+    "ciudad": "Valparaíso",
+    "tipo": "bar",
+    "patente_municipal": "PAT-VALP-002",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 120,
+    "aforo_disponible": 18,
+    "precio_entrada": 0,
+    "rating": 4.9,
+    "reviews_count": 530,
+    "genero_musical": "Rock Clásico · Bohemia Porteña",
+    "horario": "Mié a Dom: 18:00 - 03:00",
+    "descripcion": "El bar más tradicional de Valparaíso fundado en 1908. Madera centenaria, tragos de antaño y músicos locales en vivo.",
+    "ticket_provider": "Toliv",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.631,
+        -33.0375
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 3,
+        "calificacion": 5,
+        "comentario": "Patrimonio vivo de Valparaíso. Sentarse en la barra a escuchar boleros con un buen borgoña es una experiencia única.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 4,
+          "nombre": "Ignacio Valenzuela",
+          "email": "ignacio.valenzuela@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000003"
+    },
+    "id_recinto": 3,
+    "nombre_local": "Bar Cinzano",
+    "direccion": "Plaza Aníbal Pinto 1182, Valparaíso",
+    "sector": "Plaza Aníbal Pinto",
+    "ciudad": "Valparaíso",
+    "tipo": "bar",
+    "patente_municipal": "PAT-VALP-003",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 110,
+    "aforo_disponible": 15,
+    "precio_entrada": 0,
+    "rating": 4.7,
+    "reviews_count": 390,
+    "genero_musical": "Tango · Boleros · Bohemia",
+    "horario": "Mar a Sáb: 19:00 - 02:30",
+    "descripcion": "Emblemático bar fundado en 1896 en el epicentro de Plaza Aníbal Pinto. Tradición de tango, boleros en vivo y gastronomía porteña.",
+    "ticket_provider": "Ticketmaster",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6248,
+        -33.0445
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 4,
+        "calificacion": 5,
+        "comentario": "La bohemia porteña en su máxima expresión. Los cantores de tango en vivo le dan un toque inolvidable.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 8,
+          "nombre": "Lucas Sepúlveda",
+          "email": "lucas.sepulveda@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000004"
+    },
+    "id_recinto": 4,
+    "nombre_local": "Terraza Bellavista Valpo",
+    "direccion": "Blanco 1240, Bellavista, Valparaíso",
+    "sector": "Bellavista / Vista Bahía",
+    "ciudad": "Valparaíso",
+    "tipo": "pub",
+    "patente_municipal": "PAT-VALP-004",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 180,
+    "aforo_disponible": 31,
+    "precio_entrada": 6000,
+    "rating": 4.7,
+    "reviews_count": 310,
+    "genero_musical": "House · Deep House · Sunset",
+    "horario": "Jue a Dom: 19:00 - 04:00",
+    "descripcion": "Rooftop abierto con vista panorámica a la bahía de Valparaíso. Coctelería de autor y sesiones de música electrónica.",
+    "ticket_provider": "Passline",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.622,
+        -33.044
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 5,
+        "calificacion": 5,
+        "comentario": "La vista a los barcos iluminados es alucinante. Cócteles 10/10 y gran ambiente.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 3,
+          "nombre": "Camila Rojas",
+          "email": "camila.rojas@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000005"
+    },
+    "id_recinto": 5,
+    "nombre_local": "El Gato en la Ventana",
+    "direccion": "Cumming 113, Subida Ecuador, Valparaíso",
+    "sector": "Subida Ecuador / Cumming",
+    "ciudad": "Valparaíso",
+    "tipo": "pub",
+    "patente_municipal": "PAT-VALP-005",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 90,
+    "aforo_disponible": 12,
+    "precio_entrada": 3000,
+    "rating": 4.5,
+    "reviews_count": 240,
+    "genero_musical": "Cumbia · Ska · Pachanga",
+    "horario": "Mar a Sáb: 17:00 - 03:30",
+    "descripcion": "Punto de encuentro indiscutido en la vibrante Subida Ecuador. Cervezas en jarra, pisco sour porteño y música bailable.",
+    "ticket_provider": "Toliv",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6272,
+        -33.0448
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 6,
+        "calificacion": 5,
+        "comentario": "El corazón del carrete universitario. Precios accesibles y el mejor ambiente para empezar la noche.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 6,
+          "nombre": "Matías Tapia",
+          "email": "matias.tapia@alumnos.uv.cl"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000006"
+    },
+    "id_recinto": 6,
+    "nombre_local": "El Internado Resto-Cultural",
+    "direccion": "Pasaje Dimalow 167, Cerro Alegre, Valparaíso",
+    "sector": "Cerro Alegre / Paseo Dimalow",
+    "ciudad": "Valparaíso",
+    "tipo": "bar",
+    "patente_municipal": "PAT-VALP-006",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 80,
+    "aforo_disponible": 9,
+    "precio_entrada": 5000,
+    "rating": 4.9,
+    "reviews_count": 340,
+    "genero_musical": "Jazz · Soul · Vinos de Autor",
+    "horario": "Mié a Dom: 19:30 - 02:00",
+    "descripcion": "Espacio cultural y gastronómico en Cerro Alegre con sala de conciertos subterránea y terraza mirador.",
+    "ticket_provider": "Toliv",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6288,
+        -33.0412
+      ]
+    },
+    "host": {
+      "id_usuario": 10,
+      "nombre": "Host Cerros Alegre & Concepción",
+      "email": "administracion@cerroalegre.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 7,
+        "calificacion": 5,
+        "comentario": "El cuarteto de jazz y la panorámica al mar son insuperables. Lugar perfecto para una noche tranquila.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 5,
+          "nombre": "Sofía Henríquez",
+          "email": "sofia.henriquez@outlook.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000007"
+    },
+    "id_recinto": 7,
+    "nombre_local": "Cervecería Altamira",
+    "direccion": "Av. Elías 122, Valparaíso",
+    "sector": "Pie de Ascensor Reina Victoria",
+    "ciudad": "Valparaíso",
+    "tipo": "pub",
+    "patente_municipal": "PAT-VALP-007",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 140,
+    "aforo_disponible": 24,
+    "precio_entrada": 0,
+    "rating": 4.8,
+    "reviews_count": 460,
+    "genero_musical": "Craft Beer · Jazz · Acústico",
+    "horario": "Lun a Dom: 17:00 - 01:30",
+    "descripcion": "Cuna de la cerveza artesanal en Valparaíso a pasos del ascensor Reina Victoria. Elaboración a la vista y música en vivo.",
+    "ticket_provider": "Toliv",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6265,
+        -33.0438
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 8,
+        "calificacion": 5,
+        "comentario": "La cerveza Mestiza y el maridaje con empanadas de carne al vino tinto son de otro planeta.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 8,
+          "nombre": "Lucas Sepúlveda",
+          "email": "lucas.sepulveda@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000008"
+    },
+    "id_recinto": 8,
+    "nombre_local": "Mascara Pub & Club",
+    "direccion": "Plaza Aníbal Pinto 1178, Valparaíso",
+    "sector": "Plaza Aníbal Pinto",
+    "ciudad": "Valparaíso",
+    "tipo": "club",
+    "patente_municipal": "PAT-VALP-008",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 220,
+    "aforo_disponible": 28,
+    "precio_entrada": 5000,
+    "rating": 4.6,
+    "reviews_count": 310,
+    "genero_musical": "Indie Pop · Post-Punk · Electrónica",
+    "horario": "Jue a Sáb: 23:00 - 05:00",
+    "descripcion": "Club alternativo icónico de la noche porteña. Sonidos new wave, synth pop, indie y ambiente libre y diverso.",
+    "ticket_provider": "Passline",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6247,
+        -33.0442
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 9,
+        "calificacion": 5,
+        "comentario": "El mejor club indie/alternativo de Valparaíso. Fiesta garantizada y siempre la mejor selección musical.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 2,
+          "nombre": "Diego Silva",
+          "email": "diego.silva@alumnos.usm.cl"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000009"
+    },
+    "id_recinto": 9,
+    "nombre_local": "La Piedra Feliz",
+    "direccion": "Av. Errázuriz 1054, Valparaíso",
+    "sector": "Av. Errázuriz / Borde Mar",
+    "ciudad": "Valparaíso",
+    "tipo": "club",
+    "patente_municipal": "PAT-VALP-009",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 350,
+    "aforo_disponible": 45,
+    "precio_entrada": 8000,
+    "rating": 4.6,
+    "reviews_count": 380,
+    "genero_musical": "Salsa · Cumbia Porteña · Rock",
+    "horario": "Jue a Sáb: 22:00 - 05:00",
+    "descripcion": "Histórico centro de eventos frente al muelle con múltiples escenarios para orquestas en vivo, cueca brava y cumbia.",
+    "ticket_provider": "Ticketek",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6212,
+        -33.0418
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 10,
+        "calificacion": 5,
+        "comentario": "Pisar La Piedra Feliz es sentir la historia viva de los carnavales porteños. Banda en vivo monumental.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 4,
+          "nombre": "Ignacio Valenzuela",
+          "email": "ignacio.valenzuela@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000020000000a"
+    },
+    "id_recinto": 10,
+    "nombre_local": "Bar Liberty",
+    "direccion": "Cochrane 115, Plaza Echaurren, Valparaíso",
+    "sector": "Plaza Echaurren / Barrio Puerto",
+    "ciudad": "Valparaíso",
+    "tipo": "bar",
+    "patente_municipal": "PAT-VALP-010",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 70,
+    "aforo_disponible": 11,
+    "precio_entrada": 0,
+    "rating": 4.8,
+    "reviews_count": 290,
+    "genero_musical": "Cueca Brava · Folclor · Bohemia",
+    "horario": "Mar a Dom: 16:00 - 02:00",
+    "descripcion": "El bar más antiguo de Valparaíso (inaugurado en 1897). Cuna de la cueca brava porteña y reunión de poetas y marineros.",
+    "ticket_provider": "Toliv",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6325,
+        -33.0365
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 11,
+        "calificacion": 5,
+        "comentario": "Un museo vivo. Cantar cuecas espontáneas con los vecinos en la barra no tiene comparación en ningún otro lado.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 8,
+          "nombre": "Lucas Sepúlveda",
+          "email": "lucas.sepulveda@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000020000000b"
+    },
+    "id_recinto": 11,
+    "nombre_local": "Páramo Bar",
+    "direccion": "Condell 1395, Valparaíso",
+    "sector": "Condell / Teatro Municipal",
+    "ciudad": "Valparaíso",
+    "tipo": "bar",
+    "patente_municipal": "PAT-VALP-011",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 90,
+    "aforo_disponible": 16,
+    "precio_entrada": 2000,
+    "rating": 4.5,
+    "reviews_count": 210,
+    "genero_musical": "Rock · Post-Punk · Indie",
+    "horario": "Mié a Sáb: 19:00 - 03:00",
+    "descripcion": "Bar de culto para los amantes de la música underground y la literatura en pleno centro cívico de Valparaíso.",
+    "ticket_provider": "Toliv",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6235,
+        -33.0458
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 12,
+        "calificacion": 4,
+        "comentario": "Excelente música britpop y cervezas a buen precio en la barra.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 2,
+          "nombre": "Diego Silva",
+          "email": "diego.silva@alumnos.usm.cl"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000020000000c"
+    },
+    "id_recinto": 12,
+    "nombre_local": "El Rincón de las Guitarras",
+    "direccion": "Freire 631, Valparaíso",
+    "sector": "El Almendral / Freire",
+    "ciudad": "Valparaíso",
+    "tipo": "bar",
+    "patente_municipal": "PAT-VALP-012",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 100,
+    "aforo_disponible": 14,
+    "precio_entrada": 0,
+    "rating": 4.9,
+    "reviews_count": 320,
+    "genero_musical": "Cuecas · Folclor · Cantina Porteña",
+    "horario": "Mié a Sáb: 19:00 - 03:00",
+    "descripcion": "Templo del folclor porteño y la cueca urbana. Mesas largas de madera, chorrillanas contundentes y cantores que pasan mesa por mesa.",
+    "ticket_provider": "Ticketmaster",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6185,
+        -33.0478
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 13,
+        "calificacion": 5,
+        "comentario": "Si quieres conocer el verdadero espíritu de Valparaíso, este es el lugar. Las guitarras sonando en vivo te erizan la piel.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 4,
+          "nombre": "Ignacio Valenzuela",
+          "email": "ignacio.valenzuela@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000020000000d"
+    },
+    "id_recinto": 13,
+    "nombre_local": "Bar Proa Valparaíso",
+    "direccion": "Cochrane 451, Valparaíso",
+    "sector": "Plaza Sotomayor",
+    "ciudad": "Valparaíso",
+    "tipo": "pub",
+    "patente_municipal": "PAT-VALP-013",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 85,
+    "aforo_disponible": 20,
+    "precio_entrada": 0,
+    "rating": 4.4,
+    "reviews_count": 180,
+    "genero_musical": "Classic Rock · Blues · Cervezas",
+    "horario": "Lun a Sáb: 17:00 - 02:00",
+    "descripcion": "Ubicado frente al monumento naval de Plaza Sotomayor. Ambiente marinero tradicional, schops helados y bandas tributo.",
+    "ticket_provider": "Toliv",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.628,
+        -33.039
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 14,
+        "calificacion": 4,
+        "comentario": "Muy buena terraza con vista al puerto y los barcos militares. La tabla proa viene bien servida.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 6,
+          "nombre": "Matías Tapia",
+          "email": "matias.tapia@alumnos.uv.cl"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000020000000e"
+    },
+    "id_recinto": 14,
+    "nombre_local": "Pagano Club",
+    "direccion": "Av. Errázuriz 1080, Valparaíso",
+    "sector": "Av. Errázuriz",
+    "ciudad": "Valparaíso",
+    "tipo": "club",
+    "patente_municipal": "PAT-VALP-014",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 400,
+    "aforo_disponible": 36,
+    "precio_entrada": 8000,
+    "rating": 4.7,
+    "reviews_count": 350,
+    "genero_musical": "Electrónica · Pop · Circuit",
+    "horario": "Jue a Dom: 23:30 - 05:30",
+    "descripcion": "Gran discoteca de la costanera porteña con espectaculares juegos de luces robóticas, drag shows y pista principal de alta energía.",
+    "ticket_provider": "Passline",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.621,
+        -33.0415
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 15,
+        "calificacion": 5,
+        "comentario": "Fiesta insuperable, sonido envolvente y mucha producción en el escenario. De los mejores clubes de Valpo.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 1,
+          "nombre": "Valentina Morales",
+          "email": "valen.morales@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000020000000f"
+    },
+    "id_recinto": 15,
+    "nombre_local": "Waddington Bar & Resto",
+    "direccion": "Av. Gran Bretaña 437, Playa Ancha, Valparaíso",
+    "sector": "Playa Ancha Histórico",
+    "ciudad": "Valparaíso",
+    "tipo": "pub",
+    "patente_municipal": "PAT-VALP-015",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 95,
+    "aforo_disponible": 19,
+    "precio_entrada": 0,
+    "rating": 4.6,
+    "reviews_count": 220,
+    "genero_musical": "Rock Latino · Indie · Cervezas",
+    "horario": "Mar a Sáb: 18:00 - 02:00",
+    "descripcion": "El punto de encuentro en la República Independiente de Playa Ancha. Arquitectura neoclásica, cervezas artesanales y tocatas acústicas.",
+    "ticket_provider": "Toliv",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6395,
+        -33.0315
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 16,
+        "calificacion": 5,
+        "comentario": "Barrio universitario de Playa Ancha en su gloria. Acogedor y con excelente música en vinilo.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 6,
+          "nombre": "Matías Tapia",
+          "email": "matias.tapia@alumnos.uv.cl"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000010"
+    },
+    "id_recinto": 16,
+    "nombre_local": "Bar Flamingo",
+    "direccion": "Urriola 560, Cerro Alegre, Valparaíso",
+    "sector": "Cerro Alegre / Urriola",
+    "ciudad": "Valparaíso",
+    "tipo": "bar",
+    "patente_municipal": "PAT-VALP-016",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 65,
+    "aforo_disponible": 10,
+    "precio_entrada": 4000,
+    "rating": 4.8,
+    "reviews_count": 190,
+    "genero_musical": "Vinilos · Funk · Soul · Cocktails",
+    "horario": "Mié a Dom: 19:00 - 02:30",
+    "descripcion": "Pequeño y sofisticado listening bar en Cerro Alegre. Prensado en vinilo, coctelería botánica y luces de neón rosa.",
+    "ticket_provider": "Toliv",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6268,
+        -33.0428
+      ]
+    },
+    "host": {
+      "id_usuario": 10,
+      "nombre": "Host Cerros Alegre & Concepción",
+      "email": "administracion@cerroalegre.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 17,
+        "calificacion": 5,
+        "comentario": "El sonido de los vinilos y el gin tonic de lavanda hacen de este lugar una joya escondida.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 5,
+          "nombre": "Sofía Henríquez",
+          "email": "sofia.henriquez@outlook.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000011"
+    },
+    "id_recinto": 17,
+    "nombre_local": "House Rock Bar",
+    "direccion": "Cumming 98, Subida Ecuador, Valparaíso",
+    "sector": "Subida Ecuador",
+    "ciudad": "Valparaíso",
+    "tipo": "pub",
+    "patente_municipal": "PAT-VALP-017",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 85,
+    "aforo_disponible": 15,
+    "precio_entrada": 2000,
+    "rating": 4.4,
+    "reviews_count": 160,
+    "genero_musical": "Hard Rock · Heavy Metal · Grunge",
+    "horario": "Jue a Sáb: 19:00 - 03:30",
+    "descripcion": "Templo del rock pesado y metal en Subida Ecuador. Bandas tributo en vivo todos los fines de semana y jarras de cerveza helada.",
+    "ticket_provider": "Ticketek",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6268,
+        -33.0442
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 18,
+        "calificacion": 4,
+        "comentario": "Guitarras distorsionadas, buena onda y tributos excelentes a Iron Maiden y Led Zeppelin.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 4,
+          "nombre": "Ignacio Valenzuela",
+          "email": "ignacio.valenzuela@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000012"
+    },
+    "id_recinto": 18,
+    "nombre_local": "Fauna Restaurant & Bar",
+    "direccion": "Pasaje Dimalow 166, Cerro Alegre, Valparaíso",
+    "sector": "Cerro Alegre",
+    "ciudad": "Valparaíso",
+    "tipo": "bar",
+    "patente_municipal": "PAT-VALP-018",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 110,
+    "aforo_disponible": 14,
+    "precio_entrada": 0,
+    "rating": 4.9,
+    "reviews_count": 480,
+    "genero_musical": "Lounge · Chill Out · Mixología",
+    "horario": "Lun a Dom: 13:00 - 01:00",
+    "descripcion": "Terraza de renombre internacional sobre la quebrada de Cerro Alegre. Coctelería con hierbas locales y puesta de sol panorámica.",
+    "ticket_provider": "Toliv",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6285,
+        -33.0415
+      ]
+    },
+    "host": {
+      "id_usuario": 10,
+      "nombre": "Host Cerros Alegre & Concepción",
+      "email": "administracion@cerroalegre.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 19,
+        "calificacion": 5,
+        "comentario": "Una de las mejores vistas de todo Chile. Pisco sour y atardecer perfecto.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 1,
+          "nombre": "Valentina Morales",
+          "email": "valen.morales@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000013"
+    },
+    "id_recinto": 19,
+    "nombre_local": "Trolebús Bar",
+    "direccion": "Condell 1450, Valparaíso",
+    "sector": "Plaza Victoria / Condell",
+    "ciudad": "Valparaíso",
+    "tipo": "pub",
+    "patente_municipal": "PAT-VALP-019",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 80,
+    "aforo_disponible": 18,
+    "precio_entrada": 0,
+    "rating": 4.5,
+    "reviews_count": 175,
+    "genero_musical": "Cervezas · Indie · Rock Porteño",
+    "horario": "Mar a Sáb: 17:00 - 02:00",
+    "descripcion": "Bar tributo al icónico sistema de trolebuses de Valparaíso. Grifos artesanales de la zona y chorrillanas para compartir.",
+    "ticket_provider": "Toliv",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6225,
+        -33.0465
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 20,
+        "calificacion": 5,
+        "comentario": "Muy buena temática urbana y las IPAs de la Quinta Región rotan siempre frescas.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 8,
+          "nombre": "Lucas Sepúlveda",
+          "email": "lucas.sepulveda@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000014"
+    },
+    "id_recinto": 20,
+    "nombre_local": "Restobar El Cielo",
+    "direccion": "San Juan de Dios 555, Subida Ecuador, Valparaíso",
+    "sector": "San Juan de Dios / Subida Ecuador",
+    "ciudad": "Valparaíso",
+    "tipo": "pub",
+    "patente_municipal": "PAT-VALP-020",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 90,
+    "aforo_disponible": 22,
+    "precio_entrada": 3000,
+    "rating": 4.3,
+    "reviews_count": 150,
+    "genero_musical": "Pachanga · Reggaeton Clásico · Bailable",
+    "horario": "Jue a Sáb: 20:00 - 04:00",
+    "descripcion": "Azotea rústica al final de la subida con luces festivas, piscolas generosas y pista para bailar hasta las tantas.",
+    "ticket_provider": "Toliv",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.628,
+        -33.046
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 21,
+        "calificacion": 4,
+        "comentario": "El remate clásico de la Subida Ecuador. Para ir a bailar con amigos sin complicaciones.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 6,
+          "nombre": "Matías Tapia",
+          "email": "matias.tapia@alumnos.uv.cl"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000015"
+    },
+    "id_recinto": 21,
+    "nombre_local": "Club Subterráneo Valpo",
+    "direccion": "Cochrane 560, Valparaíso",
+    "sector": "Barrio Puerto / Cochrane",
+    "ciudad": "Valparaíso",
+    "tipo": "club",
+    "patente_municipal": "PAT-VALP-021",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 250,
+    "aforo_disponible": 30,
+    "precio_entrada": 7000,
+    "rating": 4.7,
+    "reviews_count": 280,
+    "genero_musical": "Techno · Tech House · Minimal",
+    "horario": "Vie y Sáb: 23:30 - 06:00",
+    "descripcion": "Bodega de piedra abovedada con acústica brutal para la música electrónica underground. Fiestas extendidas de trasnoche.",
+    "ticket_provider": "Passline",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.6295,
+        -33.0385
+      ]
+    },
+    "host": {
+      "id_usuario": 9,
+      "nombre": "Host Valparaíso Puerto SpA",
+      "email": "contacto@valpopuerto.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 22,
+        "calificacion": 5,
+        "comentario": "Sonido Funktion-One impresionante en los muros de piedra antiguos. La mejor fiesta techno porteña.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 2,
+          "nombre": "Diego Silva",
+          "email": "diego.silva@alumnos.usm.cl"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000016"
+    },
+    "id_recinto": 22,
+    "nombre_local": "Club OVO (Enjoy Viña)",
+    "direccion": "Av. San Martín 199, Viña del Mar",
+    "sector": "Av. San Martín / Casino",
+    "ciudad": "Viña del Mar",
+    "tipo": "club",
+    "patente_municipal": "PAT-VINA-022",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 450,
+    "aforo_disponible": 32,
+    "precio_entrada": 15000,
+    "rating": 4.8,
+    "reviews_count": 470,
+    "genero_musical": "EDM · Reggaeton VIP · Hits",
+    "horario": "Jue a Sáb: 23:30 - 05:00",
+    "descripcion": "Discoteca de alta gama dentro del Casino Enjoy Viña del Mar. Producciones de lujo, invitados internacionales y zona VIP.",
+    "ticket_provider": "Puntoticket",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5582,
+        -33.0185
+      ]
+    },
+    "host": {
+      "id_usuario": 11,
+      "nombre": "Host Viña Poniente & Casino",
+      "email": "contacto@vinaponiente.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 23,
+        "calificacion": 5,
+        "comentario": "La discoteca más elegante de Viña. Los juegos de luces y el servicio VIP en las mesas son de estándar mundial.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 7,
+          "nombre": "Francisca Contreras",
+          "email": "fran.contreras@gmail.com"
+        }
+      },
+      {
+        "id_resena": 24,
+        "calificacion": 5,
+        "comentario": "Muy prendida la noche, los DJs tocan una mezcla perfecta de reggaeton y electrónica.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 1,
+          "nombre": "Valentina Morales",
+          "email": "valen.morales@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000017"
+    },
+    "id_recinto": 23,
+    "nombre_local": "Journal Bar & Resto",
+    "direccion": "3 Poniente 422, Viña del Mar",
+    "sector": "3 Poniente / Casco Gastronómico",
+    "ciudad": "Viña del Mar",
+    "tipo": "pub",
+    "patente_municipal": "PAT-VINA-023",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 150,
+    "aforo_disponible": 44,
+    "precio_entrada": 0,
+    "rating": 4.6,
+    "reviews_count": 310,
+    "genero_musical": "Indie Rock · Pop 80s & 90s",
+    "horario": "Lun a Dom: 18:00 - 03:00",
+    "descripcion": "El epicentro del carrete en 3 Poniente. Amplia carta cervecera, hamburguesas caseras y clásicos del rock e indie.",
+    "ticket_provider": "Ticketek",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.555,
+        -33.0195
+      ]
+    },
+    "host": {
+      "id_usuario": 11,
+      "nombre": "Host Viña Poniente & Casino",
+      "email": "contacto@vinaponiente.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 25,
+        "calificacion": 5,
+        "comentario": "Un infaltable de los viernes en Poniente. Las tablas para picar son generosas y la música es buenísima.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 3,
+          "nombre": "Camila Rojas",
+          "email": "camila.rojas@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000018"
+    },
+    "id_recinto": 24,
+    "nombre_local": "Stylo Sunset & Lounge",
+    "direccion": "Av. San Martín 540, Viña del Mar",
+    "sector": "Av. San Martín / Playa Acapulco",
+    "ciudad": "Viña del Mar",
+    "tipo": "bar",
+    "patente_municipal": "PAT-VINA-024",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 110,
+    "aforo_disponible": 17,
+    "precio_entrada": 7000,
+    "rating": 4.7,
+    "reviews_count": 250,
+    "genero_musical": "Afro House · Melodic Lounge",
+    "horario": "Mié a Sáb: 19:00 - 03:30",
+    "descripcion": "Terraza lounge climatizada frente al mar con mixología de autor, sillones de terciopelo y sesiones de sunset deep house.",
+    "ticket_provider": "Toliv",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.554,
+        -33.015
+      ]
+    },
+    "host": {
+      "id_usuario": 11,
+      "nombre": "Host Viña Poniente & Casino",
+      "email": "contacto@vinaponiente.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 26,
+        "calificacion": 5,
+        "comentario": "Excelente ambientación y vista al mar. Los tragos de autor están perfectamente equilibrados.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 5,
+          "nombre": "Sofía Henríquez",
+          "email": "sofia.henriquez@outlook.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000019"
+    },
+    "id_recinto": 25,
+    "nombre_local": "Living Club Reñaca",
+    "direccion": "Av. Borgoño 14555, Reñaca, Viña del Mar",
+    "sector": "Reñaca / Sector 5 Costanera",
+    "ciudad": "Viña del Mar",
+    "tipo": "club",
+    "patente_municipal": "PAT-VINA-025",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 300,
+    "aforo_disponible": 21,
+    "precio_entrada": 12000,
+    "rating": 4.8,
+    "reviews_count": 390,
+    "genero_musical": "Urbano · Tech House · Fiesta Playera",
+    "horario": "Jue a Sáb: 23:00 - 05:30",
+    "descripcion": "La fiesta frente a las olas más cotizada de Reñaca durante todo el año. Pista iluminada, brisa marina y sets hasta el amanecer.",
+    "ticket_provider": "Passline",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5435,
+        -32.973
+      ]
+    },
+    "host": {
+      "id_usuario": 12,
+      "nombre": "Host Reñaca Beach Clubs",
+      "email": "contacto@renacabeach.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 27,
+        "calificacion": 5,
+        "comentario": "¡Reñaca con el mar al lado es insuperable! Reservar por la app nos ahorró la tremenda fila de entrada.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 7,
+          "nombre": "Francisca Contreras",
+          "email": "fran.contreras@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000020000001a"
+    },
+    "id_recinto": 26,
+    "nombre_local": "La Tertulia Cervecería",
+    "direccion": "1 Poniente 542, Viña del Mar",
+    "sector": "1 Poniente",
+    "ciudad": "Viña del Mar",
+    "tipo": "pub",
+    "patente_municipal": "PAT-VINA-026",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 95,
+    "aforo_disponible": 29,
+    "precio_entrada": 4000,
+    "rating": 4.6,
+    "reviews_count": 195,
+    "genero_musical": "Rock Acústico · Blues · Craft Beer",
+    "horario": "Mar a Dom: 17:30 - 02:30",
+    "descripcion": "Cervecería de culto con 18 canillas artesanales de barril, pizarras rotativas de variedades lupuladas y tocatas acústicas.",
+    "ticket_provider": "Toliv",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5532,
+        -33.021
+      ]
+    },
+    "host": {
+      "id_usuario": 11,
+      "nombre": "Host Viña Poniente & Casino",
+      "email": "contacto@vinaponiente.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 28,
+        "calificacion": 5,
+        "comentario": "La mejor pizarra de IPAs y Stouts en Viña Centro. Para los amantes de la buena cerveza este es el templo.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 8,
+          "nombre": "Lucas Sepúlveda",
+          "email": "lucas.sepulveda@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000020000001b"
+    },
+    "id_recinto": 27,
+    "nombre_local": "Bar Hollywood Viña",
+    "direccion": "Av. San Martín 501, Viña del Mar",
+    "sector": "Av. San Martín",
+    "ciudad": "Viña del Mar",
+    "tipo": "pub",
+    "patente_municipal": "PAT-VINA-027",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 160,
+    "aforo_disponible": 25,
+    "precio_entrada": 5000,
+    "rating": 4.5,
+    "reviews_count": 280,
+    "genero_musical": "Hits 90s · Pop Latino · Bailable",
+    "horario": "Mié a Dom: 18:30 - 04:00",
+    "descripcion": "Restobar y pub bailable en la esquina de San Martín con 6 Norte. Terraza amplia y ambiente para celebrar cumpleaños y grupos.",
+    "ticket_provider": "Ticketmaster",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5545,
+        -33.016
+      ]
+    },
+    "host": {
+      "id_usuario": 11,
+      "nombre": "Host Viña Poniente & Casino",
+      "email": "contacto@vinaponiente.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 29,
+        "calificacion": 4,
+        "comentario": "Muy prendido para ir en grupo de amigas. Ponen puros clásicos bailables que todos se saben.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 3,
+          "nombre": "Camila Rojas",
+          "email": "camila.rojas@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000020000001c"
+    },
+    "id_recinto": 28,
+    "nombre_local": "Del Barrio Pub",
+    "direccion": "3 Poniente 431, Viña del Mar",
+    "sector": "3 Poniente",
+    "ciudad": "Viña del Mar",
+    "tipo": "pub",
+    "patente_municipal": "PAT-VINA-028",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 120,
+    "aforo_disponible": 30,
+    "precio_entrada": 0,
+    "rating": 4.5,
+    "reviews_count": 220,
+    "genero_musical": "Rock Latino · Cervezas · Tablas",
+    "horario": "Lun a Sáb: 18:00 - 03:00",
+    "descripcion": "Un clásico de la bohemia tradicional viñamarina. Excelente atención de meseros, chorrillanas contundentes y tragos clásicos.",
+    "ticket_provider": "Ticketek",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5552,
+        -33.0198
+      ]
+    },
+    "host": {
+      "id_usuario": 11,
+      "nombre": "Host Viña Poniente & Casino",
+      "email": "contacto@vinaponiente.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 30,
+        "calificacion": 5,
+        "comentario": "Buena música chilena y argentina, excelente ambiente de barrio para juntarse a conversar y tomar algo.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 4,
+          "nombre": "Ignacio Valenzuela",
+          "email": "ignacio.valenzuela@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000020000001d"
+    },
+    "id_recinto": 29,
+    "nombre_local": "Club de la Cerveza Viña",
+    "direccion": "4 Norte 191, Viña del Mar",
+    "sector": "4 Norte",
+    "ciudad": "Viña del Mar",
+    "tipo": "pub",
+    "patente_municipal": "PAT-VINA-029",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 130,
+    "aforo_disponible": 35,
+    "precio_entrada": 0,
+    "rating": 4.7,
+    "reviews_count": 260,
+    "genero_musical": "Cerveza Internacional · Indie Pop",
+    "horario": "Mar a Dom: 17:00 - 02:00",
+    "descripcion": "Patio cervecero al aire libre con más de 80 etiquetas en botella y barril de Bélgica, Alemania y microcervecerías chilenas.",
+    "ticket_provider": "Toliv",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5528,
+        -33.0175
+      ]
+    },
+    "host": {
+      "id_usuario": 11,
+      "nombre": "Host Viña Poniente & Casino",
+      "email": "contacto@vinaponiente.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 31,
+        "calificacion": 5,
+        "comentario": "Variedad insólita de estilos cerveceros. El patio interior es súper cómodo.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 8,
+          "nombre": "Lucas Sepúlveda",
+          "email": "lucas.sepulveda@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000020000001e"
+    },
+    "id_recinto": 30,
+    "nombre_local": "Boca de Pez Restobar",
+    "direccion": "2 Poniente 342, Viña del Mar",
+    "sector": "2 Poniente",
+    "ciudad": "Viña del Mar",
+    "tipo": "bar",
+    "patente_municipal": "PAT-VINA-030",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 75,
+    "aforo_disponible": 12,
+    "precio_entrada": 0,
+    "rating": 4.8,
+    "reviews_count": 190,
+    "genero_musical": "Pisco Bar · Coctelería Marina",
+    "horario": "Mié a Dom: 19:00 - 02:30",
+    "descripcion": "Especialistas en coctelería con destilados nacionales, macerados de autor y ceviches nocturnos en un ambiente íntimo y acogedor.",
+    "ticket_provider": "Toliv",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.554,
+        -33.0205
+      ]
+    },
+    "host": {
+      "id_usuario": 11,
+      "nombre": "Host Viña Poniente & Casino",
+      "email": "contacto@vinaponiente.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 32,
+        "calificacion": 5,
+        "comentario": "El pisco sour con ají verde macerado y las machas a la parmesana son un imperdible.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 1,
+          "nombre": "Valentina Morales",
+          "email": "valen.morales@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000020000001f"
+    },
+    "id_recinto": 31,
+    "nombre_local": "Valpo Bier Viña",
+    "direccion": "5 Norte 145, Viña del Mar",
+    "sector": "5 Norte",
+    "ciudad": "Viña del Mar",
+    "tipo": "pub",
+    "patente_municipal": "PAT-VINA-031",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 85,
+    "aforo_disponible": 23,
+    "precio_entrada": 0,
+    "rating": 4.5,
+    "reviews_count": 170,
+    "genero_musical": "Craft Beer · Rock · Hamburguesas",
+    "horario": "Mar a Sáb: 18:00 - 02:00",
+    "descripcion": "Extensión viñamarina del espíritu cervecero artesanal. Ambiente relajado con pantallas para deportes y tocatas íntimas.",
+    "ticket_provider": "Toliv",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.552,
+        -33.0168
+      ]
+    },
+    "host": {
+      "id_usuario": 11,
+      "nombre": "Host Viña Poniente & Casino",
+      "email": "contacto@vinaponiente.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 33,
+        "calificacion": 4,
+        "comentario": "Buena onda, schops a excelente temperatura y promos universitarias convenientes.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 2,
+          "nombre": "Diego Silva",
+          "email": "diego.silva@alumnos.usm.cl"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000020"
+    },
+    "id_recinto": 32,
+    "nombre_local": "El Irlandés Pub Viña",
+    "direccion": "Blanco Encalada 150, Viña del Mar",
+    "sector": "Plaza México / San Martín",
+    "ciudad": "Viña del Mar",
+    "tipo": "pub",
+    "patente_municipal": "PAT-VINA-032",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 100,
+    "aforo_disponible": 19,
+    "precio_entrada": 0,
+    "rating": 4.6,
+    "reviews_count": 230,
+    "genero_musical": "Irish Pub · Celtic Rock · Stouts",
+    "horario": "Lun a Dom: 17:00 - 02:30",
+    "descripcion": "Auténtica taberna estilo irlandés con madera oscura, cerveza negra Guinness de grifo, dardos y transmisiones deportivas en vivo.",
+    "ticket_provider": "Ticketek",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.557,
+        -33.019
+      ]
+    },
+    "host": {
+      "id_usuario": 11,
+      "nombre": "Host Viña Poniente & Casino",
+      "email": "contacto@vinaponiente.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 34,
+        "calificacion": 5,
+        "comentario": "La mejor Guinness de barril de la Quinta Región. Excelente ambiente de pub europeo.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 4,
+          "nombre": "Ignacio Valenzuela",
+          "email": "ignacio.valenzuela@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000021"
+    },
+    "id_recinto": 33,
+    "nombre_local": "Sunset Lounge Reñaca",
+    "direccion": "Av. Borgoño 12300, Reñaca, Viña del Mar",
+    "sector": "Reñaca / Borde Costero",
+    "ciudad": "Viña del Mar",
+    "tipo": "bar",
+    "patente_municipal": "PAT-VINA-033",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 130,
+    "aforo_disponible": 16,
+    "precio_entrada": 8000,
+    "rating": 4.8,
+    "reviews_count": 310,
+    "genero_musical": "Sunset Chill · Deep House · Gin Bar",
+    "horario": "Mié a Dom: 18:00 - 03:00",
+    "descripcion": "Lounge exclusivo sobre las rocas de Reñaca. Luces cálidas, coctelería con tónicas premium y la mejor caída del sol al mar.",
+    "ticket_provider": "Passline",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.545,
+        -32.978
+      ]
+    },
+    "host": {
+      "id_usuario": 12,
+      "nombre": "Host Reñaca Beach Clubs",
+      "email": "contacto@renacabeach.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 35,
+        "calificacion": 5,
+        "comentario": "Ver ponerse el sol con el mar rompiendo en las rocas y un cóctel de autor es impagable.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 5,
+          "nombre": "Sofía Henríquez",
+          "email": "sofia.henriquez@outlook.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000022"
+    },
+    "id_recinto": 34,
+    "nombre_local": "Terraza 8 Norte",
+    "direccion": "8 Norte 365, Viña del Mar",
+    "sector": "8 Norte / Población Vergara",
+    "ciudad": "Viña del Mar",
+    "tipo": "bar",
+    "patente_municipal": "PAT-VINA-034",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 120,
+    "aforo_disponible": 18,
+    "precio_entrada": 5000,
+    "rating": 4.7,
+    "reviews_count": 240,
+    "genero_musical": "Nu Disco · Melodic House · Cocktails",
+    "horario": "Jue a Sáb: 19:30 - 03:30",
+    "descripcion": "Rooftop moderno ubicado en el corazón residencial y chic de Población Vergara. Coctelería de autor y DJs invitados los fines de semana.",
+    "ticket_provider": "Toliv",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5515,
+        -33.0145
+      ]
+    },
+    "host": {
+      "id_usuario": 11,
+      "nombre": "Host Viña Poniente & Casino",
+      "email": "contacto@vinaponiente.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 36,
+        "calificacion": 5,
+        "comentario": "El rooftop más ondero de 8 Norte. Música electrónica suave y carta de tragos exquisita.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 3,
+          "nombre": "Camila Rojas",
+          "email": "camila.rojas@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000023"
+    },
+    "id_recinto": 35,
+    "nombre_local": "Murano Viña Club",
+    "direccion": "Quillota 798, Viña del Mar",
+    "sector": "Quillota / Sector Oriente",
+    "ciudad": "Viña del Mar",
+    "tipo": "club",
+    "patente_municipal": "PAT-VINA-035",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 500,
+    "aforo_disponible": 55,
+    "precio_entrada": 10000,
+    "rating": 4.6,
+    "reviews_count": 410,
+    "genero_musical": "Reggaeton · Ultrabailable · Fiestas",
+    "horario": "Jue a Sáb: 23:30 - 05:30",
+    "descripcion": "Uno de los centros nocturnos de mayor capacidad en Viña del Mar. Escenario gigante, shows de láser, confeti y fiesta masiva.",
+    "ticket_provider": "Passline",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.545,
+        -33.0245
+      ]
+    },
+    "host": {
+      "id_usuario": 11,
+      "nombre": "Host Viña Poniente & Casino",
+      "email": "contacto@vinaponiente.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 37,
+        "calificacion": 5,
+        "comentario": "Pista llena de energía toda la noche. El sistema de sonido suena fuertísimo.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 7,
+          "nombre": "Francisca Contreras",
+          "email": "fran.contreras@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000024"
+    },
+    "id_recinto": 36,
+    "nombre_local": "Deck 00 Reñaca",
+    "direccion": "Av. Borgoño 14850, Reñaca, Viña del Mar",
+    "sector": "Reñaca / Costanera",
+    "ciudad": "Viña del Mar",
+    "tipo": "club",
+    "patente_municipal": "PAT-VINA-036",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 280,
+    "aforo_disponible": 26,
+    "precio_entrada": 12000,
+    "rating": 4.7,
+    "reviews_count": 330,
+    "genero_musical": "Tech House · Afro House · Beach Club",
+    "horario": "Vie y Sáb: 22:30 - 05:00",
+    "descripcion": "Club playero con piso de madera sobre la arena, fogones nocturnos y la presencia de DJs consolidados de la escena electrónica nacional.",
+    "ticket_provider": "Passline",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.542,
+        -32.9715
+      ]
+    },
+    "host": {
+      "id_usuario": 12,
+      "nombre": "Host Reñaca Beach Clubs",
+      "email": "contacto@renacabeach.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 38,
+        "calificacion": 5,
+        "comentario": "Bailar con los pies prácticamente en la playa no tiene precio. Sets impecables.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 2,
+          "nombre": "Diego Silva",
+          "email": "diego.silva@alumnos.usm.cl"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000025"
+    },
+    "id_recinto": 37,
+    "nombre_local": "Pub Scratch Viña",
+    "direccion": "1 Poniente 410, Viña del Mar",
+    "sector": "1 Poniente",
+    "ciudad": "Viña del Mar",
+    "tipo": "pub",
+    "patente_municipal": "PAT-VINA-037",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 90,
+    "aforo_disponible": 15,
+    "precio_entrada": 3000,
+    "rating": 4.4,
+    "reviews_count": 180,
+    "genero_musical": "Rock en Vivo · Karaoke · Clásicos",
+    "horario": "Mié a Sáb: 20:00 - 04:00",
+    "descripcion": "El clásico pub de trasnoche con bandas tributo, karaoke después de la medianoche y pizzas a la piedra recién horneadas.",
+    "ticket_provider": "Ticketek",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5538,
+        -33.0205
+      ]
+    },
+    "host": {
+      "id_usuario": 11,
+      "nombre": "Host Viña Poniente & Casino",
+      "email": "contacto@vinaponiente.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 39,
+        "calificacion": 4,
+        "comentario": "Buen ambiente para cantar rock con los amigos y pasar un rato entretenido.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 4,
+          "nombre": "Ignacio Valenzuela",
+          "email": "ignacio.valenzuela@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000026"
+    },
+    "id_recinto": 38,
+    "nombre_local": "Tromba Bar & Kitchen",
+    "direccion": "3 Poniente 320, Viña del Mar",
+    "sector": "3 Poniente",
+    "ciudad": "Viña del Mar",
+    "tipo": "bar",
+    "patente_municipal": "PAT-VINA-038",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 95,
+    "aforo_disponible": 14,
+    "precio_entrada": 0,
+    "rating": 4.7,
+    "reviews_count": 210,
+    "genero_musical": "Gastropub · Gin Tonic Bar · Indie",
+    "horario": "Mar a Dom: 18:30 - 02:30",
+    "descripcion": "Cocina urbana contemporánea y barra especializada en botánicos y coctelería a base de gin, vermut y aperitivos de autor.",
+    "ticket_provider": "Toliv",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5555,
+        -33.0188
+      ]
+    },
+    "host": {
+      "id_usuario": 11,
+      "nombre": "Host Viña Poniente & Casino",
+      "email": "contacto@vinaponiente.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 40,
+        "calificacion": 5,
+        "comentario": "El gin tonic con romero quemado y pomelo rosado es una maravilla. Carta gastronómica de lujo.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 5,
+          "nombre": "Sofía Henríquez",
+          "email": "sofia.henriquez@outlook.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000027"
+    },
+    "id_recinto": 39,
+    "nombre_local": "Cervecería Taverna Viña",
+    "direccion": "1 Norte 1420, Viña del Mar",
+    "sector": "1 Norte / Sporting",
+    "ciudad": "Viña del Mar",
+    "tipo": "pub",
+    "patente_municipal": "PAT-VINA-039",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 110,
+    "aforo_disponible": 22,
+    "precio_entrada": 0,
+    "rating": 4.6,
+    "reviews_count": 190,
+    "genero_musical": "Craft Beer · Rock Sureño · Tablas",
+    "horario": "Mar a Dom: 17:00 - 02:00",
+    "descripcion": "Cervecería rústica cercana al Valparaíso Sporting Club con mesas de picnic, cervezas de guarda y costillares BBQ.",
+    "ticket_provider": "Toliv",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5385,
+        -33.026
+      ]
+    },
+    "host": {
+      "id_usuario": 11,
+      "nombre": "Host Viña Poniente & Casino",
+      "email": "contacto@vinaponiente.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 41,
+        "calificacion": 5,
+        "comentario": "Un agrado de lugar para escapar del centro de Viña. Estacionamiento fácil y cervezas artesanales premium.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 8,
+          "nombre": "Lucas Sepúlveda",
+          "email": "lucas.sepulveda@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000028"
+    },
+    "id_recinto": 40,
+    "nombre_local": "Gatsby Lounge Viña",
+    "direccion": "Av. San Martín 380, Viña del Mar",
+    "sector": "Av. San Martín / 4 Norte",
+    "ciudad": "Viña del Mar",
+    "tipo": "bar",
+    "patente_municipal": "PAT-VINA-040",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 85,
+    "aforo_disponible": 11,
+    "precio_entrada": 6000,
+    "rating": 4.8,
+    "reviews_count": 220,
+    "genero_musical": "Speakeasy · Jazz Moderno · Mixología",
+    "horario": "Mié a Sáb: 20:00 - 03:00",
+    "descripcion": "Bar de estilo años 20 inspirado en los speakeasy neoyorquinos. Acceso reservado, lámparas de cristal y mixología molecular.",
+    "ticket_provider": "Ticketmaster",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.5555,
+        -33.017
+      ]
+    },
+    "host": {
+      "id_usuario": 11,
+      "nombre": "Host Viña Poniente & Casino",
+      "email": "contacto@vinaponiente.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 42,
+        "calificacion": 5,
+        "comentario": "Ambiente sofisticado como pocos en la región. El cóctel ahumado con madera de roble es impresionante.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 1,
+          "nombre": "Valentina Morales",
+          "email": "valen.morales@gmail.com"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b120000000200000029"
+    },
+    "id_recinto": 41,
+    "nombre_local": "Reñaca Sunset Club",
+    "direccion": "Av. Borgoño 13900, Sector 4, Reñaca",
+    "sector": "Reñaca / Sector 4",
+    "ciudad": "Viña del Mar",
+    "tipo": "club",
+    "patente_municipal": "PAT-VINA-041",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 250,
+    "aforo_disponible": 18,
+    "precio_entrada": 10000,
+    "rating": 4.7,
+    "reviews_count": 310,
+    "genero_musical": "Electrónica · Sunset Beats · House",
+    "horario": "Jue a Sáb: 21:00 - 05:00",
+    "descripcion": "Club electrónico frente a la rompiente del sector 4. Luces sincronizadas con la marea y line-up con los mejores DJs del litoral.",
+    "ticket_provider": "Passline",
+    "hot": true,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.544,
+        -32.975
+      ]
+    },
+    "host": {
+      "id_usuario": 12,
+      "nombre": "Host Reñaca Beach Clubs",
+      "email": "contacto@renacabeach.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 43,
+        "calificacion": 5,
+        "comentario": "Tremenda fiesta al aire libre y la brisa del mar te mantiene prendido toda la noche.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 2,
+          "nombre": "Diego Silva",
+          "email": "diego.silva@alumnos.usm.cl"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "67069b12000000020000002a"
+    },
+    "id_recinto": 42,
+    "nombre_local": "Club Soho Viña",
+    "direccion": "7 Norte 445, Viña del Mar",
+    "sector": "7 Norte / Libertad",
+    "ciudad": "Viña del Mar",
+    "tipo": "club",
+    "patente_municipal": "PAT-VINA-042",
+    "estado_validacion": "APROBADO",
+    "aforo_total": 260,
+    "aforo_disponible": 34,
+    "precio_entrada": 7000,
+    "rating": 4.5,
+    "reviews_count": 260,
+    "genero_musical": "Pop Hits · Fiestas Universitarias · Reggaeton",
+    "horario": "Mié a Sáb: 23:00 - 05:00",
+    "descripcion": "Club nocturno concurrido por estudiantes universitarios de Viña. Dos ambientes, barra abierta promocional y animador en vivo.",
+    "ticket_provider": "Passline",
+    "hot": false,
+    "ubicacion": {
+      "type": "Point",
+      "coordinates": [
+        -71.548,
+        -33.0155
+      ]
+    },
+    "host": {
+      "id_usuario": 11,
+      "nombre": "Host Viña Poniente & Casino",
+      "email": "contacto@vinaponiente.cl"
+    },
+    "resenas": [
+      {
+        "id_resena": 44,
+        "calificacion": 5,
+        "comentario": "El mejor carrete universitario de los jueves y viernes en Viña. Buenas barras y mucha onda.",
+        "fecha": "2026-10-07T12:00:00.000Z",
+        "usuario": {
+          "id_usuario": 6,
+          "nombre": "Matías Tapia",
+          "email": "matias.tapia@alumnos.uv.cl"
+        }
+      }
+    ]
+  }
+]
