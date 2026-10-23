@@ -671,7 +671,7 @@ export default function MapScreen({
       </div>
 
       {/* ── TOP BAR & SEARCH ── */}
-      <div className="absolute top-0 left-0 right-0 z-20 pt-7 px-3.5">
+      <div className="absolute top-0 left-0 right-0 sm:left-1/2 sm:-translate-x-1/2 sm:w-full sm:max-w-xl z-20 pt-7 px-3.5">
         {/* Brand + Client Switcher */}
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-2">
@@ -933,7 +933,7 @@ export default function MapScreen({
 
       {/* ── BOTTOM SHEET (LOCAL + 3 EVENTOS + RESEÑAS O RESULTADOS DE BD) ── */}
       <div
-        className="absolute bottom-0 left-0 right-0 z-20 transition-all duration-300"
+        className="absolute bottom-0 left-0 right-0 sm:left-1/2 sm:-translate-x-1/2 sm:w-full sm:max-w-2xl z-20 transition-all duration-300"
         style={{
           height: expanded || searchQuery.trim().length > 0 || activeSector !== null ? "78%" : "auto",
         }}

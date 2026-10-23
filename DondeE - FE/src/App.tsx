@@ -41,6 +41,16 @@ export default function App() {
   const [isGeoModalOpen, setIsGeoModalOpen] = useState(true);
   const [userCoordinates, setUserCoordinates] = useState<UserCoordinates | null>(null);
 
+  // Responsive Viewport Mode: "mobile" (430px standard) or "desktop" (1240px expanded)
+  const [deviceMode, setDeviceMode] = useState<"mobile" | "desktop">("mobile");
+
+  const toggleDeviceMode = () => {
+    setDeviceMode((prev) => (prev === "mobile" ? "desktop" : "mobile"));
+    setTimeout(() => {
+      window.dispatchEvent(new Event("resize"));
+    }, 150);
+  };
+
   // Switch venue selection
   const handleVenueSelect = (venue: Venue) => {
     setSelectedVenue(venue);
@@ -149,8 +159,14 @@ export default function App() {
 
   return (
     <div className="relative w-full h-full bg-[#06060f] overflow-hidden font-display text-[#f0eeff]">
-      {/* Mobile container centered on screen */}
-      <div className="relative w-full h-full max-w-[430px] mx-auto overflow-hidden shadow-2xl border-x border-purple-500/10">
+      {/* Responsive Viewport Container: Mobile (430px) or Desktop Responsive */}
+      <div
+        className={`relative w-full h-full mx-auto overflow-hidden transition-all duration-300 shadow-2xl ${
+          deviceMode === "mobile"
+            ? "max-w-[430px] border-x border-purple-500/10"
+            : "max-w-[1240px] border-x border-purple-500/20"
+        }`}
+      >
         {screen === "map" ? (
           <MapScreen
             venues={venues}
@@ -210,6 +226,14 @@ export default function App() {
         </button>
 
         <div className="w-px h-4 bg-white/20" />
+
+        <button
+          onClick={toggleDeviceMode}
+          className="font-mono text-[10px] px-2.5 py-1.5 rounded-full text-cyan-300 hover:text-white transition-colors cursor-pointer flex items-center gap-1"
+          title="Alternar entre vista Móvil (Mobile-first) y vista adaptativa de Escritorio"
+        >
+          <span>{deviceMode === "mobile" ? "📱 Móvil" : "💻 Desktop"}</span>
+        </button>
 
         <button
           onClick={() => setIsClientDrawerOpen(true)}
